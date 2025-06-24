@@ -24,7 +24,7 @@ function Details() {
                     </div>
                     <h1 className='font-bold text-xl md:text-2xl'>Web Developer</h1>
                     <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional web devloper with 2 years experience in this field working with multi-national companies</p>
-                    <div className='flex md:text-base text-[12px] mt-2 flex-col md:flex-row gap-2 md:gap-6 group'>
+                    <div className='flex md:text-base  mt-2 flex-col md:flex-row gap-4 md:gap-6 group'>
                         <a href="mailto:tanvir004006@gmail.con" className='group/item1 flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
                             Hire Me
                             <p className='hidden group-hover/item1:flex '><FontAwesomeIcon icon={faArrowRight} /></p>
