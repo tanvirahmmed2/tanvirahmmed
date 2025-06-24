@@ -4,12 +4,12 @@ import { motion } from 'motion/react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub, faInstagram, faLinkedin, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faHtml5, faInstagram, faLinkedin, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function Details() {
     return (
         <div className='w-full flex flex-col gap-6 items-center min-h-[100vh] mt-12 md:mt-0 h-auto py-4'>
-            <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center justify-around'>
+            <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
                 
                 <div className=' w-[200px] h-[250px] relative bg-gradient-to-t from-red-500 to-red-200 bg- overflow-hidden rounded-full cursor-pointer' >
                     <img src="/profile.png" alt="" className='scale-200' />
@@ -17,7 +17,7 @@ function Details() {
 
 
                 <div className='w-full md:w-1/2 flex flex-col gap-2  items-center md:items-start'>
-                    <h2 className='font-bold text-xs md:text-3xl'>Hello!</h2>
+                    <h2 className='font-bold text-xl md:text-3xl'>Hello!</h2>
                     <div className='flex flex-row gap-2 font-bold text-3xl sm:text-4xl md:text-4xl'>
                         <h1>I'm </h1>
                         <h1 className='text-red-600'>Tanvir Ahmmed</h1>
@@ -54,7 +54,7 @@ function Details() {
                 <div>
                     <h1>I work with:</h1>
                     <div>
-                        
+                        <FontAwesomeIcon icon={faHtml5}/>
                     </div>
                 </div>
 
