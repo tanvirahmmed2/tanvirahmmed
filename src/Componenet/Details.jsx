@@ -10,7 +10,7 @@ function Details() {
     return (
         <div className='w-full flex flex-col gap-6 items-center min-h-[100vh] mt-12 md:mt-0 h-auto py-4'>
             <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
-                
+
                 <div className=' w-[200px] h-[250px] relative bg-gradient-to-t from-red-500 to-red-200 bg- overflow-hidden rounded-full cursor-pointer' >
                     <img src="/profile.png" alt="" className='scale-200' />
                 </div>
@@ -36,36 +36,28 @@ function Details() {
                         </Link>
                     </div>
                     <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center md:justify-start'>
-                        <a className='hover:scale-125 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook}/></a>
-                        <a className='hover:scale-125 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram}/></a>
-                        <a className='hover:scale-125 hover:text-red-800' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FontAwesomeIcon icon={faWhatsapp}/></a>
-                        <a className='hover:scale-125 hover:text-red-800' href="https://t.me/tanvirahmmed14"><FontAwesomeIcon icon={faTelegram}/></a>
-                        <a className='hover:scale-125 hover:text-red-800' href="https://bd.linkedin.com/in/tanvirahmmed4"><FontAwesomeIcon icon={faLinkedin}/></a>
-                        <a className='hover:scale-125 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FontAwesomeIcon icon={faGithub}/></a>
-                        
+                        <a className='hover:scale-125 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook} /></a>
+                        <a className='hover:scale-125 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram} /></a>
+                        <a className='hover:scale-125 hover:text-red-800' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FontAwesomeIcon icon={faWhatsapp} /></a>
+                        <a className='hover:scale-125 hover:text-red-800' href="https://t.me/tanvirahmmed14"><FontAwesomeIcon icon={faTelegram} /></a>
+                        <a className='hover:scale-125 hover:text-red-800' href="https://bd.linkedin.com/in/tanvirahmmed4"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a className='hover:scale-125 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FontAwesomeIcon icon={faGithub} /></a>
+
                     </div>
-                     <div className='flex flex-row gap-4 cursor-pointer mt-4'>
-                        <p className='text-lg hover:scale-110 hover:text-red-700'>Html <FontAwesomeIcon icon={faHtml5}/></p>
-                        <p className='text-lg hover:scale-110 hover:text-red-700'>CSS <FontAwesomeIcon icon={faCss}/></p>
-                        <p className='text-lg hover:scale-110 hover:text-red-700'>JavaScript <FontAwesomeIcon icon={faJs}/></p>
-                        <p className='text-lg hover:scale-110 hover:text-red-700'>React Js <FontAwesomeIcon icon={faReact}/></p>
-                        <p className='text-lg hover:scale-110 hover:text-red-700'>Node Js <FontAwesomeIcon icon={faNode}/></p>
-                        
-                        
+                    <div className='w-full text-2xl flex flex-row gap-8 mt-4 items-center justify-center md:justify-start cursor-pointer'>
+                        <p className='hover:scale-125 hover:text-red-800'><FontAwesomeIcon icon={faHtml5} /></p>
+                        <p className='hover:scale-125 hover:text-red-800'><FontAwesomeIcon icon={faCss} /></p>
+                        <p className='hover:scale-125 hover:text-red-800'><FontAwesomeIcon icon={faJs} /></p>
+                        <p className='hover:scale-125 hover:text-red-800'><FontAwesomeIcon icon={faReact} /></p>
+                        <p className='hover:scale-125 hover:text-red-800'><FontAwesomeIcon icon={faNode} /></p>
+
+
                     </div>
                 </div>
 
             </div>
 
-            <div className='w-full md:w-3/4 text-center h-auto flex items-center justify-center flex-col '>
-                <h1 className='text-2xl md:text-3xl font-bold mb-6'>About Me</h1>
-                <p>Hi, I'm a professional MERN stack web developer based in Bangladesh. I enjoy solving real-world problems with clean code, collaborating on creative projects, and constantly growing in the tech world. With a strong eye for design and performance, I turn ideas into user-friendly web experiences.</p>
-                <div className='text-lg bg-gray-200 px-4 py-2 rounded-2xl'>
-                    
-                   
-                </div>
 
-            </div>
 
         </div>
     )
