@@ -4,6 +4,7 @@ import { motion } from 'motion/react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 function Details() {
     return (
@@ -23,22 +24,29 @@ function Details() {
                     </div>
                     <h1 className='font-bold text-xs md:text-2xl'>MERN Stack Web Developer</h1>
                     <p className='text-[12px] md:text-lg text-center md:text-start'>I'm a professional web devloper with 2 years experience in this field working with multi-national companies</p>
-                    <div className='flex md:text-base text-[12px] mt-2 flex-col md:flex-row gap-2 md:gap-6'>
-                        <a href="mailto:tanvir004006@gmail.con" className='group flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
+                    <div className='flex md:text-base text-[12px] mt-2 flex-col md:flex-row gap-2 md:gap-6 group'>
+                        <a href="mailto:tanvir004006@gmail.con" className='group/item1 flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
                             Hire Me
-                            <p className='hidden group-hover:flex '><FontAwesomeIcon icon={faArrowRight} /></p>
+                            <p className='hidden group-hover/item1:flex '><FontAwesomeIcon icon={faArrowRight} /></p>
 
                         </a>
-                        <Link to='/projects' className='group flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
+                        <Link to='/projects' className='group/item2 flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
                             Projects
-                            <p className='hidden group-hover:flex'><FontAwesomeIcon icon={faArrowRight} /></p>
+                            <p className='hidden group-hover/item2:flex'><FontAwesomeIcon icon={faArrowRight} /></p>
                         </Link>
+                    </div>
+                    <div className='w-full text-2xl flex flex-row gap-8 text-red-800 mt-4 items-center justify-center md:justify-start'>
+                        <a href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook}/></a>
+                        <a href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram}/></a>
+                        <a href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FontAwesomeIcon icon={faWhatsapp}/></a>
+                        <a href="https://t.me/tanvirahmmed14"><FontAwesomeIcon icon={faTelegram}/></a>
                     </div>
                 </div>
 
             </div>
 
             <div>
+                
 
             </div>
 
