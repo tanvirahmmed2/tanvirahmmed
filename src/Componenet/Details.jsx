@@ -35,7 +35,7 @@ function Details() {
                             <p className='hidden group-hover/item2:flex'><FontAwesomeIcon icon={faArrowRight} /></p>
                         </Link>
                     </div>
-                    <div className='w-full text-2xl flex flex-row gap-8 mt-4 items-center justify-center md:justify-start'>
+                    <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center md:justify-start'>
                         <a className='hover:scale-110 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook}/></a>
                         <a className='hover:scale-110 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram}/></a>
                         <a className='hover:scale-110 hover:text-red-800' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FontAwesomeIcon icon={faWhatsapp}/></a>
