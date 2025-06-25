@@ -36,35 +36,18 @@ function Services() {
 
       </div>
       <div className='w-full h-auto flex items-center justify-center'>
-        <div className='w-3/2 gap-4 grid auto-cols-auto'>
-          {/* {
+        <div className='w-full gap-4 grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]'>
+          {
             services.map((service)=>{
-              return <div className='flex flex-col items-center justify-center p-4 text-center w-80 h-60 bg-gray-300 hover:bg-red-300 rounded-2xl cursor-pointer' key={service.id}>
+              return <div className='relative flex flex-col items-center justify-center p-4 text-center w-80 h-60 bg-gray-300 hover:bg-red-300 rounded-2xl cursor-pointer' key={service.id}>
                 <p className='text-xl'>{service.icon}</p>
                 <h1 className="font-bold text-lg">{service.title}</h1>
                 <p>{service.desc}</p>
-                <a href="">{service.more}</a>
+                <a href="" className=' absolute bottom-2'>{service.more}</a>
               </div>
             })
-          } */}
-          <div>
-            <p><FontAwesomeIcon icon={faSwatchbook}/></p>
-            <h1>Ui/Ux Design</h1>
-            <p>Crafting beautiful, intuitive, and user-friendly digital experiences through thoughtful interface and experience design</p>
-            <a href="">learn more</a>
-          </div>
-          <div>
-            <p></p>
-            <h1></h1>
-            <p></p>
-            <a href=""></a>
-          </div>
-          <div>
-            <p></p>
-            <h1></h1>
-            <p></p>
-            <a href=""></a>
-          </div>
+          }
+          
         </div>
       </div>
 
