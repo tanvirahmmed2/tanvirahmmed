@@ -1,59 +1,56 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSwatchbook, faCode, faPeopleArrows, faDatabase, faLaptopCode, faTicket } from '@fortawesome/free-solid-svg-icons'
-import { icon } from '@fortawesome/fontawesome-svg-core'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSwatchbook, faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
-const services =[
+const services = [
   {
-    id:1,
-    title:"Ui/Ux Design",
-    desc: "Crafting beautiful, intuitive, and user-friendly digital experiences through thoughtful interface and experience design",
-    icon: <FontAwesomeIcon icon={faSwatchbook}/>,
-    more: "learn more"
+    id: 1,
+    title: "UI/UX Design",
+    desc: "Crafting beautiful, intuitive, and user-friendly digital experiences through thoughtful interface and experience design.",
+    icon: <FontAwesomeIcon icon={faSwatchbook} />,
+    more: "Learn more",
   },
   {
-    id:2,
-    title:"Web Development",
-    desc: "Delivering complete web solutions by combining front-end and back-end development into a seamless, scalable experience",
-    icon: <FontAwesomeIcon icon={faCode}/>,
-    more: "learn more"
+    id: 2,
+    title: "Web Development",
+    desc: "Delivering complete web solutions by combining front-end and back-end development into a seamless, scalable experience.",
+    icon: <FontAwesomeIcon icon={faCode} />,
+    more: "Learn more",
   },
   {
-    id:3,
+    id: 3,
     title: "Web App",
-    desc:"A fast, secure, and user-friendly web app designed to boost productivity and streamline tasks from any device.",
-    icon: <FontAwesomeIcon icon={faDatabase}/>,
-    more: "learn more"
+    desc: "A fast, secure, and user-friendly web app designed to boost productivity and streamline tasks from any device.",
+    icon: <FontAwesomeIcon icon={faDatabase} />,
+    more: "Learn more",
   }
-]
+];
 
 function Services() {
- return (
-    <div className='w-full min-h-[100vh] flex flex-col'>
-      <div className='text-3xl flex flex-row w-full h-auto items-center justify-center gap-4 font-bold mb-4'>
-        <h1 className='text-red-700'>Service </h1>
-        <h1>I Provide</h1>
-
-      </div>
-      <div className='w-full h-auto flex items-center justify-center'>
-        <div className='w-full gap-4 grid grid-cols-[repeat(auto-fit,minmax(16rem,1fr))]'>
-          {
-            services.map((service)=>{
-              return <div className='relative flex flex-col items-center justify-center p-4 text-center w-80 h-60 bg-gray-300 hover:bg-red-300 rounded-2xl cursor-pointer' key={service.id}>
-                <p className='text-xl'>{service.icon}</p>
-                <h1 className="font-bold text-lg">{service.title}</h1>
-                <p>{service.desc}</p>
-                <a href="" className=' absolute bottom-2'>{service.more}</a>
-              </div>
-            })
-          }
-          
-        </div>
+  return (
+    <div className='w-full min-h-screen px-4 py-8'>
+      <div className='text-3xl font-bold text-center mb-10'>
+        <h1 className='text-red-700 inline-block mr-2'>Service</h1>
+        <h1 className='inline-block'>I Provide</h1>
       </div>
 
-      
+      <div className='grid gap-6 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]'>
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className='relative flex flex-col items-center justify-center p-6 bg-gray-200 hover:bg-red-200 rounded-2xl text-center transition duration-300 cursor-pointer max-w-[20rem] w-full mx-auto'
+          >
+            <div className='text-2xl mb-2'>{service.icon}</div>
+            <h2 className='font-bold text-lg mb-2'>{service.title}</h2>
+            <p className='text-sm mb-6'>{service.desc}</p>
+            <a href="#" className='absolute bottom-4 text-sm text-red-600 hover:underline'>
+              {service.more}
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Services
+export default Services;
