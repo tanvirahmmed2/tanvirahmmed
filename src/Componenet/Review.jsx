@@ -1,9 +1,86 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRankingStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-regular-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
+
+
+const reviews = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    email: "sarah.johnson@creativemind.co",
+    review:
+      "Working with Tanvir was a game-changer for our online presence. He built our site from scratch with speed, precision, and a deep understanding of our brand. Communication was smooth and he was always available when needed. Highly recommended!"
+  },
+  {
+    id: 2,
+    name: "Michael Lee",
+    email: "michael.lee@techpulse.io",
+    review:
+      "Incredible work ethic and attention to detail. Tanvir delivered a fully responsive, blazing-fast site ahead of deadline. His ability to turn complex ideas into smooth functionality is outstanding. We’ll definitely work again!"
+  },
+  {
+    id: 3,
+    name: "Ayesha Rahman",
+    email: "ayesha.r@luxecommerce.com",
+    review:
+      "I’ve worked with many developers, but Tanvir stands out for his professionalism and 24/7 availability. He handled our eCommerce site with care, integrating everything we needed. Five stars without hesitation."
+  },
+  {
+    id: 4,
+    name: "David Martinez",
+    email: "david.m@nextgenstudios.org",
+    review:
+      "Tanvir didn’t just develop our education platform — he elevated it. From UI to backend logic, everything was built with quality and passion. Our students and staff love the new interface!"
+  },
+  {
+    id: 5,
+    name: "Nusrat Jahan",
+    email: "nusrat.j@publicspace.news",
+    review:
+      "From layout design to performance optimization, Tanvir nailed every aspect of our news publication website. He truly listens, delivers quickly, and goes the extra mile. Couldn’t be happier!"
+  }
+
+]
+
 function Review() {
   return (
-    <div className='w-full min-h-[100vh] bg-amber-400'>
-      
+    <div className='w-full h-auto py-20 flex flex-col items-center justify-center'>
+      <h1 className='text-3xl  font-bold pb-12'><FontAwesomeIcon icon={faRankingStar} /> Client Reviews</h1>
+      <div className='flex flex-col gap-4 items-start justify-center w-full h-auto'>
+        {
+          reviews.map((review) => (
+            <div key={review.id} className='flex flex-col w-full h-auto gap-2 items-start bg-gray-100 shadow-red-900 rounded-2xl px-4 py-2'>
+
+              <div className='flex flex-row w-full h-auto items-center justify-start gap-2'>
+                <p className='text-amber-500'><FontAwesomeIcon icon={faStar} /></p>
+                <h1 className='text-lg font-semibold'>{review.name}</h1>
+                <p className='italic'>{review.email}</p>
+
+              </div>
+              <p>{review.review}</p>
+            </div>
+          ))
+        }
+        <div className='flex md:text-base w-full h-auto items-center justify-center mt-2 flex-row gap-4 md:gap-6 group'>
+
+          <Link to='/projects' className='group/item2 flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
+            Projects
+            <p className='hidden group-hover/item2:flex'><FontAwesomeIcon icon={faArrowRight} /></p>
+          </Link>
+          <a href="mailto:tanvir004006@gmail.con" className='group/item1 flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
+            Hire Me
+            <p className='hidden group-hover/item1:flex '><FontAwesomeIcon icon={faArrowRight} /></p>
+
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

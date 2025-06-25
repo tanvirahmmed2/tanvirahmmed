@@ -38,7 +38,7 @@ function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className='relative flex flex-col items-center justify-center p-6 bg-gray-200 hover:bg-red-200 rounded-2xl text-center transition duration-300 cursor-pointer max-w-[20rem] w-full mx-auto'
+            className='relative flex flex-col items-center justify-center p-6 bg-gray-200 hover:bg-red-200 rounded-2xl text-center transition duration-300 cursor-pointer w-[20rem] mx-auto'
           >
             <div className='text-2xl mb-2'>{service.icon}</div>
             <h2 className='font-bold text-lg mb-2'>{service.title}</h2>
