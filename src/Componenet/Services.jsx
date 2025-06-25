@@ -28,7 +28,7 @@ const services = [
 
 function Services() {
   return (
-    <div className='w-full min-h-screen px-4 py-8'>
+    <div className='w-full h-auto px-4 py-20'>
       <div className='text-3xl font-bold text-center mb-10'>
         <h1 className='text-red-700 inline-block mr-2'>Service</h1>
         <h1 className='inline-block'>I Provide</h1>
