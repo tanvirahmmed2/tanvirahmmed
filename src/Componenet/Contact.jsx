@@ -31,6 +31,7 @@ function Contact() {
         <a className='hover:scale-125 hover:text-teal-500' href="mailto:tanvir004006@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
 
       </div>
+      <h1>Report</h1>
       <form action="" onSubmit={handlesubmit} className='flex flex-col gap-4 w-80 h-auto items-center justify-center  '>
         <div className='flex flex-col w-full items-start gap-2'>
           <label className='italic ' htmlFor="name">Name</label>
