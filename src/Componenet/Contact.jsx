@@ -31,19 +31,19 @@ function Contact() {
         <a className='hover:scale-125 hover:text-teal-500' href="mailto:tanvir004006@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
 
       </div>
-      <h1>Report</h1>
+      <h1 className='italic'>Report:</h1>
       <form action="" onSubmit={handlesubmit} className='flex flex-col gap-4 w-80 h-auto items-center justify-center  '>
         <div className='flex flex-col w-full items-start gap-2'>
           <label className='italic ' htmlFor="name">Name</label>
-          <input className='border-2 border-teal-700 px-4 py-2 rounded-[4px] w-full' type="text" id='name' name='name' required/>
+          <input className='border-2 border-teal-700 px-4 py-2 rounded-[4px] w-full' type="text" id='name' name='name' placeholder='full name' required/>
         </div>
         <div className='flex flex-col w-full items-start gap-2'> 
           <label className='italic ' htmlFor="mail">Email</label>
-          <input className='border-2 border-teal-700 px-4 py-2 rounded-[4px] w-full' type='email' id='mail' name='mail' required/>
+          <input className='border-2 border-teal-700 px-4 py-2 rounded-[4px] w-full' type='email' id='mail' name='mail' placeholder='email' required/>
         </div>
         <div className='flex flex-col w-full items-start gap-2'>
           <label className='italic ' htmlFor="report">Text</label>
-          <textarea className='border-2 border-teal-700 px-4 py-2 rounded-[4px] w-full' rows={4} type="text" id='report' name='report' required/>
+          <textarea className='border-2 resize-none border-teal-700 px-4 py-2 rounded-[4px] w-full' placeholder='enter your text' rows={4} type="text" id='report' name='report' required/>
         </div>
         <button type='submit' className='px-4 rounded-xl bg-teal-500 text-white cursor-pointer hover:scale-110 transition duration-300'>Send</button>
       </form>
