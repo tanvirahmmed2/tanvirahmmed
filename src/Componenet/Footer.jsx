@@ -31,7 +31,7 @@ function Footer() {
           <a className='hover:scale-110 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FontAwesomeIcon icon={faGithub} /></a>
 
         </div>
-      <p>All rights are reserved by <a href="" className='text-red-600'>TanvirAhmmed</a> | {year}</p>
+      <p>All rights are reserved by <a href="/" className='text-teal-500'>TanvirAhmmed</a> | {year}</p>
     </footer>
   )
 }
