@@ -10,7 +10,7 @@ function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center bg-gray-50 py-8 rounded-2xl'>
+    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center bg-white py-8 rounded-2xl'>
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
         <div>
           <Link to='/services'>Services</Link>
