@@ -19,11 +19,11 @@ function NavBar() {
             <div className={`relative flex md:hidden flex-col items-center justify-center h-12 w-28`}>
                 <p onClick={handlemenu} className='h-12 w-28 flex items-center justify-center cursor-pointer hover:border-b-2' ><FontAwesomeIcon icon={faBars} /></p>
                 <div className={`absolute ${menu} flex-col items-start top-14 text-black`}>
-                    <Link to='/services' className='w-[100px] h-8 items-center justify-center flex hover:scale-105 hover:text-teal-500 cursor-pointer font-semibold bg-white'>Services</Link>
-                    <Link to='/projects' className='w-[100px] h-8 items-center justify-center flex hover:scale-105 hover:text-teal-500 cursor-pointer  font-semibold bg-white'>Projects</Link>
-                    <Link to='/reviews' className='w-[100px] h-8 items-center justify-center flex  hover:scale-105 hover:text-teal-500 cursor-pointer  font-semibold bg-white'>Reviews</Link>
-                    <Link to='/contact' className='w-[100px] h-8 items-center justify-center flex  hover:scale-105 hover:text-teal-500 cursor-pointer font-semibold bg-white'>Contact Me</Link>
-                    <a href="/Tanvir_Ahmmed_resume.pdf"  download className='w-[100px] h-8 items-center justify-center flex  hover:scale-105 hover:text-teal-500 cursor-pointer  bg-white font-semibold '>Resume</a>
+                    <Link to='/services' className='w-[100px] h-8 items-center justify-center flex hover:scale-105 hover:text-teal-500 cursor-pointer font-semibold bg-gradient-to-br from-teal-900 to-transparent'>Services</Link>
+                    <Link to='/projects' className='w-[100px] h-8 items-center justify-center flex hover:scale-105 hover:text-teal-500 cursor-pointer  font-semibold bg-gradient-to-br from-teal-900 to-transparent'>Projects</Link>
+                    <Link to='/reviews' className='w-[100px] h-8 items-center justify-center flex  hover:scale-105 hover:text-teal-500 cursor-pointer  font-semibold bg-gradient-to-br from-teal-900 to-transparent'>Reviews</Link>
+                    <Link to='/contact' className='w-[100px] h-8 items-center justify-center flex  hover:scale-105 hover:text-teal-500 cursor-pointer font-semibold bg-gradient-to-br from-teal-900 to-transparent'>Contact Me</Link>
+                    <a href="/Tanvir_Ahmmed_resume.pdf"  download className='w-[100px] h-8 items-center justify-center flex  hover:scale-105 hover:text-teal-500 cursor-pointer  bg-gradient-to-br from-teal-900 to-transparent font-semibold '>Resume</a>
                 </div>
             </div>
 
