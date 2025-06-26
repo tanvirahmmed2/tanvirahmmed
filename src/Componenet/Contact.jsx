@@ -15,9 +15,9 @@ function Contact() {
   return (
     <div className='w-full h-auto px-4 py-20 flex flex-col items-center justify-center text-center gap-2'>
       <h1 className='text-3xl font-bold py-4'>Reach Me</h1>
-      <p className='text-lg '>I’m a full-time professional web developer with a deep passion for clean code, responsive design, and powerful digital experiences. I specialize in crafting modern websites and web applications that not only look great but also perform flawlessly.</p>
-      <p className='text-lg '>With 24/7 availability and a strong commitment to client satisfaction, I strive to understand your goals, bring your vision to life, and support your project from start to finish — and beyond.</p>
-      <p className='text-lg '>Whether you need a portfolio site, business page, e-commerce solution, or a custom web application, I’m here to turn your ideas into a functional, beautiful, and scalable product.</p>
+      <p className='md:text-lg text-sm'>I’m a full-time professional web developer with a deep passion for clean code, responsive design, and powerful digital experiences. I specialize in crafting modern websites and web applications that not only look great but also perform flawlessly.</p>
+      <p className='md:text-lg text-sm'>With 24/7 availability and a strong commitment to client satisfaction, I strive to understand your goals, bring your vision to life, and support your project from start to finish — and beyond.</p>
+      <p className='md:text-lg text-sm'>Whether you need a portfolio site, business page, e-commerce solution, or a custom web application, I’m here to turn your ideas into a functional, beautiful, and scalable product.</p>
 
 
       

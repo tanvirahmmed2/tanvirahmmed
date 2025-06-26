@@ -69,7 +69,7 @@ function Review() {
                 <p className='italic'>{review.email}</p>
 
               </div>
-              <p>{review.review}</p>
+              <p className='text-sm'>{review.review}</p>
             </motion.div>
           ))
         }
