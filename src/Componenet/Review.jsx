@@ -61,7 +61,7 @@ function Review() {
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: .4 }}
-              key={review.id} className='flex flex-col w-full h-auto gap-2 items-start bg-gradient-to-br from-teal-900 to-gray-900 rounded-2xl px-4 py-2'>
+              key={review.id} className='flex flex-col w-full h-auto gap-2 items-start bg-gradient-to-br from-teal-900 to-transparent rounded-2xl px-4 py-2'>
 
               <div className='flex flex-row w-full h-auto items-center justify-start gap-2'>
                 <p className='text-amber-500'><FontAwesomeIcon icon={faStar} /></p>

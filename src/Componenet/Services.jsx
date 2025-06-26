@@ -1,7 +1,4 @@
 import React from 'react';
-
-import { motion } from 'motion/react'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSwatchbook, faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
@@ -33,16 +30,13 @@ function Services() {
   return (
     <div className='w-full h-auto px-4 py-20'>
       <div className='text-3xl font-bold text-center mb-10'>
-        <h1 className='text-teal-500 inline-block mr-2'>Service</h1>
+        <h1 className='text-red-700 inline-block mr-2'>Service</h1>
         <h1 className='inline-block'>I Provide</h1>
       </div>
 
       <div className='grid gap-6 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]'>
         {services.map((service) => (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: .4 }}
+          <div
             key={service.id}
             className='relative flex flex-col items-center justify-center p-6 border-teal-700 border-2 hover:bg-teal-700  rounded-2xl text-center transition duration-300 cursor-pointer w-[20rem] mx-auto'
           >
@@ -52,7 +46,7 @@ function Services() {
             <a href="#" className='absolute bottom-4 text-sm text-red-600 hover:underline'>
               {service.more}
             </a>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

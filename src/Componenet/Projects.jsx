@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "Online Store",
     desc: "User-friendly shopping site with product listings and cart system.",
-    image: "",
+    image: "/online_store_web.jpg",
     link: ""
 
   },
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     title: "Magazine",
     desc: "Built for reading — a blog-style magazine site using React and Tailwind.",
-    image: "",
+    image: "/magazine_web.jpg",
     link: ""
 
   },
@@ -32,7 +32,7 @@ const projects = [
     id: 4,
     title: "Publication",
     desc: "Designed for displaying journals, publications, and editorial content.",
-    image: "",
+    image: "/publication_web.jpg",
     link: ""
 
   },
@@ -40,7 +40,7 @@ const projects = [
     id: 5,
     title: "Education",
     desc: "Easy access to quality learning resources and tools for students and teachers.",
-    image: "",
+    image: "/educational_web.jpg",
     link: ""
 
   },
@@ -48,7 +48,7 @@ const projects = [
     id: 6,
     title: "Daily Life",
     desc: "Users plan, track, and manage their daily tasks for a more organized and productive life.",
-    image: "",
+    image: "/daily_life_web.jpg",
     link: ""
 
   }
@@ -73,7 +73,7 @@ function Projects() {
             transition={{ duration: .4 }}
             href={project.link} key={project.id} className='group relative hover:border-2 border-teal-700 text-black flex flex-col items-center justify-end p-4 overflow-hidden rounded-xl text-center cursor-pointer w-[20rem] h-100 mx-auto'>
             
-            <img src={project.image} alt="" className='absolute  w-full h-110 object-fill top-0 ' />
+            <img src={project.image} alt="" className='absolute  w-full h-110 object-cover top-0 ' />
             <div className='flex flex-col w-full items-center justify-center absolute bottom-0 backdrop-blur-2xl'>
               <p className='text-sm italic'>{project.desc}</p>
               <h1 className='font-bold text-lg '>{project.title}</h1>
