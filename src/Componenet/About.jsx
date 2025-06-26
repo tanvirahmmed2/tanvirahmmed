@@ -13,7 +13,7 @@ function About() {
 
             </div>
             <div className='grid gap-6 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] w-full justify-items-center'>
-                <div className='flex flex-col items-center justify-center w-80 h-60 bg-gray-50 p-4 gap-3 rounded-2xl'>
+                <div className='flex flex-col items-center justify-center w-80 h-60 bg-gray-50 p-4 gap-3 rounded-2xl hover:bg-blue-100'>
                     <h1 className='text-xl font-bold'>I work with</h1>
                     <div className='w-full text-3xl flex flex-row gap-8 mt-4 items-center justify-center cursor-pointer'>
                         <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FontAwesomeIcon icon={faHtml5} /></p>

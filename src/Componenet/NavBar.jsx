@@ -12,7 +12,7 @@ function NavBar() {
     }
 
     return (
-        <nav className='w-full h-12 flex flex-row items-center justify-between px-8 rounded-4xl relative z-50 bg-gray-50'>
+        <nav className='w-full h-12 flex flex-row items-center justify-between px-8 rounded-4xl relative z-50 bg-blue-500 text-white'>
 
             <a href="/" className='w-auto h-12 flex items-center justify-center  font-bold font-bold sm:text-2xl'>Tanvir Ahmmed</a>
 

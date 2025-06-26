@@ -10,7 +10,7 @@ import Projects from './Componenet/Projects'
 
 function App() {
   return (
-    <div className='overflow-x-hidden w-full px-4 py-4  select-none h-auto bg-gray-200 '>
+    <div className='overflow-x-hidden w-full px-4 py-4  select-none h-auto '>
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />

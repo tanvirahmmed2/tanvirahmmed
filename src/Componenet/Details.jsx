@@ -11,7 +11,7 @@ function Details() {
         <div className='w-full flex flex-col gap-6 items-center min-h-[100vh] mt-12 md:mt-0 h-auto py-4'>
             <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
 
-                <div className='  w-[200px] h-[250px] relative bg-gradient-to-t from-red-500 to-red-200 bg- overflow-hidden rounded-full cursor-pointer' >
+                <div className='  w-[200px] h-[250px] relative bg-gradient-to-t from-blue-500 to-white bg- overflow-hidden rounded-full cursor-pointer' >
                     <img src="/profile.png" alt="" className='scale-150 absolute bottom-6 left-0' />
                 </div>
 
