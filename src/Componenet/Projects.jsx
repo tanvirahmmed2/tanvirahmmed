@@ -65,7 +65,7 @@ function Projects() {
 
       <div className='grid gap-8 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]'>
         {projects.map((project) => (
-          <div key={project.id} className='group relative flex flex-col items-center justify-end p-4 bg-gray-200 rounded-2xl text-center cursor-pointer w-[20rem] h-90  mx-auto'>
+          <div key={project.id} className='group relative flex flex-col items-center justify-end p-4 bg-gray-50 rounded-2xl text-center cursor-pointer w-[20rem] h-90  mx-auto'>
             <img src={project.image} alt="" />
             <p>{project.desc}</p>
             <a href={project.link} className=' text-red-500 group-hover:flex hidden transition duration-400'>show more</a>

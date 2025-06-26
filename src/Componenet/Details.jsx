@@ -11,8 +11,8 @@ function Details() {
         <div className='w-full flex flex-col gap-6 items-center min-h-[100vh] mt-12 md:mt-0 h-auto py-4'>
             <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
 
-                <div className=' w-[200px] h-[250px] relative bg-gradient-to-t from-red-500 to-red-200 bg- overflow-hidden rounded-full cursor-pointer' >
-                    <img src="/profile.png" alt="" className='scale-200' />
+                <div className='  w-[200px] h-[250px] relative bg-gradient-to-t from-red-500 to-red-200 bg- overflow-hidden rounded-full cursor-pointer' >
+                    <img src="/profile.png" alt="" className='scale-150 absolute bottom-6 left-0' />
                 </div>
 
 
@@ -24,18 +24,22 @@ function Details() {
                     </div>
                     <h1 className='font-bold text-2xl'>Web Developer</h1>
                     <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional web devloper with 2 years experience in this field working with multi-national companies</p>
-                    <div className='flex md:text-base  mt-2 flex-row gap-4 md:gap-6 group'>
+                    <div className='flex md:text-base mt-2 flex-col gap-2 md:gap-4 group'>
                         
-                        <Link to='/projects' className='group/item2 flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
+                        <Link to='/projects' className='group/item2 flex flex-row items-center justify-between gap-4 bg-gray-200 font-bold px-10 rounded-md cursor-pointer hover:scale-105'>
                             Projects
                             <p className='hidden group-hover/item2:flex'><FontAwesomeIcon icon={faArrowRight} /></p>
                         </Link>
-                        <a href="mailto:tanvir004006@gmail.con" className='group/item1 flex flex-row items-center justify-between gap-4 bg-gray-200 hover:bg-red-700 px-4 rounded-2xl text-black hover:text-white font-bold'>
+                        <a href="mailto:tanvir004006@gmail.con" className='group/item1 flex flex-row items-center justify-between gap-4 bg-gray-200 font-bold px-10 rounded-md cursor-pointer hover:scale-105'>
                             Hire Me
                             <p className='hidden group-hover/item1:flex '><FontAwesomeIcon icon={faArrowRight} /></p>
 
                         </a>
+                        <a href="/Tanvir_Ahmmed_resume.pdf" download className='bg-gray-200 font-bold px-10 rounded-md cursor-pointer hover:scale-105'>Download Resume</a>
+
                     </div>
+                    
+
                     <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center md:justify-start'>
                         <a className='hover:scale-125 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook} /></a>
                         <a className='hover:scale-125 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram} /></a>
