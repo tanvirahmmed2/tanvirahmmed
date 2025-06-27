@@ -10,8 +10,8 @@ function Details() {
     return (
         <div className='w-full flex flex-col gap-6 items-center min-h-[100vh] mt-12 md:mt-0 h-auto py-4'>
             <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
-                <div className='  w-[250px] h-[300px] relative bg-gradient-to-br text-white from-teal-800 to-gray-900  flex flex-col items-center justify-center rounded-full cursor-pointer' >
-                    <div className='  w-[300px] h-[400px] absolute text-white bg-gradient-to-br  from-teal-800 to-teal-900 blur-3xl overflow-hidden rounded-full cursor-pointer' ></div>
+                <div className='group  w-[250px] h-[300px] relative bg-gradient-to-br text-white from-teal-800 to-gray-900  flex flex-col items-center justify-center rounded-full cursor-pointer' >
+                    <div className='group-hover:scale-110 transition duration-500  w-[300px] h-[400px] absolute text-white bg-gradient-to-br  from-teal-800 to-teal-900 blur-3xl overflow-hidden rounded-full cursor-pointer' ></div>
                     <div className='  w-[250px] h-[300px] relative bg-gradient-to-br text-white from-teal-800 to-gray-900  overflow-hidden rounded-full cursor-pointer' >
                         <img src="/profile.png" alt="" className='scale-150 absolute bottom-6 left-0' />
                     </div>
