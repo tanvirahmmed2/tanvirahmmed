@@ -21,7 +21,7 @@ function NavBar() {
                 <div className={`absolute ${menu} flex-col gap-4 items-start top-14`}>
                     <Link to='/services' className='w-[100px] h-8 items-center justify-center flex hover:scale-110 hover:text-teal-500 cursor-pointer font-semibold '>Services</Link>
                     <Link to='/projects' className='w-[100px] h-8 items-center justify-center flex hover:scale-110 hover:text-teal-500 cursor-pointer  font-semibold '>Projects</Link>
-                    <Link to='/reviews' className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer  font-semibold '>Reviews</Link>
+                    {/* <Link to='/reviews' className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer  font-semibold '>Reviews</Link> */}
                     <Link to='/contact' className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer font-semibold '>Contact Me</Link>
                     <a href="/Tanvir_Ahmmed_resume.pdf"  download className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer   font-semibold '>Resume</a>
                 </div>
@@ -31,7 +31,7 @@ function NavBar() {
             <div className='hidden  w-auto h-12 md:flex flex-row items-center justify-between gap-2'>
                 <Link to='/services' className='w-[100px] h-12 items-center justify-center flex hover:border-b-2 cursor-pointer font-semibold '>Services</Link>
                 <Link to='/projects' className='w-[100px] h-12 items-center justify-center flex hover:border-b-2 cursor-pointer  font-semibold '>Projects</Link>
-                <Link to='/reviews' className='w-[100px] h-12 items-center justify-center flex hover:border-b-2 cursor-pointer  font-semibold '>Reviews</Link>
+                {/* <Link to='/reviews' className='w-[100px] h-12 items-center justify-center flex hover:border-b-2 cursor-pointer  font-semibold '>Reviews</Link> */}
                 <Link to='/contact' className='w-[100px] h-12 items-center justify-center flex hover:border-b-2 cursor-pointer text-teal-500 font-semibold '>Contact Me</Link>
             </div>
         </nav>
