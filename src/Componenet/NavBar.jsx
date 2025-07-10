@@ -17,12 +17,12 @@ function NavBar() {
 
             <div className={`relative flex md:hidden flex-col items-center justify-center h-12 w-28`}>
                 <p onClick={handlemenu} className='h-12 w-28 flex items-center justify-center cursor-pointer hover:border-b-2' ><FaBars/></p>
-                <div className={`absolute ${menu} flex-col gap-4 items-start top-14`}>
+                <div className={`absolute ${menu} flex-col gap-4 items-start top-14 bg-white pb-4 rounded-xl`}>
                     <Link to='/services' className='w-[100px] h-8 items-center justify-center flex hover:scale-110 hover:text-teal-500 cursor-pointer font-semibold '>Services</Link>
                     <Link to='/projects' className='w-[100px] h-8 items-center justify-center flex hover:scale-110 hover:text-teal-500 cursor-pointer  font-semibold '>Projects</Link>
                     <Link to='/reviews' className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer  font-semibold '>Reviews</Link>
                     <Link to='/contact' className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer font-semibold '>Contact Me</Link>
-                    <a href="/Tanvir_Ahmmed_resume.pdf"  download className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer   font-semibold '>Resume</a>
+                    <a href="/Tanvir_Ahmmed_resume.pdf"  download className='w-[100px] h-8 items-center justify-center flex  hover:scale-110 hover:text-teal-500 cursor-pointer   font-semibold text-red-600'>Resume</a>
                 </div>
             </div>
 
