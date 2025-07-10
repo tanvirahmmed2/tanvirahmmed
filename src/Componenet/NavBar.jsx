@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 
 import { FaBars } from "react-icons/fa";
-{/* <FontAwesomeIcon icon={faBars} /> */ }
 
 function NavBar() {
     const [menu, setMenu] = useState("hidden");
