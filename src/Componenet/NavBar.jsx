@@ -7,7 +7,7 @@ import { FaBars } from "react-icons/fa";
 function NavBar() {
     const [menu, setMenu] = useState("hidden");
     const handlemenu = () => {
-        setMenu(menu == "hidden" ? "flex" : "hidden")
+        setMenu(menu === "hidden" ? "flex" : "hidden")
     }
 
     return (
