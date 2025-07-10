@@ -39,8 +39,7 @@ function Services() {
       <div className='grid gap-6 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]'>
         {services.map((service) => (
           <div
-            key={service.id}
-            className='relative flex flex-col items-center justify-center p-6 border-teal-700 border-2 hover:bg-teal-700  rounded-2xl text-center transition duration-300 cursor-pointer w-[20rem] mx-auto'
+            key={service.id} className='relative shadow-xl flex flex-col items-center justify-center p-6 border-teal-700 border-2 hover:bg-gray-200  rounded-2xl text-center transition duration-300 cursor-pointer w-[20rem] mx-auto'
           >
             <div className='text-2xl mb-2'>{service.icon}</div>
             <h2 className='font-bold text-lg mb-2'>{service.title}</h2>

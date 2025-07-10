@@ -8,6 +8,7 @@ import service from './sliderImage/service.jpg'
 import review from './sliderImage/review.jpg'
 import projects from './sliderImage/projects.jpg'
 import { useState } from 'react';
+import photo from './Image/photo.png'
 
 
 function Details() {
@@ -41,7 +42,7 @@ function Details() {
     const [currslide, setCurrSlide]= useState(0);
     setInterval(() => {
         setCurrSlide((currslide+1) % sliders.length)
-    }, 5000);
+    }, 3000);
     
 
     return (
@@ -51,7 +52,7 @@ function Details() {
                 <div className='group  w-[250px] h-[300px] relative  text-white  flex flex-col items-center justify-center rounded-full cursor-pointer' >
                     <div className='group-hover:scale-110 transition duration-500  w-[300px] h-[400px] absolute text-white from-gray-300 to-transparent blur-3xl overflow-hidden rounded-full cursor-pointer' ></div>
                     <div className='  w-[250px] h-[300px] relative bg-gradient-to-t text-white from-gray-300 to-transparent  overflow-hidden rounded-full cursor-pointer' >
-                        <img src="/profile.png" alt="" className='scale-150 absolute bottom-6 left-0' />
+                        <img src={photo} alt="" className='scale-150 absolute bottom-6 left-0' />
                     </div>
                 </div>
 

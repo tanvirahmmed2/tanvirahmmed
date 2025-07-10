@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import NavBar from './Componenet/NavBar'
 import Footer from './Componenet/Footer'
@@ -12,7 +12,7 @@ import Projects from './Componenet/Projects'
 function App() {
   
   return (
-    <div className='overflow-x-hidden w-full px-4 py-4  select-none h-auto bg-gradient-to-br from-white to-vray-50 '>
+    <div className='overflow-x-hidden w-full px-4 py-4  select-none h-auto '>
       
       <NavBar />
       
