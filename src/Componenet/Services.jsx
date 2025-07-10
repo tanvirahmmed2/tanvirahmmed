@@ -45,7 +45,7 @@ function Services() {
             <div className='text-2xl mb-2'>{service.icon}</div>
             <h2 className='font-bold text-lg mb-2'>{service.title}</h2>
             <p className='text-sm mb-6'>{service.desc}</p>
-            <a href="" className='absolute bottom-4 text-sm text-red-600 hover:underline'>
+            <a href="/" className='absolute bottom-4 text-sm text-red-600 hover:underline'>
               {service.more}
             </a>
           </div>
