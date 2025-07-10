@@ -65,7 +65,7 @@ function Details() {
                         <h1 className='text-teal-700'>Tanvir Ahmmed</h1>
                     </div>
                     <h1 className='font-bold text-2xl'>Web Developer</h1>
-                    <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional MERN stack web devloper with 2 years experience in this field working with multi-national companies</p>
+                    <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field working with multi-national companies</p>
                     <div className='flex md:text-base mt-2 flex-col gap-2 md:gap-4 group'>
 
                         
