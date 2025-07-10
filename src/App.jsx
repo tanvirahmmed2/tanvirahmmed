@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {  useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import NavBar from './Componenet/NavBar'
 import Footer from './Componenet/Footer'
@@ -8,10 +8,14 @@ import Services from './Componenet/Services'
 import Contact from './Componenet/Contact'
 import Projects from './Componenet/Projects'
 
+
 function App() {
+  
   return (
-    <div className='overflow-x-hidden w-full px-4 py-4  select-none h-auto bg-gradient-to-tl text-white from-teal-800 to-gray-900'>
+    <div className='overflow-x-hidden w-full px-4 py-4  select-none h-auto bg-gradient-to-br from-white to-vray-50 '>
+      
       <NavBar />
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/reviews' element={<Review />} />

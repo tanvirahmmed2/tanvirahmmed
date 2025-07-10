@@ -1,17 +1,56 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion';
 
-import { FaCaretRight, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
-
+import {  FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import contact from './sliderImage/contact.jpg'
+import service from './sliderImage/service.jpg'
+import review from './sliderImage/review.jpg'
+import projects from './sliderImage/projects.jpg'
+import { useState } from 'react';
 
 
 function Details() {
+    const sliders=[
+        {
+            id:1,
+            title: "Service",
+            path: "/services",
+            imgurl:service
+        },
+        {
+            id:2,
+            title: "Projects",
+            path: "/projects",
+            imgurl: projects
+        },
+        {
+            id:3,
+            title: "Reviews",
+            path: "/reviews",
+            imgurl: review
+        },
+        {
+            id:4,
+            title: "Contact",
+            path: "/contact",
+            imgurl: contact
+        }
+    ]
+
+    const [currslide, setCurrSlide]= useState(0);
+    setInterval(() => {
+        setCurrSlide((currslide+1) % sliders.length)
+    }, 5000);
+    
+
     return (
-        <div className='w-full flex flex-col gap-6 items-center min-h-[100vh] mt-12 md:mt-0 h-auto py-4'>
+        <div className='w-full flex flex-col gap-6 items-center min-h-screen mt-12 md:mt-0 h-auto py-4'>
+            
             <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
-                <div className='group  w-[250px] h-[300px] relative bg-gradient-to-br text-white from-teal-800 to-gray-900  flex flex-col items-center justify-center rounded-full cursor-pointer' >
-                    <div className='group-hover:scale-110 transition duration-500  w-[300px] h-[400px] absolute text-white bg-gradient-to-br  from-teal-800 to-teal-900 blur-3xl overflow-hidden rounded-full cursor-pointer' ></div>
-                    <div className='  w-[250px] h-[300px] relative bg-gradient-to-br text-white from-teal-800 to-gray-900  overflow-hidden rounded-full cursor-pointer' >
+                <div className='group  w-[250px] h-[300px] relative  text-white  flex flex-col items-center justify-center rounded-full cursor-pointer' >
+                    <div className='group-hover:scale-110 transition duration-500  w-[300px] h-[400px] absolute text-white from-gray-300 to-transparent blur-3xl overflow-hidden rounded-full cursor-pointer' ></div>
+                    <div className='  w-[250px] h-[300px] relative bg-gradient-to-t text-white from-gray-300 to-transparent  overflow-hidden rounded-full cursor-pointer' >
                         <img src="/profile.png" alt="" className='scale-150 absolute bottom-6 left-0' />
                     </div>
                 </div>
@@ -19,25 +58,17 @@ function Details() {
 
 
                 <div className='w-full md:w-1/2 flex flex-col gap-2  items-center md:items-start'>
-                    <h2 className='font-bold text-xl md:text-3xl'>Hello!</h2>
+                    <motion.h2 initial={{scale: .7}} whileInView={{scale:1 }}  className='font-bold text-2xl md:text-3xl'>Hello!</motion.h2>
                     <div className='flex flex-row gap-2 font-bold text-3xl md:text-5xl'>
                         <h1>I'm </h1>
-                        <h1 className='text-teal-200'>Tanvir Ahmmed</h1>
+                        <h1 className='text-teal-700'>Tanvir Ahmmed</h1>
                     </div>
                     <h1 className='font-bold text-2xl'>Web Developer</h1>
-                    <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional web devloper with 2 years experience in this field working with multi-national companies</p>
+                    <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional MERN stack web devloper with 2 years experience in this field working with multi-national companies</p>
                     <div className='flex md:text-base mt-2 flex-col gap-2 md:gap-4 group'>
 
-                        <Link to='/projects' className='group/item2 flex flex-row items-center justify-between gap-4 border-teal-700 border-2 font-bold px-10 rounded-md cursor-pointer hover:scale-105'>
-                            Projects
-                            <p className='hidden group-hover/item2:flex'><FaCaretRight/></p>
-                        </Link>
-                        <a href="mailto:tanvir004006@gmail.con" className='group/item1 flex flex-row items-center justify-between gap-4 border-teal-700 border-2  font-bold px-10 rounded-md cursor-pointer hover:scale-105'>
-                            Hire Me
-                            <p className='hidden group-hover/item1:flex '><FaCaretRight/></p>
-
-                        </a>
-                        <a href="/Tanvir_Ahmmed_resume.pdf" download className='border-teal-700 border-2  font-bold px-10 rounded-md cursor-pointer hover:scale-105'>Download Resume</a>
+                        
+                        <a href="/Tanvir_Ahmmed_resume.pdf" download className='border-teal-700 border-2  font-bold px-10 rounded-md cursor-pointer transition duration-300 hover:scale-110'>Download Resume</a>
 
                     </div>
 
@@ -55,8 +86,18 @@ function Details() {
                 </div>
 
             </div>
+            <div className='w-full h-auto flex items-center justify-center mb-8'>
+                <div className='w-2/5 min-w-[350px] h-[400px] bg-gray-400 rounded-xl overflow-hidden relative cursor-pointer group'>
+                    <img src={sliders[currslide].imgurl} className='w-full object-center h-[400px]' alt="" />
+                    <div className='w-full h-auto absolute bottom-0 flex flex-row items-center justify-between p-4 text-xl font-semibold'>
+                        <h1 className='font-bold'>{sliders[currslide].title}</h1>
+                        <Link to={sliders[currslide].path} className='text-red-500'>more......</Link>
+                    </div>
+                </div>
+            </div>
 
 
+            <div className='w-3/4 h-[2px] bg-teal-950'></div>
 
         </div>
     )
