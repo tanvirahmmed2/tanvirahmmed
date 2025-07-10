@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'motion/react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faCss, faFacebook, faGithub, faHtml5, faInstagram, faJs, faLinkedin, faNode, faNodeJs, faReact, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { FaCaretRight, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+
+
 
 function Details() {
     return (
@@ -31,11 +30,11 @@ function Details() {
 
                         <Link to='/projects' className='group/item2 flex flex-row items-center justify-between gap-4 border-teal-700 border-2 font-bold px-10 rounded-md cursor-pointer hover:scale-105'>
                             Projects
-                            <p className='hidden group-hover/item2:flex'><FontAwesomeIcon icon={faArrowRight} /></p>
+                            <p className='hidden group-hover/item2:flex'><FaCaretRight/></p>
                         </Link>
                         <a href="mailto:tanvir004006@gmail.con" className='group/item1 flex flex-row items-center justify-between gap-4 border-teal-700 border-2  font-bold px-10 rounded-md cursor-pointer hover:scale-105'>
                             Hire Me
-                            <p className='hidden group-hover/item1:flex '><FontAwesomeIcon icon={faArrowRight} /></p>
+                            <p className='hidden group-hover/item1:flex '><FaCaretRight/></p>
 
                         </a>
                         <a href="/Tanvir_Ahmmed_resume.pdf" download className='border-teal-700 border-2  font-bold px-10 rounded-md cursor-pointer hover:scale-105'>Download Resume</a>
@@ -44,12 +43,12 @@ function Details() {
 
 
                     <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center md:justify-start'>
-                        <a className='hover:scale-125 hover:text-teal-500' href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook} /></a>
-                        <a className='hover:scale-125 hover:text-teal-500' href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram} /></a>
-                        <a className='hover:scale-125 hover:text-teal-500' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FontAwesomeIcon icon={faWhatsapp} /></a>
-                        <a className='hover:scale-125 hover:text-teal-500' href="https://t.me/tanvirahmmed14"><FontAwesomeIcon icon={faTelegram} /></a>
-                        <a className='hover:scale-125 hover:text-teal-500' href="https://bd.linkedin.com/in/tanvirahmmed4"><FontAwesomeIcon icon={faLinkedin} /></a>
-                        <a className='hover:scale-125 hover:text-teal-500' href="https://github.com/tanvirahmmed2"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a className='hover:scale-125 hover:text-teal-500' href="https://www.facebook.com/tanvirahmmed.official/"> <FaFacebook/></a>
+                        <a className='hover:scale-125 hover:text-teal-500' href="https://www.instagram.com/tanvirahmmed4"><FaInstagram/></a>
+                        <a className='hover:scale-125 hover:text-teal-500' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FaWhatsapp/></a>
+                        <a className='hover:scale-125 hover:text-teal-500' href="https://t.me/tanvirahmmed14"><FaTelegram/></a>
+                        <a className='hover:scale-125 hover:text-teal-500' href="https://bd.linkedin.com/in/tanvirahmmed4"><FaLinkedin /></a>
+                        <a className='hover:scale-125 hover:text-teal-500' href="https://github.com/tanvirahmmed2"><FaGithub /></a>
 
                     </div>
 

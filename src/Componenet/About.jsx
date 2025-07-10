@@ -1,8 +1,6 @@
 import React from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss, faFacebook, faGithub, faHtml5, faInstagram, faJs, faLinkedin, faNode, faNodeJs, faReact, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
+import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 
 function About() {
     return (
@@ -16,11 +14,11 @@ function About() {
                 <div className='flex flex-col items-center justify-center w-80 h-60  p-4 gap-3 rounded-2xl border-teal-700 border-2 hover:scale-110 transition duration-300 cursor-pointer'>
                     <h1 className='text-xl font-bold'>I work with</h1>
                     <div className='w-full text-3xl flex flex-row gap-8 mt-4 items-center justify-center cursor-pointer'>
-                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FontAwesomeIcon icon={faHtml5} /></p>
-                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FontAwesomeIcon icon={faCss} /></p>
-                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FontAwesomeIcon icon={faJs} /></p>
-                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FontAwesomeIcon icon={faReact} /></p>
-                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FontAwesomeIcon icon={faNode} /></p>
+                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaHtml5 /></p>
+                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaCss3/></p>
+                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaJs/></p>
+                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaReact/></p>
+                        <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaNodeJs/></p>
 
 
                     </div>

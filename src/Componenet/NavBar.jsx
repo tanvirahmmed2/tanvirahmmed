@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+
+import { FaBars } from "react-icons/fa";
 {/* <FontAwesomeIcon icon={faBars} /> */ }
 
 function NavBar() {
@@ -17,7 +17,7 @@ function NavBar() {
             <a href="/" className='w-auto h-12 flex items-center justify-center  font-bold text-xl sm:text-3xl'>Tanvir Ahmmed</a>
 
             <div className={`relative flex md:hidden flex-col items-center justify-center h-12 w-28`}>
-                <p onClick={handlemenu} className='h-12 w-28 flex items-center justify-center cursor-pointer hover:border-b-2' ><FontAwesomeIcon icon={faBars} /></p>
+                <p onClick={handlemenu} className='h-12 w-28 flex items-center justify-center cursor-pointer hover:border-b-2' ><FaBars/></p>
                 <div className={`absolute ${menu} flex-col gap-4 items-start top-14`}>
                     <Link to='/services' className='w-[100px] h-8 items-center justify-center flex hover:scale-110 hover:text-teal-500 cursor-pointer font-semibold '>Services</Link>
                     <Link to='/projects' className='w-[100px] h-8 items-center justify-center flex hover:scale-110 hover:text-teal-500 cursor-pointer  font-semibold '>Projects</Link>

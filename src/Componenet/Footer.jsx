@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub, faHtml5, faInstagram, faLinkedin, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   const date = new Date();
@@ -23,12 +20,12 @@ function Footer() {
         
       </div>
       <div className='flex flex-row gap-4 items-start justify-center text-2xl'>
-          <a className='hover:scale-110 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook} /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram} /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FontAwesomeIcon icon={faWhatsapp} /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://t.me/tanvirahmmed14"><FontAwesomeIcon icon={faTelegram} /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://bd.linkedin.com/in/tanvirahmmed4"><FontAwesomeIcon icon={faLinkedin} /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FontAwesomeIcon icon={faGithub} /></a>
+          <a className='hover:scale-110 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FaFacebook /></a>
+          <a className='hover:scale-110 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FaInstagram/></a>
+          <a className='hover:scale-110 hover:text-red-800' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FaWhatsapp/></a>
+          <a className='hover:scale-110 hover:text-red-800' href="https://t.me/tanvirahmmed14"><FaTelegram /></a>
+          <a className='hover:scale-110 hover:text-red-800' href="https://bd.linkedin.com/in/tanvirahmmed4"><FaLinkedin /></a>
+          <a className='hover:scale-110 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FaGithub/></a>
 
         </div>
       <p>All rights are reserved by <a href="/" className='text-teal-500'>TanvirAhmmed</a> | {year}</p>

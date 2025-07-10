@@ -1,10 +1,8 @@
 import React from 'react'
 
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faCss, faFacebook, faGithub, faHtml5, faInstagram, faJs, faLinkedin, faNode, faNodeJs, faReact, faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 
 function Contact() {
 
@@ -22,13 +20,13 @@ function Contact() {
 
       
       <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center'>
-        <a className='hover:scale-125 hover:text-teal-500' href="https://www.facebook.com/tanvirahmmed.official/"> <FontAwesomeIcon icon={faFacebook} /></a>
-        <a className='hover:scale-125 hover:text-teal-500' href="https://www.instagram.com/tanvirahmmed4"><FontAwesomeIcon icon={faInstagram} /></a>
-        <a className='hover:scale-125 hover:text-teal-500' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FontAwesomeIcon icon={faWhatsapp} /></a>
-        <a className='hover:scale-125 hover:text-teal-500' href="https://t.me/tanvirahmmed14"><FontAwesomeIcon icon={faTelegram} /></a>
-        <a className='hover:scale-125 hover:text-teal-500' href="https://bd.linkedin.com/in/tanvirahmmed4"><FontAwesomeIcon icon={faLinkedin} /></a>
-        <a className='hover:scale-125 hover:text-teal-500' href="https://github.com/tanvirahmmed2"><FontAwesomeIcon icon={faGithub} /></a>
-        <a className='hover:scale-125 hover:text-teal-500' href="mailto:tanvir004006@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+        <a className='hover:scale-125 hover:text-teal-500' href="https://www.facebook.com/tanvirahmmed.official/"> <FaFacebook/></a>
+        <a className='hover:scale-125 hover:text-teal-500' href="https://www.instagram.com/tanvirahmmed4"><FaInstagram/></a>
+        <a className='hover:scale-125 hover:text-teal-500' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FaWhatsapp/></a>
+        <a className='hover:scale-125 hover:text-teal-500' href="https://t.me/tanvirahmmed14"><FaTelegram /></a>
+        <a className='hover:scale-125 hover:text-teal-500' href="https://bd.linkedin.com/in/tanvirahmmed4"><FaLinkedin/></a>
+        <a className='hover:scale-125 hover:text-teal-500' href="https://github.com/tanvirahmmed2"><FaGithub /></a>
+        <a className='hover:scale-125 hover:text-teal-500' href="mailto:tanvir004006@gmail.com"><CiMail /></a>
 
       </div>
       <h1 className='italic'>Report:</h1>

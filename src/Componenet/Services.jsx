@@ -1,27 +1,29 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSwatchbook, faCode, faDatabase } from '@fortawesome/free-solid-svg-icons';
+
+
+import { FaCode, FaDatabase, FaSwatchbook } from "react-icons/fa";
+
 
 const services = [
   {
     id: 1,
     title: "UI/UX Design",
     desc: "Crafting beautiful, intuitive, and user-friendly digital experiences through thoughtful interface and experience design.",
-    icon: <FontAwesomeIcon icon={faSwatchbook} />,
+    icon: <FaSwatchbook />,
     more: "Learn more",
   },
   {
     id: 2,
     title: "Web Development",
     desc: "Delivering complete web solutions by combining front-end and back-end development into a seamless, scalable experience.",
-    icon: <FontAwesomeIcon icon={faCode} />,
+    icon: <FaCode />,
     more: "Learn more",
   },
   {
     id: 3,
     title: "Web App",
     desc: "A fast, secure, and user-friendly web app designed to boost productivity and streamline tasks from any device.",
-    icon: <FontAwesomeIcon icon={faDatabase} />,
+    icon: <FaDatabase />,
     more: "Learn more",
   }
 ];
