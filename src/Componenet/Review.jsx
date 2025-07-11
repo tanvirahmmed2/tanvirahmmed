@@ -7,9 +7,9 @@ import { reviewDatas } from './ReviewDatas'
 
 const Review = () => {
   return (
-    <div className='w-full min-h-screen flex flex-col items-center justify-center gap-12 m-8'>
+    <div className='w-full min-h-screen flex flex-col items-center justify-center gap-12 py-8'>
       <p className='flex flex-row w-full h-auto items-center justify-center gap-4 text-xl md:text-3xl'><FaStar /> What clients are saying?</p>
-      <div className='w-full h-auto grid justify-items-center gap-12 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
+      <div className='grid justify-items-center w-full p-2 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4'>
         {reviewDatas.map((reviews) => {
 
           const { id, name, email, review } = reviews
