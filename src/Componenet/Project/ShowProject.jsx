@@ -20,14 +20,23 @@ const ShowProject = () => {
     <div className='w-full min-h-screen flex flex-col items-center py-12'>
       <h1 className='text-2xl font-bold'>{title} Projects</h1>
       <h1>{projectgroup.headline}</h1>
-      {projectgroup.projects.map((project)=>{
-        const {id,title,desc,homeimg,productimg,responsiveimg,barimg,userimg,siteurl}= project
-        return <div>
-          <h1>{title}</h1>
-          <p>{desc}</p>
-          <a href={siteurl} className='text-red-500'>view site</a>
-        </div>
-      })}
+      <div className='w-full h-auto'>
+        {projectgroup.projects.map((project) => {
+          const { id, title, desc, homeimg, productimg, responsiveimg, barimg, userimg, siteurl } = project
+          return <div className='w-full h-auto flex flex-col gap-6 items-center text-center  justify-center' key={id}>
+            <h1 className='text-3xl font-bold text-teal-600'>{title}</h1>
+            <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={homeimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
+
+            <p>{desc}</p>
+            <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={productimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
+            <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={responsiveimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
+            <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={barimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
+            <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={userimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
+            <a href={siteurl} className='text-red-500'>view site</a>
+          </div>
+        })}
+      </div>
+      
 
     </div>
   );
