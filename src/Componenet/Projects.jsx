@@ -16,7 +16,7 @@ const Projects = () => {
           return <div key={id} className='w-[400px] h-[350px] relative bg-gray-300 group rounded-xl overflow-hidden'>
 
             <img src={titleimg} alt="" className='w-[400px] h-[350px] object-cover' />
-            <div className='absolute bottom-0 w-full h-auto p-4 flex flex-col items-center justify-center font-semibold text-teal-950 bg-white/50'>
+            <div className='absolute bottom-0 w-full h-auto p-4 flex flex-col items-center justify-center font-semibold text-teal-950 bg-white/80'>
               <h1 className='text-xl font-bold'>{title}</h1>
               <p>{headline}</p>
               <Link to={`/projects/${title}`} className='text-red-700 text-xl group-hover:scale-110 font-bold font-mono'>see more</Link>
