@@ -35,7 +35,7 @@ function Services() {
   const [iconindex, setIconIndex]= useState(0);
 
   useEffect(()=>{
-    const indexnumber= setInterval(()=>{
+    setInterval(()=>{
       setIconIndex((previndex)=>(previndex+1) % icons.length)
     },3000)
   },[icons.length])
@@ -60,7 +60,7 @@ function Services() {
         ))}
       </div>
       <div className='w-full h-auto flex flex-row gap-4 items-center justify-center'>
-        <p className='text-9xl text-teal-700 hover:text-red-700 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex]}</p>
+        <p className='text-9xl text-teal-800 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex]}</p>
 
       </div>
 
