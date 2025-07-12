@@ -5,12 +5,12 @@ import { projectDatas } from './Project/Datas'
 
 const Projects = () => {
   return (
-    <div className='w-full px-6 py-12 h-auto flex-col min-h-screen gap-6 items-center flex'>
+    <div className='w-full  py-12 h-auto flex-col min-h-screen gap-6 items-center flex'>
       <div className='text-3xl font-bold flex flex-row items-center justify-center w-full h-auto gap-4'>
         <h1>Here are</h1>
         <h1 className='text-teal-500'>My Projects</h1>
       </div>
-      <div className='grid justify-items-center h-auto w-full p-2 grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-8'>
+      <div className='grid justify-items-center w-full p-2 grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-4'>
         {projectDatas.map((projectsdata) => {
           const { id, title, headline , titleimg} = projectsdata
           return <div key={id} className='w-[350px] h-[350px] relative bg-gray-300 group rounded-xl overflow-hidden'>
