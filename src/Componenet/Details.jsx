@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
@@ -41,10 +41,13 @@ function Details() {
     ]
 
     const [currslide, setCurrSlide] = useState(0);
-    setInterval(() => {
-        setCurrSlide((currslide + 1) % sliders.length)
-    }, 3000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrSlide((prev) => (prev + 1) % sliders.length);
+        }, 3000);
 
+        return () => clearInterval(interval); 
+    }, [sliders.length])
 
     return (
         <div className='w-full flex flex-col gap-6 items-center min-h-screen mt-12 md:mt-0 h-auto py-4'>
