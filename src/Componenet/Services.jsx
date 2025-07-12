@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
 
 import { FaCode, FaDatabase, FaSwatchbook } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 
 
 const services = [
@@ -30,14 +31,23 @@ const services = [
 ];
 
 function Services() {
+  const icons=[<FaCss3/>, <FaHtml5/>, <FaJs/>, <FaNodeJs/>, <FaReact/>]
+  const [iconindex, setIconIndex]= useState(0);
+
+  useEffect(()=>{
+    const indexnumber= setInterval(()=>{
+      setIconIndex((previndex)=>(previndex+1) % icons.length)
+    },3000)
+  },[icons.length])
+
   return (
-    <div className='w-full h-auto px-4 py-20 min-h-screen'>
-      <div className='text-3xl font-bold text-center mb-10'>
+    <div className='w-full h-auto px-4 py-20 min-h-screen gap-12 flex flex-col items-center justify-center'>
+      <div className='text-3xl font-bold text-center '>
         <h1 className='text-red-700 inline-block mr-2'>Service</h1>
         <h1 className='inline-block'>I Provide</h1>
       </div>
 
-      <div className='grid gap-6 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]'>
+      <div className='grid gap-6 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] w-full'>
         {services.map((service) => (
           <div
             key={service.id} className='relative shadow-xl flex flex-col items-center justify-center p-6 border-teal-700 border-2 hover:bg-gray-200  rounded-2xl text-center transition duration-300 cursor-pointer w-[20rem] mx-auto'
@@ -49,6 +59,11 @@ function Services() {
           </div>
         ))}
       </div>
+      <div className='w-full h-auto flex flex-row gap-4 items-center justify-center'>
+        <p className='text-9xl text-teal-700 hover:text-red-700 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex]}</p>
+
+      </div>
+
     </div>
   );
 }
