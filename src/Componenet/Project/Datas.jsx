@@ -12,7 +12,8 @@ import tbresponsive from './ProjectImg/techbeast/responsive.png'
 import tbsignin from './ProjectImg/techbeast/signinpage.jpg'
 import tbbottom from './ProjectImg/techbeast/bottom.jpg'
 
-
+import onlineshop from './ProjectImg/onlineshop.jpg'
+import portfolio from './ProjectImg/portfolio.jpg'
 
 
 
@@ -22,7 +23,7 @@ export const projectDatas=[
         id:1,
         title: "Portfolio",
         headline: "Responsive and modern design to present developer, business, commercial profile.",
-        imgurL:"hee",
+        titleimg: portfolio,
         projects:[
             {
                 id:1,
@@ -43,6 +44,7 @@ export const projectDatas=[
         id:2,
         title: "Online Shop",
         headline: "One-stop destination for quality products at great prices",
+        titleimg: onlineshop,
         projects: [
             {
                 id:1,
