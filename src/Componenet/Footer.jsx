@@ -7,7 +7,7 @@ function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center border-t-2 border-teal-700 py-8'>
+    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center bg-white border-t-2 border-teal-700 py-8'>
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
         <div>
           <Link to='/services'>Services</Link>
@@ -28,7 +28,7 @@ function Footer() {
           <a className='hover:scale-110 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FaGithub/></a>
 
         </div>
-      <p>All rights are reserved by <a href="/" className='text-teal-500'>TanvirAhmmed</a> | {year}</p>
+      <p>All rights are reserved by <a href="/" className='text-teal-600 font-bold'>TanvirAhmmed</a> | {year}</p>
     </footer>
   )
 }

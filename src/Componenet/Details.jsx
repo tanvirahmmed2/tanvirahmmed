@@ -55,7 +55,7 @@ function Details() {
             <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
                 <div className='group  w-[250px] h-[300px] relative  text-white  flex flex-col items-center justify-center rounded-full cursor-pointer' >
                     <div className='group-hover:scale-110 transition duration-500  w-[300px] h-[400px] absolute text-white from-gray-300 to-transparent blur-3xl overflow-hidden rounded-full cursor-pointer' ></div>
-                    <div className='  w-[250px] h-[300px] border-2 relative bg-gradient-to-t text-white shadow-lg from-gray-300 to-transparent  overflow-hidden rounded-full cursor-pointer' >
+                    <div className='  w-[250px] h-[300px] border-2 relative bg-gradient-to-t text-white shadow-2xl border-teal-800 from-gray-300 to-transparent  overflow-hidden rounded-full cursor-pointer' >
                         <img src={photo} alt="" className='scale-150 absolute bottom-6 left-0' />
                     </div>
                 </div>
@@ -75,7 +75,7 @@ function Details() {
                         </h1>
                     </div>
                     <h1 className='font-bold text-2xl'>Web Developer</h1>
-                    <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field working with multi-national companies</p>
+                    <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field especially working with multi-national companies</p>
                     <div className='flex md:text-base mt-2 flex-col gap-2 md:gap-4 group'>
 
 

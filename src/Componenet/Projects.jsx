@@ -13,7 +13,7 @@ const Projects = () => {
       <div className='grid justify-items-center w-full p-2 grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-4'>
         {projectDatas.map((projectsdata) => {
           const { id, title, headline , titleimg} = projectsdata
-          return <div key={id} className='border-2 shadow-xl w-[350px] h-[350px] relative bg-gray-300 group rounded-xl overflow-hidden'>
+          return <div key={id} className='border-2 border-teal-900 shadow-xl w-[350px] h-[350px] relative bg-gray-300 group rounded-xl overflow-hidden'>
 
             <img src={titleimg} alt="" className='w-[350px] h-[350px] object-cover' />
             <div className='absolute bottom-0 w-full h-auto p-4 flex flex-col items-center justify-center font-semibold text-teal-950 bg-white/80'>

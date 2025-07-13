@@ -12,10 +12,10 @@ import ShowProject from './Componenet/Project/ShowProject'
 
 function App() {
   return (
-    <div className='overflow-x-hidden w-full px-4 py-4  select-none h-auto bg-gray-100 '>
-      
-        <NavBar />
+    <div className='overflow-x-hidden w-full relative select-none h-auto bg-gray-100 '>
 
+      <NavBar />
+      <div className='w-full  py-12 h-auto'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/reviews' element={<Review />} />
@@ -24,8 +24,10 @@ function App() {
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/:title' element={<ShowProject />} />
         </Routes>
-        <Footer />
-      
+
+      </div>
+
+      <Footer />
 
 
     </div>
