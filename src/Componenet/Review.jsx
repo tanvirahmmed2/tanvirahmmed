@@ -4,8 +4,10 @@ import React from 'react'
 import { FaStar } from "react-icons/fa";
 
 import { reviewDatas } from './ReviewDatas'
+import UsePageTitle from './UsePageTitle';
 
 const Review = () => {
+  UsePageTitle("Review")
   return (
     <div className='w-full min-h-screen flex flex-col items-center justify-center gap-12 py-8'>
       <p className='flex flex-row w-full h-auto items-center justify-center gap-4 text-2xl md:text-4xl font-bold'> <span className='text-amber-500'><FaStar /></span> What clients are saying?</p>

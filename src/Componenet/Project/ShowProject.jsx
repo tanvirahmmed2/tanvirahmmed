@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { projectDatas } from './Datas';
 import { useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const ShowProject = () => {
   const [projectgroup, setProjectGroup] = useState(null);
@@ -17,14 +18,14 @@ const ShowProject = () => {
   }
 
   return (
-    <div className='w-full min-h-screen flex flex-col items-center py-12'>
-      <h1 className='text-2xl font-bold'>{title} Projects</h1>
-      <h1>{projectgroup.headline}</h1>
+    <div className='w-full min-h-screen flex flex-col items-center gap-6 py-12'>
+      <h1 className='text-3xl font-bold'>{title} Projects</h1>
+      <h1 className='text-center'>{projectgroup.headline}</h1>
       <div className='w-full h-auto'>
         {projectgroup.projects.map((project) => {
           const { id, title, desc, homeimg, productimg,  responsivedesc, footerimg,  userimg, responsiveimg,  siteurl } = project
-          return <div className='w-full h-auto flex flex-col gap-6 items-center text-center  justify-center' key={id}>
-            <h1 className='text-3xl font-bold text-teal-600'>{title}</h1>
+          return <div className='w-full h-auto flex flex-col gap-6 items-center text-center  justify-center mb-8' key={id}>
+            <h1 className='text-3xl font-bold text-teal-600'> <span className='text-teal-900'>#{id} </span>{title}</h1>
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={homeimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
 
             <p>{desc}</p>
@@ -39,6 +40,7 @@ const ShowProject = () => {
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={footerimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
 
             <a href={siteurl} className='text-red-500'>view site</a>
+            <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}} className='w-3/4 h-[2px] bg-red-700'></motion.div>
           </div>
         })}
       </div>

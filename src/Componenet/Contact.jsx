@@ -1,15 +1,26 @@
 import React from 'react'
+import {useFormik} from 'formik'
 
 
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 
 function Contact() {
+  const formik =useFormik({
+    initialValues:{
+      name:'',
+      mail:'',
+      report:''
+    },
+    onSubmit:(values,  {resetForm})=>{
+      resetForm({values:''})
+      console.log(values);
+      alert("Thank You")
+      
+    }
+  })
 
- const handlesubmit=(e)=>{
-  e.preventDefault()
- }
-
+ 
   return (
     <div className='w-full h-auto px-4 py-20 flex flex-col items-center justify-center text-center gap-2'>
       <h1 className='text-3xl font-bold py-4'>Reach Me</h1>
@@ -29,19 +40,19 @@ function Contact() {
         <a className='hover:scale-125 hover:text-teal-500' href="mailto:tanvir004006@gmail.com"><CiMail /></a>
 
       </div>
-      <h1 className='italic'>Report:</h1>
-      <form action="" onSubmit={handlesubmit} className='flex flex-col gap-4 w-80 h-auto items-center justify-center  '>
+      <h1 className='italic font-semibold mt-4'>Report or mail:</h1>
+      <form action="" onSubmit={formik.handleSubmit} className='flex flex-col gap-4 w-80 h-auto items-center justify-center  '>
         <div className='flex flex-col w-full items-start gap-2'>
           <label className='italic ' htmlFor="name">Name</label>
-          <input className='border-2 border-teal-700 px-4 py-2 rounded-[4px] w-full' type="text" id='name' name='name' placeholder='full name' required/>
+          <input value={formik.values.name} onChange={formik.handleChange} className='border-2 border-teal-700 px-4 py-2 rounded-[7px] w-full' type="text" id='name' name='name' placeholder='full name' required/>
         </div>
         <div className='flex flex-col w-full items-start gap-2'> 
           <label className='italic ' htmlFor="mail">Email</label>
-          <input className='border-2 border-teal-700 px-4 py-2 rounded-[4px] w-full' type='email' id='mail' name='mail' placeholder='email' required/>
+          <input value={formik.values.mail} onChange={formik.handleChange} className='border-2 border-teal-700 px-4 py-2 rounded-[7px] w-full' type='email' id='mail' name='mail' placeholder='email' required/>
         </div>
         <div className='flex flex-col w-full items-start gap-2'>
           <label className='italic ' htmlFor="report">Text</label>
-          <textarea className='border-2 resize-none border-teal-700 px-4 py-2 rounded-[4px] w-full' placeholder='enter your text' rows={4} type="text" id='report' name='report' required/>
+          <textarea value={formik.values.report} onChange={formik.handleChange} className='border-2 resize-none border-teal-700 px-4 py-2 rounded-[7px] w-full' placeholder='enter your text' rows={4} type="text" id='report' name='report' required/>
         </div>
         <button type='submit' className='px-4 rounded-xl bg-teal-500 text-white cursor-pointer hover:scale-110 transition duration-300'>Send</button>
       </form>

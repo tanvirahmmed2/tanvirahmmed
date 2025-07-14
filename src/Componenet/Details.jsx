@@ -53,9 +53,8 @@ function Details() {
         <div className='w-full flex flex-col gap-6 items-center min-h-screen mt-12 md:mt-0 h-auto py-4'>
 
             <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
-                <div className='group  w-[250px] h-[300px] relative  text-white  flex flex-col items-center justify-center rounded-full cursor-pointer' >
-                    <div className='group-hover:scale-110 transition duration-500  w-[300px] h-[400px] absolute text-white from-gray-300 to-transparent blur-3xl overflow-hidden rounded-full cursor-pointer' ></div>
-                    <div className='  w-[250px] h-[300px] border-2 relative bg-gradient-to-t text-white shadow-2xl border-teal-800 from-gray-300 to-transparent  overflow-hidden rounded-full cursor-pointer' >
+                <div className='group  w-[250px] h-[320px] relative  text-white  flex flex-col items-center justify-center rounded-full cursor-pointer' >
+                    <div className='  w-[250px] h-[320px] border-2 relative bg-gradient-to-t text-white shadow-2xl border-teal-800 from-teal-800 to-transparent  overflow-hidden rounded-full cursor-pointer' >
                         <img src={photo} alt="" className='scale-150 absolute bottom-6 left-0' />
                     </div>
                 </div>

@@ -5,8 +5,10 @@ import Projects from './Componenet/Projects'
 import Review from './Componenet/Review'
 import Contact from './Componenet/Contact'
 import About from './Componenet/About'
+import UsePageTitle from './Componenet/UsePageTitle'
 
 function Home() {
+  UsePageTitle("Home")
   return (
     <div>
       <Details/>
