@@ -43,7 +43,7 @@ function Services() {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [icons.length]);
 
   return (
     <div className='w-full h-auto px-4 py-20 min-h-screen gap-12 flex flex-col items-center justify-center'>

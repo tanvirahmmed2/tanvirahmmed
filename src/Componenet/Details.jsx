@@ -47,7 +47,7 @@ function Details() {
         }, 3000);
 
         return () => clearInterval(interval); 
-    }, [])
+    }, [sliders.length])
 
     return (
         <div className='w-full flex flex-col gap-6 items-center min-h-screen mt-12 md:mt-0 h-auto py-4'>
