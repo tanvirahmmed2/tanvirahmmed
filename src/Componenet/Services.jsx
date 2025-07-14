@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
 
-import { FaBehance, FaBootstrap, FaCode, FaDatabase,  FaSwatchbook } from "react-icons/fa";
+import { FaBehance, FaBootstrap, FaCode, FaDatabase, FaSwatchbook } from "react-icons/fa";
 import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { CiCloud } from "react-icons/ci";
 import UsePageTitle from './UsePageTitle';
@@ -34,16 +34,17 @@ const services = [
 
 function Services() {
   UsePageTitle("Service")
-  const icons=[<FaCss3/>, <FaBehance/> ,<FaHtml5/>, <CiCloud/>, <FaJs/>, <FaNodeJs/>, <FaReact/>, <FaBootstrap/>, <FaCode/> ,<FaDatabase/>]
-  const [iconindex, setIconIndex]= useState(0);
+  const icons = [<FaCss3 />, <FaBehance />, <FaHtml5 />, <CiCloud />, <FaJs />, <FaNodeJs />, <FaReact />, <FaBootstrap />, <FaCode />, <FaDatabase />]
+  const [iconindex, setIconIndex] = useState(0);
 
-  useEffect(()=>{
-    setInterval(()=>{
-      setIconIndex((previndex)=>(previndex+1) % icons.length)
-      
-      
-    },3000)
-  },[icons.length])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIconIndex((prevIndex) => (prevIndex + 1) % icons.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className='w-full h-auto px-4 py-20 min-h-screen gap-12 flex flex-col items-center justify-center'>
       <div className='text-3xl font-bold text-center '>
@@ -64,7 +65,9 @@ function Services() {
         ))}
       </div>
       <div className='w-full h-auto flex flex-row gap-4 items-center justify-center'>
-        <p className='text-9xl text-teal-800 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex]}</p>
+        <p className='text-5xl text-teal-900 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex - 1]}</p>
+        <p className='text-9xl text-teal-700 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex]}</p>
+        <p className='text-5xl text-teal-900 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex + 1]}</p>
 
       </div>
 
