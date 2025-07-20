@@ -18,7 +18,8 @@ const Review = () => {
           }, 3000);
   
           return () => clearInterval(interval);
-      }, [reviewDatas.length]);
+      }, []);
+
       useEffect(() => {
           if (centerslide === 0) {
               setLeftSlide(reviewDatas.length - 1)
@@ -35,7 +36,7 @@ const Review = () => {
   
           }
   
-      }, [reviewDatas.length, centerslide])
+      }, [ centerslide])
   
   UsePageTitle("Review")
   return (
