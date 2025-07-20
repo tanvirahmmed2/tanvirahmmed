@@ -1,6 +1,9 @@
+
+import { FaUser } from "react-icons/fa";
 export const reviewDatas = [
   {
     id: 1,
+    avatar: <FaUser/> ,
     name: "Sarah Johnson",
     email: "sarah.johnson@creativemind.co",
     review:
@@ -8,6 +11,7 @@ export const reviewDatas = [
   },
   {
     id: 2,
+    avatar: <FaUser/> ,
     name: "Michael Lee",
     email: "michael.lee@techpulse.io",
     review:
@@ -15,6 +19,7 @@ export const reviewDatas = [
   },
   {
     id: 3,
+    avatar: <FaUser/> ,
     name: "Ayesha Rahman",
     email: "ayesha.r@luxecommerce.com",
     review:
@@ -22,6 +27,7 @@ export const reviewDatas = [
   },
   {
     id: 4,
+    avatar: <FaUser/> ,
     name: "David Martinez",
     email: "david.m@nextgenstudios.org",
     review:
@@ -29,6 +35,7 @@ export const reviewDatas = [
   },
   {
     id: 5,
+    avatar: <FaUser/> ,
     name: "Nusrat Jahan",
     email: "nusrat.j@publicspace.news",
     review:
