@@ -16,7 +16,7 @@ function App() {
 
       <NavBar />
       
-      <div className='w-full  py-12 h-auto'>
+      <div className='w-full  pt-12 h-auto'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/reviews' element={<Review />} />

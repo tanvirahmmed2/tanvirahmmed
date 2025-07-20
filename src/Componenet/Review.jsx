@@ -15,8 +15,8 @@ const Review = () => {
         {reviewDatas.map((reviews) => {
 
           const { id, name, email, review } = reviews
-          return <div key={id} className='relative w-[300px] h-auto rounded-xl hover:scale-95 transition duration-300 cursor-pointer shadow-xl overflow-hidden flex flex-col items-start justify-start border-2 border-teal-800'>
-            <div className='w-full h-auto border-b-2 p-4 border-teal-800'>
+          return <div key={id} className='relative w-[300px] bg-gray-50 h-auto rounded-xl hover:scale-95 transition duration-300 cursor-pointer shadow-xl overflow-hidden flex flex-col items-start justify-start border-2 border-cyan-600'>
+            <div className='w-full h-auto border-b-2 p-4 border-cyan-600'>
               <h1 className='text-xl font-bold'>{name}</h1>
               <p>{email}</p>
             </div>

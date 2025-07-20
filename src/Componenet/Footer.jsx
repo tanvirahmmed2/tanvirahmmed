@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'
 
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
@@ -7,7 +8,8 @@ function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center bg-white border-t-2 border-teal-700 py-8'>
+    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center bg-white  py-8'>
+      <motion.span initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}} className='w-full h-[1px] bg-cyan-500'></motion.span>
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
         <div>
           <Link to='/services'>Services</Link>
