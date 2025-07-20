@@ -64,7 +64,7 @@ function About() {
 
         }
 
-    }, [sliders.length])
+    }, [sliders.length, centerslide])
 
 
     return (
