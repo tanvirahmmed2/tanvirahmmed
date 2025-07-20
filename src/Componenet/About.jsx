@@ -36,15 +36,35 @@ function About() {
         }
     ]
 
-    const [currslide, setCurrSlide] = useState(0);
+    const [leftslide, setLeftSlide] = useState(0)
+    const [centerslide, setCenterSlide] = useState(0)
+    const [rightslide, setRightSlide] = useState(2)
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrSlide((prev) => (prev + 1) % sliders.length);
+            setCenterSlide(prev =>
+                prev === sliders.length - 1 ? 0 : prev + 1
+            );
         }, 3000);
 
         return () => clearInterval(interval);
-    }, [sliders.length])
+    }, []);
+    useEffect(() => {
+        if (centerslide === 0) {
+            setLeftSlide(sliders.length - 1)
+            setRightSlide(1)
 
+        }
+        else if (centerslide === sliders.length - 1) {
+            setLeftSlide(centerslide - 1)
+            setRightSlide(0)
+        }
+        else {
+            setRightSlide(centerslide + 1)
+            setLeftSlide(centerslide - 1)
+
+        }
+
+    }, [centerslide])
 
 
     return (
@@ -89,15 +109,23 @@ function About() {
 
 
 
-            {/* <div className='w-full h-auto flex items-center justify-center py-10'>
-                <div className='w-2/5 min-w-[350px] h-[400px] bg-gray-400 rounded-xl overflow-hidden relative cursor-pointer group'>
-                    <img src={sliders[currslide].imgurl} className='w-full object-center h-[400px]' alt="" />
-                    <div className='w-full h-auto absolute bottom-0 flex flex-row items-center justify-between p-4 text-xl font-semibold'>
-                        <h1 className='font-bold'>{sliders[currslide].title}</h1>
-                        <Link to={sliders[currslide].path} className='text-red-500'>more......</Link>
+            <div className='w-full h-auto flex items-center justify-center py-10'>
+                <div className='w-full relative h-[500px] flex items-center gap-16 justify-center'>
+
+                    <img className='w-[230px] h-[350px] object-cover rounded-xl blur-[1px] hidden sm:block' src={sliders[leftslide].imgurl} alt="" />
+                    <div className='absolute z-20 w-[300px] h-[440px] flex flex-col items-center justify-center border-2 border-red-700 shadow-2xl rounded-xl overflow-hidden'>
+                        <img className='w-[300px] h-[400px] object-cover ' src={sliders[centerslide].imgurl} alt="" />
+                        <div className='w-full h-auto flex flex-row items-center justify-between px-6 py-2'>
+                            <p className='text-cyan-500 font-poppins'>{sliders[centerslide].title}</p>
+                            <Link to={sliders[centerslide].path} className='text-cyan-500 font-poppins'>show more</Link>
+
+
+                        </div>
                     </div>
+                    <img className='w-[230px] h-[350px] object-cover rounded-xl blur-[1px] hidden sm:block' src={sliders[rightslide].imgurl} alt="" />
+
                 </div>
-            </div> */}
+            </div>
 
 
 

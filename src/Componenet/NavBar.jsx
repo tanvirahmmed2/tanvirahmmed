@@ -11,17 +11,17 @@ function NavBar() {
     }
 
     return (
-        <nav className='w-full h-12 shadow-sm flex flex-row items-center justify-between px-4 md:px-8 fixed z-50 backdrop-blur-md bg-white/70'>
+        <nav className='w-full h-12 shadow-sm flex flex-row items-center justify-between px-4 md:px-8 fixed z-50 bg-white'>
 
             <a href="/" className='w-auto h-12 flex items-center justify-center  font-bold text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</a>
 
             <div className={`relative flex md:hidden flex-col items-center justify-center h-12 w-28`}>
-                <p onClick={handlemenu} className='h-12 w-16 flex gap-4 items-center justify-center cursor-pointer hover:border-b-2' >
+                <span onClick={handlemenu} className='h-12 w-16 flex gap-4 items-center justify-center cursor-pointer hover:border-b-2' >
                     <p className={`text-3xl ${menu ? "hidden":"flex"}`}><HiBars3BottomLeft/></p>
                     <p className={`text-3xl ${!menu ? "hidden":"flex"}`}><IoMdClose/></p>
                     
-                </p>
-                <div className={`absolute ${!menu ? "hidden":"flex"} flex-col w-[130px] gap-4 items-start top-12 shadow-2xl bg-white py-4 px-4 rounded-xl`}>
+                </span>
+                <div className={`absolute ${!menu ? "hidden":"flex"} flex-col w-[130px] h-[100vh] gap-4 items-start top-12 shadow-2xl bg-white py-4 px-4 rounded-xl`}>
                     <Link to='/services' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Services</Link>
                     <Link to='/projects' className='h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold '>Projects</Link>
                     <Link to='/reviews' className='h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Reviews</Link>

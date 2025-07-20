@@ -26,7 +26,8 @@ const Projects = () => {
           </div>
         })}
       </div>
-      <div className='p-6 h-auto w-full flex flex-col items-center justify-center text-center gap-4 text-[17px]'>
+      <div className='p-6 h-auto w-full flex flex-col items-center justify-center gap-4 text-[17px]'>
+        
         <p>Over the years, I’ve worked on a diverse range of full-stack web development projects, primarily focused on the MERN stack — MongoDB, Express.js, React.js, and Node.js. Each project reflects my ability to craft complete, production-ready applications that are fast, scalable, and user-centric</p>
         <p>My portfolio includes everything from personal portfolio websites and company landing pages, to complex dashboards, authentication systems, e-commerce platforms, chat applications, and real-time data visualization tools. I’ve developed responsive and intuitive UIs using React.js with modern libraries like Tailwind CSS, Framer Motion, and React Router, ensuring a smooth user experience across all devices.</p>
         <p>On the backend, I’ve implemented secure REST APIs with Node.js and Express, integrated MongoDB for flexible and efficient data management, and used tools like JWT, bcrypt, and middleware for robust authentication and authorization flows. In some cases, I’ve also incorporated WebSockets, Cloudinary, and third-party APIs to enhance functionality.</p>
