@@ -47,7 +47,7 @@ function About() {
         }, 3000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [sliders.length]);
     useEffect(() => {
         if (centerslide === 0) {
             setLeftSlide(sliders.length - 1)
