@@ -14,7 +14,7 @@ function Details() {
     return (
         <div className='w-full flex flex-col items-center justify-between min-h-[90vh] h-auto pt-4'>
 
-            <div className='w-full min-h-[90vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around justify-end'>
+            <div className='w-full min-h-[90vh] flex flex-col md:flex-row  items-center md:justify-around justify-end'>
 
                 <div className='w-full md:w-1/2 flex flex-col gap-2  items-center md:items-start'>
                     <motion.h2 initial={{ scale: .7 }} whileInView={{ scale: 1 }} className='font-bold text-4xl md:text-6xl font-poppins'>Hello!</motion.h2>
@@ -30,12 +30,24 @@ function Details() {
                     </div>
                     <h1 className='font-semibold text-base md:text-xl'>Web Developer</h1>
                     <p className='text-base md:text-xl text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field especially working with multi-national companies</p>
-                    <div className='flex w-[220px] text-xl mt-2 flex-col gap-2 md:gap-4 group relative group'>
+                    
+                    <div className='h-auto md:w-[400px] w-[200px] group md:gap-2 flex flex-col md:flex-row'>
+                        <div className='flex w-full  mt-2 flex-col group relative group/item1'>
 
-                        <span className='absolute inset-0 bg-cyan-600 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left rounded-lg'></span>
-                        <a href="/Tanvir_Ahmmed_resume.pdf" download className='h-8 w-full gap-2  flex items-center justify-start pl-4 rounded-lg z-50 border-2  text-cyan-600 hover:text-white transition duration-1000'>Download Resume <p className='text-xs hidden group-hover:block transition duration-500 ease-out'><FaChevronRight /></p></a>
+                            <span className='absolute inset-0 bg-cyan-500 w-0 group-hover/item1:w-full transition-all duration-500 ease-out origin-left rounded-lg'></span>
+                            <a href="/Tanvir_Ahmmed_resume.pdf" download className='h-8 w-full gap-2  flex items-center justify-center px-4 rounded-lg z-50 border-2  text-cyan-600 hover:text-white transition duration-1000'>Download Resume <p className='text-xs hidden group-hover/item1:block transition duration-500 ease-out'><FaChevronRight /></p></a>
 
+                        </div>
+                        <div className='flex w-full  mt-2 flex-col group relative group/item2'>
+
+                            <span className='absolute inset-0 bg-cyan-500 w-0 group-hover/item2:w-full transition-all duration-500 ease-out origin-left rounded-lg'></span>
+                            <a href="maito:tanvir004006@gmail.com" download className='h-8 w-full gap-2  flex items-center justify-center px-4 rounded-lg z-50 border-2  text-cyan-600 hover:text-white transition duration-1000'>Hire Me <p className='text-xs hidden group-hover/item2:block transition duration-500 ease-out'><FaChevronRight /></p></a>
+
+
+
+                        </div>
                     </div>
+                    
 
 
                     <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center md:justify-start'>
@@ -50,9 +62,9 @@ function Details() {
 
                 </div>
 
-                <img src={photo} alt="" className='md:h-[90vh] h-[30vh] md:w-[370px] w-[350px] object-cover ' />
+                <img src={photo} alt="" className='md:h-[90vh] h-[33vh] md:w-[370px] w-[350px] object-cover ' />
 
-                
+
 
 
 
