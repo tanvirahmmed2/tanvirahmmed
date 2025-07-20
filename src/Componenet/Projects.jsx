@@ -12,7 +12,7 @@ const Projects = () => {
         <h1>Here are</h1>
         <h1 className='text-cyan-500'>My Projects</h1>
       </div>
-      <div className='grid justify-items-center w-full p-2 grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-4'>
+      <div className=' w-full p-2 flex flex-col md:flex-row items-center justify-center h-auto gap-8'>
         {projectDatas.map((projectsdata) => {
           const { id, title, headline , titleimg} = projectsdata
           return <div key={id} className='border-2 border-cyan-600 shadow-xl w-[350px] h-[350px] relative bg-gray-300 group rounded-xl overflow-hidden'>
