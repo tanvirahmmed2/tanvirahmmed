@@ -8,8 +8,8 @@ function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center bg-white  py-8'>
-      <motion.span initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}} className='w-full h-[1px] bg-cyan-500'></motion.span>
+    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center bg-white  pb-8'>
+      <motion.span initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}} className='w-full h-[2px] bg-cyan-500'></motion.span>
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
         <div>
           <Link to='/services'>Services</Link>

@@ -24,7 +24,7 @@ function Details() {
 
 
                 <div className='w-full md:w-1/2 flex flex-col gap-2  items-center md:items-start'>
-                    <motion.h2 initial={{ scale: .7 }} whileInView={{ scale: 1 }} className='font-bold text-4xl md:text-6xl'>Hello!</motion.h2>
+                    <motion.h2 initial={{ scale: .7 }} whileInView={{ scale: 1 }} className='font-bold text-4xl md:text-6xl font-poppins'>Hello!</motion.h2>
                     <div className='flex flex-row gap-2 font-bold items-end h-auto '>
                         <h1 className='inline-block text-3xl md:text-5xl'>I'm </h1>
                         <h1 className='text-cyan-500 inline-block text-3xl md:text-5xl'>
@@ -35,12 +35,12 @@ function Details() {
                             />
                         </h1>
                     </div>
-                    <h1 className='font-bold text-2xl'>Web Developer</h1>
-                    <p className='text-[14px] md:text-lg text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field especially working with multi-national companies</p>
-                    <div className='flex text-lg mt-2 flex-col gap-2 md:gap-4 group relative group'>
+                    <h1 className='font-semibold text-base md:text-xl'>Web Developer</h1>
+                    <p className='text-base md:text-xl text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field especially working with multi-national companies</p>
+                    <div className='flex w-[220px] text-xl mt-2 flex-col gap-2 md:gap-4 group relative group'>
 
                         <span className='absolute inset-0 bg-cyan-600 w-0 group-hover:w-full transition-all duration-500 ease-out origin-left rounded-lg'></span>
-                        <a href="/Tanvir_Ahmmed_resume.pdf" download className='h-8 w-[200px] gap-2  flex items-center justify-center rounded-lg z-50 border-2  text-cyan-600 hover:text-white transition duration-1000'>Download Resume <p className='text-xs hidden group-hover:block transition duration-500 ease-out'><FaChevronRight /></p></a>
+                        <a href="/Tanvir_Ahmmed_resume.pdf" download className='h-8 w-full gap-2  flex items-center justify-start pl-4 rounded-lg z-50 border-2  text-cyan-600 hover:text-white transition duration-1000'>Download Resume <p className='text-xs hidden group-hover:block transition duration-500 ease-out'><FaChevronRight /></p></a>
 
                     </div>
 
@@ -60,7 +60,7 @@ function Details() {
             </div>
             
 
-            <motion.span initial={{scale: 0}} whileInView={{scale:1}} transition={{duration:1}} className='w-3/4 h-[1px]  bg-cyan-500'></motion.span>
+            <motion.span initial={{scale: 0}} whileInView={{scale:1}} transition={{duration:1}} className='w-3/4 h-[2px]  bg-cyan-500'></motion.span>
 
         </div>
     )

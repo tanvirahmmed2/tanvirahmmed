@@ -9,13 +9,13 @@ import UsePageTitle from './UsePageTitle';
 const Review = () => {
   UsePageTitle("Review")
   return (
-    <div className='w-full min-h-screen flex flex-col items-center justify-center gap-12 py-8'>
+    <div  className="w-full min-h-screen flex flex-col items-center justify-center gap-12 py-8 bg-white ">
       <p className='flex flex-row w-full h-auto items-center justify-center gap-4 text-2xl md:text-4xl font-bold'> <span className='text-amber-500'><FaStar /></span> What clients are saying?</p>
       <div className='grid justify-items-center w-full p-2 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-4'>
         {reviewDatas.map((reviews) => {
 
           const { id, name, email, review } = reviews
-          return <div key={id} className='relative w-[300px] bg-gray-50 h-auto rounded-xl hover:scale-95 transition duration-300 cursor-pointer shadow-xl overflow-hidden flex flex-col items-start justify-start border-2 border-cyan-600'>
+          return <div key={id} className='relative w-[300px] bg-gray-50 h-auto rounded-lg hover:scale-95 transition duration-300 cursor-pointer shadow-xl overflow-hidden flex flex-col items-start justify-start border-2 border-cyan-600'>
             <div className='w-full h-auto border-b-2 p-4 border-cyan-600'>
               <h1 className='text-xl font-bold'>{name}</h1>
               <p>{email}</p>

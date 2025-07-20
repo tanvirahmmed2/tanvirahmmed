@@ -13,7 +13,7 @@ function NavBar() {
     return (
         <nav className='w-full h-12 shadow-sm flex flex-row items-center justify-between px-4 md:px-8 fixed z-50 backdrop-blur-md bg-white/70'>
 
-            <a href="/" className='w-auto h-12 flex items-center justify-center text-cyan-500 font-bold text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</a>
+            <a href="/" className='w-auto h-12 flex items-center justify-center  font-bold text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</a>
 
             <div className={`relative flex md:hidden flex-col items-center justify-center h-12 w-28`}>
                 <p onClick={handlemenu} className='h-12 w-16 flex gap-4 items-center justify-center cursor-pointer hover:border-b-2' >
