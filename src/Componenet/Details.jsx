@@ -1,27 +1,20 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 
-import {  FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 
 import photo from './Image/photo.png'
 
 
 function Details() {
-   
+
 
     return (
-        <div className='w-full flex flex-col gap-6 items-center min-h-screen mt-12 md:mt-0 h-auto py-4'>
+        <div className='w-full flex flex-col items-center justify-between min-h-[90vh] h-auto pt-4'>
 
-            <div className='w-full min-h-[85vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around'>
-                <div className='group  w-[250px] h-[320px] relative  text-white  flex flex-col items-center justify-center rounded-full cursor-pointer' >
-                    <div className='  w-[250px] h-[320px] border-2 relative bg-gradient-to-t text-white shadow-2xl border-cyan-800 from-cyan-800 to-transparent  overflow-hidden rounded-full cursor-pointer' >
-                        <img src={photo} alt="" className='scale-150 absolute bottom-6 left-0' />
-                    </div>
-                </div>
-
-
+            <div className='w-full min-h-[90vh] flex flex-col md:flex-row gap-8 md:gap-0 items-center md:justify-around justify-end'>
 
                 <div className='w-full md:w-1/2 flex flex-col gap-2  items-center md:items-start'>
                     <motion.h2 initial={{ scale: .7 }} whileInView={{ scale: 1 }} className='font-bold text-4xl md:text-6xl font-poppins'>Hello!</motion.h2>
@@ -57,10 +50,17 @@ function Details() {
 
                 </div>
 
-            </div>
-            
+                <img src={photo} alt="" className='md:h-[90vh] h-[30vh] md:w-[370px] w-[350px] object-cover ' />
 
-            <motion.span initial={{scale: 0}} whileInView={{scale:1}} transition={{duration:1}} className='w-3/4 h-[2px]  bg-cyan-500'></motion.span>
+                
+
+
+
+
+            </div>
+
+
+            <motion.span initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 1 }} className='w-full h-[2px]  bg-cyan-500'></motion.span>
 
         </div>
     )

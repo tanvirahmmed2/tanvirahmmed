@@ -89,7 +89,7 @@ function About() {
 
 
 
-            <div className='w-full h-auto flex items-center justify-center py-10'>
+            {/* <div className='w-full h-auto flex items-center justify-center py-10'>
                 <div className='w-2/5 min-w-[350px] h-[400px] bg-gray-400 rounded-xl overflow-hidden relative cursor-pointer group'>
                     <img src={sliders[currslide].imgurl} className='w-full object-center h-[400px]' alt="" />
                     <div className='w-full h-auto absolute bottom-0 flex flex-row items-center justify-between p-4 text-xl font-semibold'>
@@ -97,7 +97,7 @@ function About() {
                         <Link to={sliders[currslide].path} className='text-red-500'>more......</Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
 
