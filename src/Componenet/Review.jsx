@@ -45,11 +45,11 @@ const Review = () => {
       <div className='w-full p-2 flex flex-row items-center justify-center gap-12'>
 
 
-        <div className='w-[300px] h-[400px] rounded-xl cursor-pointer blur-[1px] hidden md:flex flex-col items-center justify-between p-6 opacity-30 text-center bg-gray-100 shadow-xl'>
+        <div className='w-[250px] h-[350px] rounded-xl cursor-pointer blur-[1px] hidden md:flex scale-75 lg:scale-95 flex-col items-center justify-between p-6 opacity-30 text-center bg-gray-100 shadow-xl'>
 
-          <p className='font-poppins'>{reviewDatas[leftslide].review}</p>
+          <p className='font-poppins text-xs'>{reviewDatas[leftslide].review}</p>
           <div className='w-full h-auto flex flex-col items-center justify-center gap-1  text-amber-500 '>
-            <p className='text-5xl rounded-full border-2 pt-2 border-white overflow-hidden'>{reviewDatas[leftslide].avatar}</p>
+            <p className=' rounded-full border-2 pt-2 border-white overflow-hidden'>{reviewDatas[leftslide].avatar}</p>
             <h1>{reviewDatas[leftslide].name}</h1>
             <p>{reviewDatas[leftslide].email}</p>
 
@@ -57,7 +57,7 @@ const Review = () => {
         </div>
 
 
-        <div className='w-[300px] h-[400px] rounded-xl cursor-pointer flex flex-col items-center justify-between p-6 opacity-100 text-center hover:scale-105 bg-gray-100 shadow-xl'>
+        <div className='min-w-[290px] w-[300px] h-[400px] rounded-xl cursor-pointer flex flex-col items-center justify-between p-6 opacity-100 text-center hover:scale-105 bg-gray-100 shadow-xl'>
 
           <p className='font-poppins'>{reviewDatas[centerslide].review}</p>
           <div className='w-full h-auto flex flex-col items-center justify-center gap-1  text-amber-500 '>
@@ -71,11 +71,11 @@ const Review = () => {
 
 
 
-        <div className='w-[300px] h-[400px] rounded-xl cursor-pointer blur-[1px] hidden md:flex flex-col items-center justify-between p-6 opacity-30 text-center bg-gray-100 shadow-xl'>
+        <div className='w-[250px] h-[350px] rounded-xl cursor-pointer blur-[1px] hidden md:flex scale-75 lg:scale-95 flex-col items-center justify-between p-6 opacity-30 text-center bg-gray-100 shadow-xl'>
 
-          <p className='font-poppins'>{reviewDatas[rightslide].review}</p>
+          <p className='font-poppins text-xs'>{reviewDatas[rightslide].review}</p>
           <div className='w-full h-auto flex flex-col items-center justify-center gap-1  text-amber-500 '>
-            <p className='text-5xl rounded-full border-2 pt-2 border-white overflow-hidden'>{reviewDatas[rightslide].avatar}</p>
+            <p className=' rounded-full border-2 pt-2 border-white overflow-hidden'>{reviewDatas[rightslide].avatar}</p>
             <h1>{reviewDatas[rightslide].name}</h1>
             <p>{reviewDatas[rightslide].email}</p>
 
