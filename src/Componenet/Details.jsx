@@ -31,7 +31,7 @@ function Details() {
                     <h1 className='font-semibold text-base md:text-xl'>Web Developer</h1>
                     <p className='text-base md:text-xl text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field especially working with multi-national companies</p>
                     
-                    <div className='h-auto md:w-[400px] w-[200px] group md:gap-2  flex flex-col md:flex-row'>
+                    <div className='h-auto md:w-[400px] text-xs md:text-base w-[160px] group md:gap-2  flex flex-col md:flex-row'>
                         <div className='flex w-full  mt-2 flex-col group relative group/item1'>
 
                             <span className='absolute inset-0 bg-cyan-500 w-0 group-hover/item1:w-full transition-all duration-500 ease-out origin-left rounded-lg'></span>
