@@ -13,7 +13,7 @@ import About from './Componenet/About'
 
 function App() {
   return (
-    <div className='overflow-x-hidden w-full relative select-none h-auto bg-gray-100 font-manrope '>
+    <div className='overflow-x-hidden w-full relative select-none h-auto bg-gray-100 font-sans '>
 
       <NavBar />
       
