@@ -113,11 +113,11 @@ function About() {
                 <div className='w-full relative h-[500px] flex items-center gap-16 justify-center'>
 
                     <img className='w-[230px] h-[350px] object-cover rounded-xl  hidden sm:block blur-[2px]' src={sliders[leftslide].imgurl} alt="" />
-                    <div className='absolute z-20 w-[300px] h-[440px] flex flex-col items-center justify-center border-2 border-red-700 shadow-2xl rounded-xl overflow-hidden'>
+                    <div className='absolute z-20 w-[300px] h-[440px] flex flex-col items-center justify-center border-2 border-amber-500 shadow-2xl rounded-xl overflow-hidden'>
                         <img className='w-[300px] h-[400px] object-cover ' src={sliders[centerslide].imgurl} alt="" />
                         <div className='w-full h-auto flex flex-row items-center justify-between px-6 py-2'>
-                            <p className='text-cyan-500 font-poppins'>{sliders[centerslide].title}</p>
-                            <Link to={sliders[centerslide].path} className='text-cyan-500 font-poppins'>show more</Link>
+                            <p className='text-amber-500 font-poppins'>{sliders[centerslide].title}</p>
+                            <Link to={sliders[centerslide].path} className='text-amber-500 font-poppins'>show more</Link>
 
 
                         </div>
