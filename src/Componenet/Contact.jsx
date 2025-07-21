@@ -4,8 +4,12 @@ import {useFormik} from 'formik'
 
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import UsePageTitle from './UsePageTitle';
 
 function Contact() {
+  UsePageTitle("Contact")
+
+
   const formik =useFormik({
     initialValues:{
       name:'',
