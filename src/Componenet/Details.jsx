@@ -14,13 +14,13 @@ function Details() {
     return (
         <div className='w-full flex flex-col items-center justify-between min-h-[90vh] h-auto pt-4'>
 
-            <div className='w-full min-h-[90vh] pt-20 md:pt-0 flex flex-col md:flex-row  items-center md:justify-around justify-end'>
+            <div className='w-full min-h-[90vh] pt-20 lg:pt-0 flex flex-col lg:flex-row  items-center md:justify-around justify-end'>
 
-                <div className='w-full md:w-1/2 flex flex-col gap-2  items-center md:items-start'>
+                <div className='w-full md:w-1/2 flex flex-col gap-2  items-center lg:items-start'>
                     <motion.h2 initial={{ scale: .7 }} whileInView={{ scale: 1 }} className='font-bold text-4xl md:text-6xl font-poppins'>Hello!</motion.h2>
                     <div className='flex flex-row gap-2 font-bold items-end h-auto '>
-                        <h1 className='inline-block text-3xl md:text-5xl'>I'm </h1>
-                        <h1 className='text-cyan-500 inline-block text-3xl md:text-5xl'>
+                        <h1 className='inline-block text-3xl lg:text-5xl'>I'm </h1>
+                        <h1 className='text-cyan-500 inline-block text-3xl lg:text-5xl'>
                             <Typewriter
                                 words={[' Tanvir Ahmmed']}
                                 typeSpeed={100}
@@ -29,7 +29,7 @@ function Details() {
                         </h1>
                     </div>
                     <h1 className='font-semibold text-base md:text-xl'>Web Developer</h1>
-                    <p className='text-base md:text-xl text-center md:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field especially working with multi-national companies</p>
+                    <p className='text-base md:text-xl text-center lg:text-start'>I'm a professional MERN stack web developer with 2 years experience in this field especially working with multi-national companies</p>
                     
                     <div className='h-auto md:w-[400px] text-xs md:text-base w-[160px] group md:gap-2  flex flex-col md:flex-row'>
                         <div className='flex w-full  mt-2 flex-col group relative group/item1'>
@@ -62,7 +62,7 @@ function Details() {
 
                 </div>
 
-                <img src={photo} alt="" className='md:h-[90vh] h-auto md:w-[420px] w-[350px] object-cover ' />
+                <img src={photo} alt="" className='md:h-[90vh] h-auto lg:w-[420px] md:w-[370px] w-[320px] object-cover ' />
 
 
 
