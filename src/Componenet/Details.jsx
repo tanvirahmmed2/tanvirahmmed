@@ -62,7 +62,7 @@ function Details() {
 
                 </div>
 
-                <img src={photo} alt="" className='md:h-[90vh] h-auto md:w-[370px] w-[350px] object-cover ' />
+                <img src={photo} alt="" className='md:h-[90vh] h-auto md:w-[420px] w-[350px] object-cover ' />
 
 
 
