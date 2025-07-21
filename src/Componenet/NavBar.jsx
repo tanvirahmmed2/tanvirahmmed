@@ -15,13 +15,14 @@ function NavBar() {
 
             <a href="/" className='w-auto h-12 flex items-center justify-center  font-bold text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</a>
 
-            <div className={`relative flex md:hidden flex-col items-center justify-center h-12 w-28`}>
+            <div className={`relative flex lg:hidden flex-col items-center justify-center h-12 w-28`}>
                 <span onClick={handlemenu} className='h-12 w-16 flex gap-4 items-center justify-center cursor-pointer hover:border-b-2 text-amber-600' >
                     <p className={`text-3xl ${menu ? "hidden":"flex"}`}><HiBars3BottomLeft/></p>
                     <p className={`text-3xl ${!menu ? "hidden":"flex"}`}><IoMdClose/></p>
                     
                 </span>
                 <div className={`absolute ${!menu ? "hidden":"flex"} flex-col w-[130px] h-auto gap-4 items-start top-12 shadow-2xl bg-white py-4 px-4 `}>
+                    <Link to='/about' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>About Me</Link>
                     <Link to='/services' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Services</Link>
                     <Link to='/projects' className='h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold '>Projects</Link>
                     <Link to='/reviews' className='h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Reviews</Link>
@@ -31,7 +32,8 @@ function NavBar() {
             </div>
 
 
-            <div className='hidden  w-auto h-12 md:flex flex-row items-center justify-between gap-2'>
+            <div className='hidden  w-auto h-12 lg:flex flex-row items-center justify-between gap-2'>
+                <Link to='/about' className='hover:scale-110 hover:text-cyan-700 w-[100px] h-12 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer font-semibold '>About Me</Link>
                 <Link to='/services' className='hover:scale-110 hover:text-cyan-700 w-[100px] h-12 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer font-semibold '>Services</Link>
                 <Link to='/projects' className='hover:scale-110 hover:text-cyan-700 w-[100px] h-12 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer  font-semibold '>Projects</Link>
                 <Link to='/reviews' className=' hover:scale-110 hover:text-cyan-700 w-[100px] h-12 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer  font-semibold '>Reviews</Link>

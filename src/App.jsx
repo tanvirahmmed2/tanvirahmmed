@@ -8,6 +8,7 @@ import Services from './Componenet/Services'
 import Contact from './Componenet/Contact'
 import Projects from './Componenet/Projects'
 import ShowProject from './Componenet/Project/ShowProject'
+import About from './Componenet/About'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <div className='w-full  pt-12 h-auto'>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
           <Route path='/reviews' element={<Review />} />
           <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
