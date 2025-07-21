@@ -12,7 +12,7 @@ import ShowProject from './Componenet/Project/ShowProject'
 
 function App() {
   return (
-    <div className='overflow-x-hidden w-full relative select-none h-auto bg-gray-100 font-poppins '>
+    <div className='overflow-x-hidden w-full relative select-none h-auto bg-gray-100 font-manrope '>
 
       <NavBar />
       
