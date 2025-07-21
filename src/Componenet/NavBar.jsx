@@ -21,7 +21,7 @@ function NavBar() {
                     <p className={`text-3xl ${!menu ? "hidden":"flex"}`}><IoMdClose/></p>
                     
                 </span>
-                <div className={`absolute ${!menu ? "hidden":"flex"} flex-col w-[130px] h-[100vh] gap-4 items-start top-12 shadow-2xl bg-white py-4 px-4 rounded-xl`}>
+                <div className={`absolute ${!menu ? "hidden":"flex"} flex-col w-[130px] h-[100vh] gap-4 items-start top-12 shadow-2xl bg-white py-4 px-4 `}>
                     <Link to='/services' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Services</Link>
                     <Link to='/projects' className='h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold '>Projects</Link>
                     <Link to='/reviews' className='h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Reviews</Link>

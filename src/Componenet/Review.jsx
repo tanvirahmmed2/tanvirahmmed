@@ -60,8 +60,8 @@ const Review = () => {
         <div className='w-[300px] h-[400px] rounded-xl cursor-pointer flex flex-col items-center justify-between p-6 opacity-100 text-center hover:scale-105 bg-gray-100 shadow-xl'>
 
           <p className='font-poppins'>{reviewDatas[centerslide].review}</p>
-          <div className='w-full h-auto flex flex-col items-center justify-center gap-1  text-red-500 '>
-            <p className='text-5xl rounded-full border-2 pt-2 border-white overflow-hidden'>{reviewDatas[centerslide].avatar}</p>
+          <div className='w-full h-auto flex flex-col items-center justify-center gap-1  text-emerald-500 '>
+            <p className='text-5xl rounded-full border-2 pt-2 border-emerald-500 overflow-hidden'>{reviewDatas[centerslide].avatar}</p>
             <h1>{reviewDatas[centerslide].name}</h1>
             <p>{reviewDatas[centerslide].email}</p>
 
