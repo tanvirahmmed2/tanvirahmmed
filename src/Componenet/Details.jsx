@@ -50,7 +50,7 @@ function Details() {
                     
 
 
-                    <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center md:justify-start'>
+                    <div className='w-full text-2xl flex flex-row gap-8 mt-8 items-center justify-center lg:justify-start'>
                         <a className='hover:scale-125 hover:text-cyan-500' href="https://www.facebook.com/tanvirahmmed.official/"> <FaFacebook /></a>
                         <a className='hover:scale-125 hover:text-cyan-500' href="https://www.instagram.com/tanvirahmmed4"><FaInstagram /></a>
                         <a className='hover:scale-125 hover:text-cyan-500' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FaWhatsapp /></a>
