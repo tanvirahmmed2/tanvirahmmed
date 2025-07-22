@@ -19,8 +19,8 @@ function Details() {
                 <div className='w-full md:w-1/2 flex flex-col gap-2  items-center lg:items-start'>
                     <motion.h2 initial={{ scale: .7 }} whileInView={{ scale: 1 }} className='font-bold text-4xl md:text-6xl font-poppins'>Hello!</motion.h2>
                     <div className='flex flex-row gap-2 font-bold items-end h-auto '>
-                        <h1 className='inline-block text-3xl lg:text-5xl'>I'm </h1>
-                        <h1 className='text-cyan-500 inline-block text-3xl lg:text-5xl'>
+                        <h1 className='inline-block text-3xl md:text-4xl lg:text-5xl'>I'm </h1>
+                        <h1 className='text-cyan-500 inline-block text-3xl md:text-4xl lg:text-5xl'>
                             <Typewriter
                                 words={[' Tanvir Ahmmed']}
                                 typeSpeed={100}
