@@ -30,7 +30,7 @@ function Footer() {
           <a className='hover:scale-110 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FaGithub/></a>
 
         </div>
-      <p>All rights are reserved by <a href="/" className='text-teal-600 font-bold'>TanvirAhmmed</a> | {year}</p>
+      <p>All rights are reserved by <a href="/" className='text-cyan-500 font-bold'>TanvirAhmmed</a> | {year}</p>
     </footer>
   )
 }
