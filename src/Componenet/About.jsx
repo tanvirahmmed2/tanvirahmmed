@@ -68,7 +68,7 @@ function About() {
 
 
     return (
-        <div className='w-full h-auto p-4  bg-gray-50'>
+        <div className='w-full h-auto p-4  '>
             <div className='w-full h-auto p-6 flex flex-col items-center justify-center'>
                 <h1 className='text-4xl text-cyan-500 font-bold pb-6'>About Me</h1>
 
