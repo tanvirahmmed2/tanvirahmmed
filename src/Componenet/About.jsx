@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
 
 import {  FaNodeJs, FaReact } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
