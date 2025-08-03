@@ -9,6 +9,7 @@ import Contact from './Componenet/Contact'
 import Projects from './Componenet/Projects'
 import ShowProject from './Componenet/Project/ShowProject'
 import About from './Componenet/About'
+import Services from './Componenet/Services.jsx'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/reviews' element={<Review />} />
           <Route path='/skills' element={<Skills />} />
+          <Route path='/services' element={<Services />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/:title' element={<ShowProject />} />
