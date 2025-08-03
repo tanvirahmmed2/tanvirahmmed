@@ -6,6 +6,7 @@ import About from './Componenet/About'
 import UsePageTitle from './Componenet/UsePageTitle'
 import Skills from './Componenet/Skills'
 import Intro from './Componenet/Intro'
+import Services from './Componenet/Services'
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
     <div>
       <Intro/>
       <About/>
+      <Services/>
       <Skills/>
       <Projects/>
       <Review/>

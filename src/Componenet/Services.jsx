@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 
 
-import { FaBehance, FaBootstrap, FaCode, FaDatabase, FaSwatchbook } from "react-icons/fa";
-import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
-import { CiCloud } from "react-icons/ci";
+import { FaCode, FaDatabase, FaSwatchbook } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
 
 
@@ -34,16 +32,7 @@ const services = [
 
 function Services() {
   UsePageTitle("Service")
-  const icons = [<FaCss3 />, <FaBehance />, <FaHtml5 />, <CiCloud />, <FaJs />, <FaNodeJs />, <FaReact />, <FaBootstrap />, <FaCode />, <FaDatabase />]
-  const [iconindex, setIconIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIconIndex((prevIndex) => (prevIndex + 1) % icons.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [icons.length]);
+  
 
   return (
     <div className='w-full h-auto px-4 py-20 min-h-screen gap-12 flex flex-col items-center justify-center'>
@@ -52,11 +41,9 @@ function Services() {
         <h1 className='inline-block'>I Provide</h1>
       </div>
 
-      <div className='grid gap-6 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] w-full'>
+      <div className='h-auto flex flex-col md:flex-row w-full items-center justify-center gap-12'>
         {services.map((service) => (
-          <div
-            key={service.id} className='relative shadow-xl flex flex-col items-center justify-center p-6 border-cyan-500 border-2 hover:bg-gray-200  rounded-2xl text-center transition duration-300 cursor-pointer w-[20rem] mx-auto'
-          >
+          <div key={service.id} className='relative shadow-xl flex flex-col items-center justify-center p-6 border-cyan-500 border-2 hover:bg-white/10  rounded-2xl text-center transition duration-300 cursor-pointer w-[350px] md:w-[275px] h-[300px] '>
             <div className='text-2xl mb-2'>{service.icon}</div>
             <h2 className='font-bold text-lg mb-2'>{service.title}</h2>
             <p className='text-sm mb-6'>{service.desc}</p>
@@ -64,12 +51,7 @@ function Services() {
           </div>
         ))}
       </div>
-      <div className='w-full h-auto flex flex-row gap-4 items-center justify-center'>
-        <p className='text-5xl text-cyan-900 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex - 1]}</p>
-        <p className='text-9xl text-cyan-500 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex]}</p>
-        <p className='text-5xl text-cyan-900 hover:text-red-800 hover:scale-110 transition duration-300 cursor-pointer'>{icons[iconindex + 1]}</p>
-
-      </div>
+      
 
     </div>
   );

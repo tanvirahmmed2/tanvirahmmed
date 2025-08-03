@@ -64,21 +64,21 @@ function Contact() {
         </motion.div>
 
 
-        <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-white flex flex-col items-center justify-center  rounded-xl p-4'>
+        <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-white flex flex-col items-center justify-center  rounded-xl p-4 '>
 
           <h1 className='text-3xl font-semibold mt-4'>Discuss:</h1>
           <form action="" onSubmit={formik.handleSubmit} className='flex flex-col gap-4 w-80 h-auto items-center justify-center  '>
             <div className='flex flex-col w-full items-start gap-2'>
               <label className='italic ' htmlFor="name">Name</label>
-              <input value={formik.values.name} onChange={formik.handleChange} className='border-2 border-cyan-500 px-4 py-2 rounded-lg w-full outline-none' type="text" id='name' name='name' placeholder='full name' required />
+              <input value={formik.values.name} onChange={formik.handleChange} className='border-2 text-black border-cyan-500 px-4 py-2 rounded-lg w-full outline-none' type="text" id='name' name='name' placeholder='full name' required />
             </div>
             <div className='flex flex-col w-full items-start gap-2'>
               <label className='italic ' htmlFor="mail">Email</label>
-              <input value={formik.values.mail} onChange={formik.handleChange} className='border-2 border-cyan-500 px-4 py-2 rounded-lg w-full outline-none' type='email' id='mail' name='mail' placeholder='email' required />
+              <input value={formik.values.mail} onChange={formik.handleChange} className='border-2 text-black border-cyan-500 px-4 py-2 rounded-lg w-full outline-none' type='email' id='mail' name='mail' placeholder='email' required />
             </div>
             <div className='flex flex-col w-full items-start gap-2'>
               <label className='italic ' htmlFor="report">Text</label>
-              <textarea value={formik.values.report} onChange={formik.handleChange} className='border-2 resize-none border-cyan-500 px-4 py-2 rounded-lg w-full outline-none' placeholder='enter your text' rows={4} type="text" id='report' name='report' required />
+              <textarea value={formik.values.report} onChange={formik.handleChange} className='border-2 text-black resize-none border-cyan-500 px-4 py-2 rounded-lg w-full outline-none' placeholder='enter your text' rows={4} type="text" id='report' name='report' required />
             </div>
             <button type='submit' className='px-4 rounded-xl bg-cyan-500 text-white cursor-pointer hover:scale-110 transition duration-300'>Send</button>
           </form>
