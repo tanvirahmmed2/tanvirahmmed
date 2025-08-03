@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "formik": "^2.4.6",
     "framer-motion": "^12.23.0",
+    "gsap": "^3.13.0",
     "motion": "^12.23.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

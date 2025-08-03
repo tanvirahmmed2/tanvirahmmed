@@ -4,7 +4,7 @@ import NavBar from './Componenet/NavBar'
 import Footer from './Componenet/Footer'
 import Home from './Home'
 import Review from './Componenet/Review'
-import Services from './Componenet/Services'
+import Skills from './Componenet/Skills.jsx'
 import Contact from './Componenet/Contact'
 import Projects from './Componenet/Projects'
 import ShowProject from './Componenet/Project/ShowProject'
@@ -13,7 +13,7 @@ import About from './Componenet/About'
 
 function App() {
   return (
-    <div className='overflow-x-hidden w-full relative select-none h-auto  font-sans '>
+    <div className='overflow-x-hidden w-full relative select-none h-auto bg-gray-900 text-white font-sans '>
 
       <NavBar />
       
@@ -22,7 +22,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/reviews' element={<Review />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/skills' element={<Skills />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/:title' element={<ShowProject />} />

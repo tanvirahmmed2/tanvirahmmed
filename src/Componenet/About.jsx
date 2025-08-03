@@ -1,136 +1,74 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+
 import { Link } from 'react-router-dom'
 
-import { FaCss3, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
-import contact from './sliderImage/contact.jpg'
-import service from './sliderImage/service.jpg'
-import review from './sliderImage/review.jpg'
-import projects from './sliderImage/projects.jpg'
-import { useState } from 'react';
-
-function About() {
-    const sliders = [
-        {
-            id: 1,
-            title: "Service",
-            path: "/services",
-            imgurl: service
-        },
-        {
-            id: 2,
-            title: "Projects",
-            path: "/projects",
-            imgurl: projects
-        },
-        {
-            id: 3,
-            title: "Reviews",
-            path: "/reviews",
-            imgurl: review
-        },
-        {
-            id: 4,
-            title: "Contact",
-            path: "/contact",
-            imgurl: contact
-        }
-    ]
-
-    const [leftslide, setLeftSlide] = useState(0)
-    const [centerslide, setCenterSlide] = useState(0)
-    const [rightslide, setRightSlide] = useState(2)
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCenterSlide(prev =>
-                prev === sliders.length - 1 ? 0 : prev + 1
-            );
-        }, 3000);
-
-        return () => clearInterval(interval);
-    }, [sliders.length]);
-    useEffect(() => {
-        if (centerslide === 0) {
-            setLeftSlide(sliders.length - 1)
-            setRightSlide(1)
-
-        }
-        else if (centerslide === sliders.length - 1) {
-            setLeftSlide(centerslide - 1)
-            setRightSlide(0)
-        }
-        else {
-            setRightSlide(centerslide + 1)
-            setLeftSlide(centerslide - 1)
-
-        }
-
-    }, [sliders.length, centerslide])
+import {  FaNodeJs, FaReact } from "react-icons/fa";
+import UsePageTitle from './UsePageTitle';
 
 
-    return (
-        <div className='w-full h-auto p-4  '>
-            <div className='w-full h-auto p-6 flex flex-col items-center justify-center'>
-                <h1 className='text-4xl text-cyan-500 font-bold pb-6'>About Me</h1>
+import photo from './Image/photo.png'
 
-                <div className='w-full h-auto text-[17px] flex flex-col items-center gap-4 justify-center mb-8 text-center'>
-
-                    <p>I'm a dedicated and detail-oriented MERN Stack Developer with a strong foundation in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. With several years of hands-on experience, I've developed a wide range of dynamic, responsive, and scalable applications — from elegant personal portfolios and business websites to powerful data-driven platforms and RESTful APIs.</p>
-                    <p>My strength lies in handling the complete development cycle — from designing intuitive user interfaces with React and Tailwind CSS, to architecting robust backend systems using Node.js, Express, and MongoDB. I'm passionate about writing clean, efficient code and following best practices to deliver applications that are both user-friendly and maintainable.</p>
-                    <p>I’m always exploring new technologies and tools to stay ahead in the fast-paced world of web development. I thrive in collaborative team environments but am equally comfortable working independently to bring ideas to life.</p>
-                    <p>Whether it's building something from scratch or optimizing an existing product, I focus on creating seamless digital experiences that solve real-world problems and deliver real value.</p>
-
-
-                </div>
-                <div className='grid gap-6 md:px-24 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] w-full justify-items-center'>
-                    <div className=' flex flex-col items-center justify-center w-80 h-72  p-4 gap-3 rounded-2xl border-cyan-500 border-2 hover:scale-105 transition duration-300 cursor-pointer'>
-                        <h1 className='text-xl font-bold'>I work with</h1>
-                        <div className='w-full text-3xl flex flex-row gap-8 mt-4 items-center justify-center cursor-pointer'>
-                            <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaHtml5 /></p>
-                            <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaCss3 /></p>
-                            <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaJs /></p>
-                            <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaReact /></p>
-                            <p className='hover:scale-125 hover:text-red-800 transition duration-300'><FaNodeJs /></p>
+const About = () => {
+    
+  UsePageTitle("About")
+  return (
+    <div className='w-full h-auto min-h-[90vh] bg-white/5 py-16 flex flex-col items-center justify-center'>
+      <h1 className='text-5xl font-semibold flex flex-row gap-4'>
+        <span className='text-cyan-500'>About</span>
+        <span>Myself</span>
+      </h1>
+      <div className='w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-12'>
 
 
-                        </div>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center w-80 h-72 text-center border-cyan-500 border-2   p-4 gap-3 rounded-2xl hover:scale-105 transition duration-300  cursor-pointer'>
-                        <h1 className='text-xl font-bold'>20+ Projects Completed</h1>
-                        <p>Over the years, I’ve successfully delivered 20+ projects in collaboration with various companies and organizations. Each project has helped me grow, refine my skills, and deepen my understanding of full stack development.</p>
-                    </div>
-                    <div className=' flex flex-col items-center justify-center w-80 h-72 text-center border-cyan-500 border-2  p-4 gap-3 rounded-2xl hover:scale-105 transition duration-300  cursor-pointer'>
-                        <h1 className='text-xl font-bold'>Quality Service</h1>
-                        <p>I’m committed to delivering high-quality, reliable, and efficient web solutions tailored to each client’s unique needs. My focus on clean code, performance, and user experience ensures every project meets the highest standards.</p>
-                    </div>
-                </div>
-            </div>
+        <div className='w-[400px] h-[500px] flex flex-row items-center justify-between'>
 
-
-
-
-
-            <div className='w-full h-auto flex items-center justify-center py-10'>
-                <div className='w-full relative h-[500px] flex items-center gap-16 justify-center'>
-
-                    <img className='w-[230px] h-[350px] object-cover rounded-xl  hidden sm:block blur-[2px]' src={sliders[leftslide].imgurl} alt="" />
-                    <div className='absolute z-20 w-[300px] h-[440px] flex flex-col items-center justify-center border-2 border-amber-500 shadow-2xl rounded-xl overflow-hidden'>
-                        <img className='w-[300px] h-[400px] object-cover ' src={sliders[centerslide].imgurl} alt="" />
-                        <div className='w-full h-auto flex flex-row items-center justify-between px-6 py-2'>
-                            <p className='text-amber-500 font-poppins'>{sliders[centerslide].title}</p>
-                            <Link to={sliders[centerslide].path} className='text-amber-500 font-poppins'>show more</Link>
-
-
-                        </div>
-                    </div>
-                    <img className='w-[230px] h-[350px] object-cover rounded-xl blur-[2px] hidden sm:block' src={sliders[rightslide].imgurl} alt="" />
-
-                </div>
-            </div>
-
-
+          <div className='h-[400px] w-[50px] flex items-start justify-center'>
+            <p className='text-4xl text-cyan-500 animate-bounce'><FaReact/></p>
+          </div>
+          <div className='w-[280px] h-[400px] bg-white/20 rounded-3xl overflow-hidden flex items-center justify-center'>
+          <div className='w-[260px] h-[380px] object-contain bg-gray-900 rounded-3xl overflow-hidden flex items-center justify-center'>
+              <img src={photo} alt="" className='w-[260px] h-[380px]  object-contain rounded-3xl scale-[1.8]' />
+          </div>
+            
+          </div>
+          <div className='h-[400px] w-[50px] flex items-end justify-center' >
+            <p className='text-4xl text-emerald-500 animate-bounce'><FaNodeJs/></p>
+          </div>
 
         </div>
-    )
+
+
+        <div className='w-[400px] lg:w-[600px] h-auto flex flex-col items-center justify-center gap-8'>
+          <div className='w-full h-auto flex flex-col items-start justify-center gap-4'>
+            <h1 >Hello!</h1>
+            <p>I'm <span className='font-bold text-3xl'>Tanvir Ahmmed</span>, a passionate MERN stack developer who loves creating digital experiences that make a difference. With expertise in modern web technologies, I transform complex ideas into elegant, functional solutions.</p>
+            <p>My journey in web development started with curiosity and has evolved into a deep passion for building scalable applications. I specialize in the MERN stack but I'm always exploring new technologies to stay at the forefront of web development.</p>
+            <p>When I'm not coding, you'll find me exploring new frameworks, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+          </div>
+          <div className='w-full h-auto flex flex-row items-center justify-between'>
+            <div className='w-auto flex-auto flex flex-col items-center justify-center gap-3'>
+              <span className='text-3xl font-bold text-cyan-500'>20+</span>
+              <p>Projects</p>
+            </div>
+            <div className='w-auto flex-auto flex flex-col items-center justify-center gap-3'>
+              <span className='text-3xl font-bold text-emerald-500'>2 Years+</span>
+              <p>Experience</p>
+            </div>
+            <div className='w-auto flex-auto flex flex-col items-center justify-center gap-3'>
+              <span className='text-3xl font-bold text-indigo-500'>100%</span>
+              <p>Client satisfaction</p>
+            </div>
+
+          </div>
+           
+        </div>
+
+
+      </div>
+      
+    </div>
+  )
 }
 
 export default About
+
