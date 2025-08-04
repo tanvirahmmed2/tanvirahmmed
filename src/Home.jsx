@@ -15,13 +15,13 @@ function Home() {
   return (
     <div>
       <Notice/>
-      <Intro/>
-      <About/>
-      <Services/>
-      <Skills/>
-      <Projects/>
-      <Review/>
-      <Contact/>
+      <Intro />
+      <About />
+      <Services />
+      <Skills />
+      <Projects />
+      <Review />
+      <Contact />
 
     </div>
   )

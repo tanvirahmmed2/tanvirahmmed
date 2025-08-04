@@ -1,16 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { IoMdClose, IoMdMoon, IoMdSunny } from "react-icons/io";
+import ThemeContext from './Context/ThemeContext';
 
 const Notice = () => {
     const [notice, setNotice] = useState(true)
-    const [light, setLight]= useState(true)
+    const {light, setLight}= useContext(ThemeContext)
     const handlenoticeboard = () => {
-        setNotice(!notice)
+        setNotice(false)
 
         console.log(notice)
     }
     const handlemood=()=>{
         setLight(!light)
+        console.log(light)
     }
 
 
@@ -21,7 +23,7 @@ const Notice = () => {
                 <p className={`w-auto h-8 ${light? "flex": "hidden"} cursor-pointer rounded-xl gap-2 items-center justify-center px-3`}><IoMdSunny /> Light</p>
                 <p className={`w-auto h-8 ${light? "hidden": "flex"} cursor-pointer rounded-xl gap-2 items-center justify-center px-3`}><IoMdMoon /> Dark</p>
             </span>
-            <p onClick={handlenoticeboard} className='text-white hover:bg-white/5 cursor-pointer rounded-md p-2'><IoMdClose /></p>
+            <p onClick={handlenoticeboard} className='text-white hover:bg-white/5 cursor-pointer rounded-md p-2 '><IoMdClose /></p>
         </div>
     )
 }
