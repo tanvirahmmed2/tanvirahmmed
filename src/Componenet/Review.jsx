@@ -56,7 +56,6 @@ const Review = () => {
 
       <div className='w-full p-2 flex flex-row items-center justify-center md:gap-6 lg:gap-12'>
 
-        {/* Left Slide */}
         <div className='w-[250px] h-[350px] rounded-xl cursor-pointer blur-[1px] hidden md:flex scale-75 lg:scale-95 flex-col items-center justify-between p-6 opacity-30 text-center bg-white/10 shadow-xl'>
           <p className='font-poppins text-xs'>{reviewDatas[leftslide].review}</p>
           <div className='w-full h-auto flex flex-col items-center justify-center gap-1 text-amber-500'>
@@ -66,7 +65,6 @@ const Review = () => {
           </div>
         </div>
 
-        {/* Center Slide (with animation) */}
         <div
           ref={centerSlideRef}
           className='min-w-[290px] w-[300px] h-[400px] rounded-xl cursor-pointer flex flex-col items-center justify-between p-6 opacity-100 text-center hover:scale-105 bg-white/10 shadow-xl'
@@ -79,7 +77,6 @@ const Review = () => {
           </div>
         </div>
 
-        {/* Right Slide */}
         <div className='w-[250px] h-[350px] rounded-xl cursor-pointer blur-[1px] hidden md:flex scale-75 lg:scale-95 flex-col items-center justify-between p-6 opacity-30 text-center bg-white/10 shadow-xl'>
           <p className='font-poppins text-xs'>{reviewDatas[rightslide].review}</p>
           <div className='w-full h-auto flex flex-col items-center justify-center gap-1 text-amber-500'>

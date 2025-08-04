@@ -26,10 +26,10 @@ function Contact() {
 
 
   return (
-    <div className='w-full h-auto px-4 py-20 flex flex-col items-center justify-center text-center gap-2 bg-indigo-950 bg-opacity-20'>
+    <div className='w-full h-auto px-4 py-20 flex flex-col items-center justify-center text-center gap-2 '>
       <h1 className='text-5xl font-bold py-4 text-cyan-500'>Connect Me</h1>
       <div className='w-full h-auto flex flex-col md:flex-row gap-8 items-center justify-center'>
-        <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-white flex flex-col gap-4 items-center justify-center  rounded-xl p-4'>
+        <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-indigo-700 flex flex-col gap-4 items-center justify-center  rounded-xl p-4'>
 
           <h1 className='text-3xl font-semibold mt-4'>Network:</h1>
           <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/5 rounded-lg'>
@@ -64,7 +64,7 @@ function Contact() {
         </motion.div>
 
 
-        <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-white flex flex-col items-center justify-center  rounded-xl p-4 '>
+        <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-cyan-700 flex flex-col items-center justify-center  rounded-xl p-4 '>
 
           <h1 className='text-3xl font-semibold mt-4'>Discuss:</h1>
           <form action="" onSubmit={formik.handleSubmit} className='flex flex-col gap-4 w-80 h-auto items-center justify-center  '>

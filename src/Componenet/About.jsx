@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 
 import {  FaNodeJs, FaReact } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
+
+import ThemeContext from './Context/ThemeContext';
 
 
 import photo from './Image/photo.png'
 
 const About = () => {
     
+  const {light}= useContext(ThemeContext)
   UsePageTitle("About")
   return (
     <div className='w-full h-auto min-h-[90vh] bg-white/5 py-16 flex flex-col items-center justify-center '>
@@ -24,8 +27,8 @@ const About = () => {
           <div className='h-[400px] w-[50px] flex items-start justify-center'>
             <p className='text-4xl text-cyan-500 animate-bounce'><FaReact/></p>
           </div>
-          <div className='w-[280px] h-[400px] bg-white/20 rounded-3xl overflow-hidden flex items-center justify-center'>
-          <div className='w-[260px] h-[380px] object-contain bg-gray-900 rounded-3xl overflow-hidden flex items-center justify-center'>
+          <div className={`w-[280px] h-[400px] ${light?"bg-black/20" : "bg-white/20"} rounded-3xl overflow-hidden flex items-center justify-center`}>
+          <div className={`w-[260px] h-[380px] object-contain ${light? "bg-white": "bg-gray-950"} rounded-3xl overflow-hidden flex items-center justify-center`}>
               <img src={photo} alt="" className='w-[260px] h-[380px]  object-contain rounded-3xl scale-[1.8]' />
           </div>
             
