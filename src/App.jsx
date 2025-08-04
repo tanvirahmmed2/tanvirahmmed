@@ -11,6 +11,7 @@ import ShowProject from './Componenet/Project/ShowProject'
 import About from './Componenet/About'
 import Services from './Componenet/Services.jsx'
 import ThemeContext from './Componenet/Context/ThemeContext.jsx'
+import Notice from './Componenet/Notice.jsx'
 
 
 
@@ -18,8 +19,8 @@ function App() {
 
   const [light, setLight] = useState(false)
   return (
-    <ThemeContext.Provider value={{light, setLight}}>
-      <div className={`overflow-x-hidden w-full relative select-none h-auto ${light? "bg-white": "bg-gray-900"} ${light? "text-black": "text-white"} font-sans `}>
+    <ThemeContext.Provider value={{ light, setLight }}>
+      <div className={`overflow-x-hidden w-full relative select-none h-auto ${light ? "bg-white" : "bg-gray-900"} ${light ? "text-black" : "text-white"} font-sans `}>
 
         <NavBar />
         <div className='w-full  pt-14 h-auto'>
@@ -35,7 +36,7 @@ function App() {
           </Routes>
 
         </div>
-
+        <Notice />
         <Footer />
 
 

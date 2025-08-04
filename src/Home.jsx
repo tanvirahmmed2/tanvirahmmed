@@ -7,14 +7,12 @@ import UsePageTitle from './Componenet/UsePageTitle'
 import Skills from './Componenet/Skills'
 import Intro from './Componenet/Intro'
 import Services from './Componenet/Services'
-import Notice from './Componenet/Notice'
 
 
 function Home() {
   UsePageTitle("Home")
   return (
     <div>
-      <Notice/>
       <Intro />
       <About />
       <Services />
