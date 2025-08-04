@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-
 import { FaCode, FaDatabase, FaSwatchbook } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
 
@@ -40,6 +39,7 @@ function Services() {
         <h1 className='text-cyan-500 inline-block mr-2'>Service</h1>
         <h1 className='inline-block'>I Provide</h1>
       </div>
+      
 
       <div className='h-auto flex flex-col md:flex-row w-full items-center justify-center gap-12'>
         {services.map((service) => (

@@ -21,7 +21,8 @@ function NavBar() {
                     <p className={`text-3xl ${!menu ? "hidden":"flex"}`}><IoMdClose/></p>
                     
                 </span>
-                <div className={`absolute ${!menu ? "hidden":"flex"} flex-col w-[130px] h-auto gap-4 items-start top-14 shadow-2xl backdrop-blur-3xl bg-black/20 py-4 px-4 `}>
+                <div className={`absolute ${!menu ? "hidden":"flex"} flex-col w-[130px] h-auto gap-4 items-start top-14 shadow-2xl backdrop-blur-3xl bg-black/50 py-4 px-4 `}>
+                    <a href='/' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Home</a>
                     <Link to='/about' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>About</Link>
                     <Link to='/skills' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Skills</Link>
                     <Link to='/projects' className='h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold '>Projects</Link>
@@ -33,10 +34,11 @@ function NavBar() {
 
 
             <div className='hidden  w-auto  h-14 md:flex flex-row items-center justify-between gap-2'>
-                <Link to='/about' className='hover:scale-110 hover:text-cyan-500 w-[100px]  h-14 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer font-semibold '>About</Link>
-                <Link to='/skills' className='hover:scale-110 hover:text-cyan-500 w-[100px]  h-14 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer font-semibold '>Skills</Link>
-                <Link to='/projects' className='hover:scale-110 hover:text-cyan-500 w-[100px]  h-14 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer  font-semibold '>Projects</Link>
-                <Link to='/contact' className=' hover:scale-110 hover:text-red-700 w-[100px]  h-14 items-center justify-center flex hover:border-b-2 border-red-500 cursor-pointer  font-semibold '>Contact <span className='px-2 animate-bounce text-xl font-bold text-cyan-500'> !</span></Link>
+                <a href='/' className='hover:scale-110 hover:text-cyan-500 w-[90px]  h-14 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer font-semibold '>Home</a>
+                <Link to='/about' className='hover:scale-110 hover:text-cyan-500 w-[90px]  h-14 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer font-semibold '>About</Link>
+                <Link to='/skills' className='hover:scale-110 hover:text-cyan-500 w-[90px]  h-14 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer font-semibold '>Skills</Link>
+                <Link to='/projects' className='hover:scale-110 hover:text-cyan-500 w-[90px]  h-14 items-center justify-center flex hover:border-b-2 border-cyan-500 cursor-pointer  font-semibold '>Projects</Link>
+                <Link to='/contact' className=' hover:scale-110 hover:text-red-700 w-[90px]  h-14 items-center justify-center flex hover:border-b-2 border-red-500 cursor-pointer  font-semibold '>Contact <span className='px-2 animate-bounce text-xl font-bold text-cyan-500'> !</span></Link>
             </div>
         </nav>
     )
