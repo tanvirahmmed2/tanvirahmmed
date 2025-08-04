@@ -18,7 +18,7 @@ function App() {
 
       <NavBar />
       
-      <div className='w-full  pt-12 h-auto'>
+      <div className='w-full  pt-14 h-auto'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
