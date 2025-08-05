@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom'
 
 import { FaCode, FaDatabase, FaSwatchbook } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
+import ThemeContext from './Context/ThemeContext';
 
 
 const services = [
@@ -30,6 +31,7 @@ const services = [
 ];
 
 function Services() {
+  const {light}= useContext(ThemeContext)
   UsePageTitle("Service")
   
 
@@ -43,7 +45,7 @@ function Services() {
 
       <div className='h-auto flex flex-col md:flex-row w-full items-center justify-center gap-12'>
         {services.map((service) => (
-          <div key={service.id} className='relative shadow-xl flex flex-col items-center justify-center p-6 border-cyan-500 border-2 hover:bg-white/10  rounded-2xl text-center transition duration-300 cursor-pointer w-[350px] md:w-[275px] h-[300px] '>
+          <div key={service.id} className={`relative shadow-xl flex flex-col items-center justify-center p-6 border-cyan-500 border-2 ${light?"hover:bg-black/10": "hover:bg-white/10"}  rounded-2xl text-center transition duration-300 cursor-pointer w-[350px] md:w-[275px] h-[300px] `}>
             <div className='text-2xl mb-2'>{service.icon}</div>
             <h2 className='font-bold text-lg mb-2'>{service.title}</h2>
             <p className='text-sm mb-6'>{service.desc}</p>
