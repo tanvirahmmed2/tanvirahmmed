@@ -36,7 +36,8 @@ export const projectDatas=[
                 responsiveimg: dbresponsive,
                 footerimg: dbbottom,
                 userimg : dbsignin,
-                siteurl: "https://www.disibin.com"
+                siteurl: "https://www.disibin.com",
+                code:"https://github.com/tanvirahmmed2/disibin",
             }
         ]
     },
@@ -56,7 +57,8 @@ export const projectDatas=[
                 responsiveimg: tbresponsive,
                 footerimg: tbbottom,
                 userimg : tbsignin,
-                siteurl: "https://tech-beast.netlify.app/"
+                siteurl: "https://tech-beast.netlify.app/",
+                code: "https://github.com/tanvirahmmed2/techbeast",
             }
         ]
     },

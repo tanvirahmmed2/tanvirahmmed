@@ -23,7 +23,7 @@ const ShowProject = () => {
       <h1 className='text-center'>{projectgroup.headline}</h1>
       <div className='w-full h-auto'>
         {projectgroup.projects.map((project) => {
-          const { id, title, desc, homeimg, productimg,  responsivedesc, footerimg,  userimg, responsiveimg,  siteurl } = project
+          const { id, title, desc, homeimg, productimg, responsivedesc, footerimg, userimg, responsiveimg, siteurl, code } = project
           return <div className='w-full h-auto flex flex-col gap-6 items-center text-center  justify-center mb-8' key={id}>
             <h1 className='text-3xl font-bold text-teal-600'> <span className='text-teal-900'>#{id} </span>{title}</h1>
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={homeimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
@@ -38,9 +38,12 @@ const ShowProject = () => {
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={userimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
             <p className='text-3xl font-mono '>Footer</p>
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={footerimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
+            <div className='w-auto h-auto flex flex-row gap-2 items-center justify-center'>
+              <a href={siteurl} className='px-4 bg-red-500 rounded-xl cursor-pointer hover:scale-105 shadow-md shadow-red-500'>view site</a>
+              <a href={code} className='px-4 bg-emerald-500 rounded-xl cursor-pointer hover:scale-105 shadow-md shadow-emerald-500'>code</a>
+            </div>
 
-            <a href={siteurl} className='text-red-500'>view site</a>
-            <motion.div initial={{scale:0}} whileInView={{scale:1}} transition={{duration:1}} className='w-3/4 h-[2px] bg-red-700'></motion.div>
+            <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 1 }} className='w-3/4 h-[2px] bg-red-700'></motion.div>
           </div>
         })}
       </div>
