@@ -15,7 +15,7 @@ const About = () => {
   UsePageTitle("About")
   return (
     <div className='w-full h-auto min-h-[90vh] bg-white/5 py-16 flex flex-col items-center justify-center '>
-      <h1 className='text-5xl font-semibold flex flex-row gap-4'>
+      <h1 className='text-4xl font-semibold flex flex-row gap-4'>
         <span className='text-cyan-500'>About</span>
         <span>Myself</span>
       </h1>
