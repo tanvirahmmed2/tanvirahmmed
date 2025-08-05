@@ -14,7 +14,7 @@ function NavBar() {
     }
 
     return (
-        <nav className={`w-full  h-14  backdrop-blur-md flex flex-row items-center justify-between px-4 md:px-8 fixed font-sans z-50 text-base ${light? "bg-black/15": "bg-white/5"} `}>
+        <nav className={`w-full  h-14  backdrop-blur-md flex flex-row items-center justify-between px-4 md:px-8 fixed font-sans z-50 text-base ${light? "bg-indigo-700": "bg-white"} bg-opacity-5 `}>
 
             <Link to="/" className='w-auto font-manrope h-14 flex items-center justify-center text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</Link>
 
