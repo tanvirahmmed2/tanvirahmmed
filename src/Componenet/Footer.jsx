@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import ThemeContext from './Context/ThemeContext';
 
 function Footer() {
+  const {light} =useContext(ThemeContext)
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className='flex flex-col gap-4 w-full h-auto items-center justify-center  pb-8'>
+    <footer className={`flex flex-col gap-4 w-full h-auto items-center justify-center  pb-8 ${light? "bg-black/15": "bg-transparent"}`}>
       
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
         <div>
