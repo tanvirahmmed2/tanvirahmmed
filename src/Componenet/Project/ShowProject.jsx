@@ -39,8 +39,8 @@ const ShowProject = () => {
             <p className='text-3xl font-mono '>Footer</p>
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={footerimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
             <div className='w-auto h-auto flex flex-row gap-2 items-center justify-center'>
-              <a href={siteurl} className='px-4 bg-red-500 rounded-xl cursor-pointer hover:scale-105 shadow-md shadow-red-500'>view site</a>
-              <a href={code} className='px-4 bg-emerald-500 rounded-xl cursor-pointer hover:scale-105 shadow-md shadow-emerald-500'>code</a>
+              <a href={siteurl} className='px-4 bg-red-500  text-white rounded-xl cursor-pointer hover:scale-105 shadow-md shadow-red-500'>view site</a>
+              <a href={code} className='px-4 bg-emerald-500 text-white rounded-xl cursor-pointer hover:scale-105 shadow-md shadow-emerald-500'>code</a>
             </div>
 
             <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 1 }} className='w-3/4 h-[2px] bg-red-700'></motion.div>
