@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { useFormik } from 'formik'
 import { motion } from 'framer-motion';
 
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaChevronRight, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import UsePageTitle from './UsePageTitle';
 import ThemeContext from './Context/ThemeContext';
@@ -21,46 +21,59 @@ function Contact() {
     onSubmit: (values, { resetForm }) => {
       resetForm({ values: '' })
       console.log(values);
-      alert("Thank You")
+      alert("Thank You " + values.name)
 
     }
   })
 
 
   return (
-    <div className='w-full h-auto px-4 py-20 flex flex-col items-center justify-center text-center gap-2 '>
+    <div className='w-full h-auto px-4 py-20 flex flex-col items-center justify-center text-center gap-2 bg-white/5 '>
       <h1 className='text-4xl font-bold py-4 text-cyan-500'>Connect Me</h1>
       <div className='w-full h-auto flex flex-col md:flex-row gap-8 items-center justify-center'>
-        <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-indigo-700 flex flex-col gap-4 items-center justify-center ${light? "bg-indigo-50": "bg-transparent"} bg-opacity-40 rounded-xl p-4`}>
+        <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`group w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-indigo-700 flex flex-col gap-4 items-center justify-center ${light? "bg-indigo-50": "bg-transparent"} bg-opacity-40 rounded-xl p-4`}>
 
           <h1 className='text-3xl font-semibold mt-4'>Network:</h1>
-          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/5 rounded-lg'>
+
+
+          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/5 rounded-lg relative group/item1'>
             <a className='hover:scale-125 hover:text-cyan-500 text-4xl' href="mailto:tanvir004006@gmail.com"><CiMail /></a>
             <div className='w-full h-auto flex flex-col items-start justify-center'>
               <h1 className='text-xl'>Gmail</h1>
               <p className='text-xs'>tanvir004006@gmail.com</p>
             </div>
+            <a href="mailto:tanvir004006@gmail.com" className='text-2xl hidden group-hover/item1:flex transition duration-700'><FaChevronRight/></a>
           </div>
-          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/10 rounded-lg'>
+
+
+          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/10 rounded-lg group/item2'>
             <a className='hover:scale-125 hover:text-cyan-500 text-4xl' href="https://bd.linkedin.com/in/tanvirahmmed4"><FaLinkedin /></a>
             <div className='w-full h-auto flex flex-col items-start justify-center'>
               <h1 className='text-xl'>LinkedIn</h1>
               <p className='text-xs'>/in/tanvirahmmed4</p>
             </div>
+            <a href="https://bd.linkedin.com/in/tanvirahmmed4" className='text-2xl hidden group-hover/item2:flex transition duration-700'><FaChevronRight/></a>
           </div>
-          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/15 rounded-lg'>
+
+
+          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/15 rounded-lg group/item3'>
             <a className='hover:scale-125 hover:text-cyan-500 text-4xl' href="https://github.com/tanvirahmmed2"><FaGithub /></a>
             <div className='w-full h-auto flex flex-col items-start justify-center'>
               <h1 className='text-xl'>Github</h1>
               <p className='text-xs'>/tanvirahmmed2</p>
             </div>
+            <a href="https://github.com/tanvirahmmed2" className='text-2xl hidden group-hover/item3:flex transition duration-700'><FaChevronRight/></a>
           </div>
-          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/20 rounded-lg'>
+
+
+
+          <div className='w-full h-auto flex flex-row items-center justify-start p-4 gap-4 bg-white/20 rounded-lg group/item4'>
             <a className='hover:scale-125 hover:text-cyan-500 text-4xl' href="https://www.facebook.com/tanvirahmmed.official/"> <FaFacebook /></a>
             <div className='w-full h-auto flex flex-col items-start justify-center'>
               <h1 className='text-xl'>Facebook</h1>
               <p className='text-xs'>/tanvirahmmed.official</p>
             </div>
+            <a href="https://www.facebook.com/tanvirahmmed.official/" className='text-2xl hidden group-hover/item4:flex transition duration-700'><FaChevronRight/></a>
           </div>
 
         </motion.div>

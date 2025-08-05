@@ -1,12 +1,8 @@
 import React, { useContext } from 'react'
-
-
+import { motion } from 'framer-motion';
 import {  FaNodeJs, FaReact } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
-
 import ThemeContext from './Context/ThemeContext';
-
-
 import photo from './Image/photo.png'
 
 const About = () => {
@@ -22,13 +18,13 @@ const About = () => {
       <div className='w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-12'>
 
 
-        <div className='w-[400px] h-[500px] flex flex-row items-center justify-between '>
+        <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[400px] h-[500px] flex flex-row items-center justify-between '>
 
           <div className='h-[400px] w-[50px] flex items-start justify-center'>
             <p className='text-4xl text-cyan-500 animate-bounce'><FaReact/></p>
           </div>
           <div className={`w-[280px] h-[400px] ${light?"bg-black/20" : "bg-white/20"} rounded-3xl overflow-hidden flex items-center justify-center`}>
-          <div className={`w-[260px] h-[380px] object-contain ${light? "bg-white": "bg-gray-950"} rounded-3xl overflow-hidden flex items-center justify-center`}>
+          <div className={`w-[260px] h-[380px] object-contain ${light? "bg-indigo-50": "bg-gray-800"} rounded-3xl overflow-hidden flex items-center justify-center`}>
               <img src={photo} alt="" className='w-[260px] h-[380px]  object-contain rounded-3xl scale-[1.8]' />
           </div>
             
@@ -37,10 +33,10 @@ const About = () => {
             <p className='text-4xl text-emerald-500 animate-bounce'><FaNodeJs/></p>
           </div>
 
-        </div>
+        </motion.div>
 
 
-        <div className='w-[400px] lg:w-[600px] h-auto flex flex-col items-center justify-center gap-8 text-center lg:text-start px-6'>
+        <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className='w-[400px] lg:w-[600px] h-auto flex flex-col items-center justify-center gap-8 text-center lg:text-start px-6'>
           <div className='w-full h-auto flex flex-col items-start justify-center gap-4'>
             <h1 className='w-full h-auto text-center lg:text-start text-3xl' >Hello!</h1>
             <p>I'm <span className='font-bold text-xl'>Tanvir Ahmmed</span>, a passionate MERN stack developer who loves creating digital experiences that make a difference. With expertise in modern web technologies, I transform complex ideas into elegant, functional solutions.</p>
@@ -63,7 +59,7 @@ const About = () => {
 
           </div>
            
-        </div>
+        </motion.div>
 
 
       </div>

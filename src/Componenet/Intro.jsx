@@ -12,11 +12,11 @@ import { FaCode } from "react-icons/fa";
 const Intro = () => {
     
   const {light}= useContext(ThemeContext)
-
+   
     return (
         <div className='w-full h-auto min-h-screen py-16 flex flex-col items-center justify-center  text-center px-4'>
             <div className='w-3/4 h-auto flex flex-col items-center justify-center gap-4 text-center'>
-                <p className='text-6xl text-indigo-500 animate-pulse'><FaCode /></p>
+                <p className='text-6xl text-indigo-500 animate-bounce'><FaCode /></p>
                 <h1 className='lg:text-6xl text-3xl font-semibold flex flex-row items-center justify-center gap-4'>
                     <p>Tanvir</p>
                     <p>Ahmmed</p>
@@ -28,6 +28,8 @@ const Intro = () => {
                         delaySpeed={1000}
                     />
                 </p>
+
+                
                 <p className='text-lg'>Crafting exceptional digital experiences with modern web technologies. Specializing in full-stack development with a passion for clean code and innovative solutions.</p>
 
 
