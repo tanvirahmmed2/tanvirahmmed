@@ -21,7 +21,7 @@ const Intro = () => {
                     <p>Tanvir</p>
                     <p>Ahmmed</p>
                 </h1>
-                <p className='text-2xl lg:text-5xl font-semibold text-indigo-500 font-manrope'>
+                <p className='text-6xl lg:text-8xl font-semibold text-indigo-500 font-manrope'>
                     <Typewriter
                         words={[' MERN STACK DEVELOPER']}
                         typeSpeed={100}
