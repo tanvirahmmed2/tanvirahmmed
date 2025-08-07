@@ -15,7 +15,7 @@ const Skills = () => {
     return (
         <div className='w-full h-auto min-h-[90vh] flex flex-col items-center justify-center gap-6 py-16'>
             <h1 className='text-4xl font-semibold'>Technical skills</h1>
-            <p className='text-2xl opacity-70'>Technologies I work with to bring ideas to life</p>
+            <p className='md:text-2xl text-lg opacity-70 text-center'>Technologies I work with to bring ideas to life</p>
             <div className='w-full h-auto flex flex-col md:flex-row items-center justify-center gap-12'>
 
                 
