@@ -12,6 +12,8 @@ import About from './Componenet/About'
 import Services from './Componenet/Services.jsx'
 import ThemeContext from './Componenet/Context/ThemeContext.jsx'
 import Notice from './Componenet/Notice.jsx'
+import LogIn from './Componenet/LogIn.jsx'
+import Message from './Componenet/Message.jsx'
 
 
 
@@ -33,6 +35,8 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/projects/:title' element={<ShowProject />} />
+            <Route path='/login' element={<LogIn/>}/>
+            <Route path='message' element={<Message/>}/>
           </Routes>
 
         </div>
