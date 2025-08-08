@@ -21,7 +21,7 @@ function App() {
 
    const [light, setLight] = useState(() => {
         const savedTheme = localStorage.getItem("theme");
-        return savedTheme ? JSON.parse(savedTheme) : true;
+        return savedTheme ? JSON.parse(savedTheme) : false;
     });
 
     useEffect(() => {
