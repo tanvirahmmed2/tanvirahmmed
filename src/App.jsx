@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import NavBar from './Componenet/NavBar'
 import Footer from './Componenet/Footer'
@@ -19,7 +19,16 @@ import Message from './Componenet/Message.jsx'
 
 function App() {
 
-  const [light, setLight] = useState(false)
+   const [light, setLight] = useState(() => {
+        const savedTheme = localStorage.getItem("theme");
+        return savedTheme ? JSON.parse(savedTheme) : true;
+    });
+
+    useEffect(() => {
+        localStorage.setItem("theme", JSON.stringify(light));
+    }, [light]);
+
+    
   return (
     <ThemeContext.Provider value={{ light, setLight }}>
       <div className={`overflow-x-hidden w-full relative select-none h-auto ${light ? "bg-sky-50" : "bg-gray-900"} ${light ? "text-black" : "text-white"} font-sans `}>
