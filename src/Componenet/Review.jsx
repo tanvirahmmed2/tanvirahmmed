@@ -1,8 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useContext } from 'react'
 import { FaStar } from "react-icons/fa";
 import { reviewDatas } from './ReviewDatas'
 import UsePageTitle from './UsePageTitle';
 import { gsap } from "gsap";
+
+import ThemeContext from './Context/ThemeContext';
 
 const Review = () => {
   const [leftslide, setLeftSlide] = useState(0)
@@ -47,9 +49,12 @@ const Review = () => {
   }, [centerslide]);
 
   UsePageTitle("Review")
+  
+  const {light}= useContext(ThemeContext)
+  
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center gap-12 py-8">
+    <div className={`w-full min-h-screen flex flex-col items-center justify-center gap-12 py-8 ${light? "bg-indigo-900": "bg-white"} bg-opacity-5`}>
       <p className='flex flex-row w-full h-auto items-center justify-center gap-4 text-2xl md:text-4xl font-bold'>
         <span className='text-amber-500'><FaStar /></span> What clients are saying?
       </p>

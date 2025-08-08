@@ -10,7 +10,7 @@ const About = () => {
   const {light}= useContext(ThemeContext)
   UsePageTitle("About")
   return (
-    <div className='w-full h-auto min-h-[90vh] bg-white/5 py-16 flex flex-col items-center justify-center '>
+    <div className={`w-full h-auto min-h-[90vh]  py-16 flex flex-col items-center justify-center ${light? "bg-indigo-900": "bg-white"} bg-opacity-5`}>
       <h1 className='text-4xl font-semibold flex flex-row gap-4'>
         <span className='text-cyan-500'>About</span>
         <span>Myself</span>
