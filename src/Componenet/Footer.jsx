@@ -9,7 +9,7 @@ function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className={`flex flex-col gap-4 w-full h-auto items-center justify-center  pb-8 text-white ${light? "bg-indigo-900": "bg-transparent"} `}>
+    <footer className={`flex flex-col gap-4 w-full h-auto items-center justify-center  pb-8 text-white ${light? "bg-indigo-950": "bg-transparent"} `}>
       
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
         <div>
