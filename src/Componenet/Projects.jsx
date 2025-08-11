@@ -13,16 +13,16 @@ const Projects = () => {
         <h1 className='text-cyan-500'>My Projects</h1>
       </div>
       <div className=' w-full p-2 flex flex-col lg:flex-row items-center justify-center h-auto gap-8'>
-        {projectDatas.map((projectsdata) => {
-          const { id, title, headline, titleimg } = projectsdata;
-          return <div key={id} className='border-2 border-cyan-600 w-full lg:w-[350px] h-[500px] relative bg-gray-300 group rounded-xl overflow-hidden'>
 
-            <img src={titleimg} alt="" className='w-full h-[500px] object-cover' />
-            <div className='absolute bottom-0 w-full h-auto p-4 flex flex-col items-center justify-center font-semibold text-cyan-950 bg-white/90'>
-              <h1 className='text-xl font-bold'>{title}</h1>
-              <p>{headline}</p>
-              <Link to={`/projects/${title}`} className='text-red-700 text-xl group-hover:scale-110 font-bold font-mono'>see more</Link>
-            </div>
+        {projectDatas.map((Data)=>{
+          const {id,title, category, titleimg}= Data
+          return <div key={id} className='w-[300px] h-[400px] relative rounded-lg overflow-hidden hover:border-2 cursor-pointer border-cyan-400'>
+              <img src={titleimg} alt="" className='w-[300px] h-[400px] object-cover'/>
+              <div className='w-full h-auto absolute bottom-0 flex flex-row items-center justify-center p-1 bg-white/20'>
+                <p className='w-1/2  text-center font-bold text-white'>{category}</p>
+                <Link to={`/projects/${title}`} className='text-white font-bold font-mono w-1/2  text-center bg-cyan-500 rounded-lg'>see more</Link>
+              </div>
+
           </div>
         })}
       </div>
