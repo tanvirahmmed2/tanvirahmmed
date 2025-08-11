@@ -12,21 +12,25 @@ const Projects = () => {
         <h1>Here are</h1>
         <h1 className='text-cyan-500'>My Projects</h1>
       </div>
-      <div className=' w-full p-2 flex flex-col lg:flex-row items-center justify-center h-auto gap-8'>
+      <div className=' w-full p-2 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] justify-items-center h-auto gap-8'>
 
-        {projectDatas.map((Data)=>{
-          const {id,title, category, titleimg}= Data
-          return <div key={id} className='w-[300px] h-[400px] relative rounded-lg overflow-hidden hover:border-2 cursor-pointer border-cyan-400'>
-              <img src={titleimg} alt="" className='w-[300px] h-[400px] object-cover'/>
-              <div className='w-full h-auto absolute bottom-0 flex flex-row items-center justify-center p-1 bg-white/20'>
-                <p className='w-1/2  text-center font-bold text-white'>{category}</p>
+        {projectDatas.map((Data) => {
+          const { id, title, category, titleimg } = Data
+          return <div key={id} className='w-[300px] h-[400px] relative rounded-lg overflow-hidden hover:shadow-2xl cursor-pointer shadow-black'>
+            <img src={titleimg} alt="" className='w-[300px] h-[400px] object-cover' />
+            <div className='w-full h-auto absolute bottom-0 flex flex-col items-center justify-center p-1 bg-white/20 gap-2'>
+              <p className='text-xs font-poppins text-cyan-500 font-bold w-full text-end px-4'>{category}</p>
+              <div className='w-full h-auto flex flex-row items-center justify-center'>
+                <p className='w-1/2  text-center font-bold text-white'>{title}</p>
                 <Link to={`/projects/${title}`} className='text-white font-bold font-mono w-1/2  text-center bg-cyan-500 rounded-lg'>see more</Link>
               </div>
+              
+            </div>
 
           </div>
         })}
       </div>
-      
+
     </div>
   )
 }
