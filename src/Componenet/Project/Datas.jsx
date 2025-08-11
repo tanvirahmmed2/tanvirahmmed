@@ -12,6 +12,14 @@ import tbresponsive from './ProjectImg/techbeast/responsive.png'
 import tbsignin from './ProjectImg/techbeast/signinpage.jpg'
 import tbbottom from './ProjectImg/techbeast/bottom.jpg'
 
+
+
+import tahomepage from './ProjectImg/tanvirahmmed/homepage.jpg'
+import taitem from './ProjectImg/tanvirahmmed/product.jpg'
+import taresponsive from './ProjectImg/tanvirahmmed/responsive.jpg'
+import tasignin from './ProjectImg/tanvirahmmed/user.jpg'
+import tabottom from './ProjectImg/tanvirahmmed/footer.jpg'
+
 import onlineshop from './ProjectImg/onlineshop.jpg'
 import portfolio from './ProjectImg/portfolio.jpg'
 
@@ -62,11 +70,11 @@ export const projectDatas = [
         headline: " Responsive and modern design to present developer, business, commercial profile.",
         desc: "DisiBin specialize in delivering innovative solutions that drive success and growth. This portfolio highlights our expertise, showcasing a diverse range of projects that demonstrate our commitment to quality, creativity, and client satisfaction. Explore our work to see how we turn ideas into impactful results — let’s partner to elevate your business to the next level",
         responsivedesc: "Responsive design is a modern web development approach that ensures websites and applications provide an optimal viewing and interaction experience across a wide range of devices and screen sizes. It involves using CSS media queries, fluid grids, flexible layouts, and responsive images to create interfaces that automatically adjust their structure, content, and functionality based on the user's device. By implementing responsive design principles, developers can deliver seamless usability, improve accessibility, and reduce the need for multiple versions of a website for different devices. Whether viewed on a large desktop monitor, a tablet, or a mobile phone, a responsively designed site maintains visual consistency, readability, and navigation ease—enhancing both user experience and performance. Responsive design also plays a crucial role in SEO, as search engines prioritize mobile-friendly websites. It's a foundational skill for modern frontend development and essential for building scalable, future-proof web applications",
-        homeimg: dbhomepage,
-        productimg: dbpackage,
-        responsiveimg: dbresponsive,
-        footerimg: dbbottom,
-        userimg: dbsignin,
+        homeimg: tahomepage,
+        productimg: taitem,
+        responsiveimg: taresponsive,
+        footerimg: tabottom,
+        userimg: tasignin,
         siteurl: "https://www.tanvirahmmed.info",
         codeurl: "https://github.com/tanvirahmmed2/tanvirahmmed",
 
