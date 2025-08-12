@@ -16,7 +16,7 @@ const Projects = () => {
 
         {projectDatas.map((Data) => {
           const { id, title, category, titleimg } = Data
-          return <div key={id} className='w-[300px] h-[400px] relative rounded-lg overflow-hidden hover:shadow-2xl cursor-pointer shadow-black'>
+          return <div key={id} className='w-[300px] h-[400px] relative rounded-lg overflow-hidden hover:shadow-2xl cursor-pointer shadow-green-400 hover:scale-105 transition duration-500'>
             <img src={titleimg} alt="" className='w-[300px] h-[400px] object-cover' />
             <div className='w-full h-auto absolute bottom-0 flex flex-col items-center justify-center p-1 bg-white/20 gap-2'>
               <p className='text-xs font-poppins text-cyan-500 font-bold w-full text-end px-4'>{category}</p>
