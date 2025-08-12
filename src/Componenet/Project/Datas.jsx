@@ -79,6 +79,23 @@ export const projectDatas = [
         codeurl: "https://github.com/tanvirahmmed2/tanvirahmmed",
 
     },
+    {
+        id:4,
+        category: "org",
+        title: "Blood Bank",
+        titleimg: onlineshop,
+        headline: " Responsive and modern design to present developer, business, commercial profile.",
+        desc: "DisiBin specialize in delivering innovative solutions that drive success and growth. This portfolio highlights our expertise, showcasing a diverse range of projects that demonstrate our commitment to quality, creativity, and client satisfaction. Explore our work to see how we turn ideas into impactful results — let’s partner to elevate your business to the next level",
+        responsivedesc: "Responsive design is a modern web development approach that ensures websites and applications provide an optimal viewing and interaction experience across a wide range of devices and screen sizes. It involves using CSS media queries, fluid grids, flexible layouts, and responsive images to create interfaces that automatically adjust their structure, content, and functionality based on the user's device. By implementing responsive design principles, developers can deliver seamless usability, improve accessibility, and reduce the need for multiple versions of a website for different devices. Whether viewed on a large desktop monitor, a tablet, or a mobile phone, a responsively designed site maintains visual consistency, readability, and navigation ease—enhancing both user experience and performance. Responsive design also plays a crucial role in SEO, as search engines prioritize mobile-friendly websites. It's a foundational skill for modern frontend development and essential for building scalable, future-proof web applications",
+        homeimg: tahomepage,
+        productimg: taitem,
+        responsiveimg: taresponsive,
+        footerimg: tabottom,
+        userimg: tasignin,
+        siteurl: "https://blood-bank.netlify.app/",
+        codeurl: "https://github.com/tanvirahmmed2/donatebank",
+
+    }
 
 
 
