@@ -16,7 +16,7 @@ function NavBar() {
     return (
         <nav className={`w-full  h-14  backdrop-blur-md flex flex-row items-center justify-between px-4 md:px-8 fixed font-sans z-50 text-base ${light? "bg-indigo-950": "bg-white/15"} text-white `}>
 
-            <Link to="/" className='w-auto font-manrope h-14 flex items-center justify-center text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</Link>
+            <Link to="/" className='w-auto font-semibold h-14 flex items-center justify-center text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</Link>
         
             <div className={`relative flex md:hidden flex-col items-center justify-center  h-14 w-28`}>
                 <span onClick={handlemenu} className=' h-14 w-16 flex gap-4 items-center justify-center cursor-pointer hover:border-b-2' >
