@@ -81,7 +81,7 @@ function Contact() {
 
         <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-[350px] lg:w-[400px] h-[500px] shadow-sm shadow-cyan-700 flex flex-col items-center justify-center ${light? "bg-cyan-50": "bg-transparent"} bg-opacity-40 rounded-xl p-4`}>
 
-          <h1 className='text-3xl font-semibold mt-4'>Discuss:</h1>
+          <h1 className='text-3xl font-semibold mt-4'>Message:</h1>
           <form action="" onSubmit={formik.handleSubmit} className='flex flex-col gap-4 w-80 h-auto items-center justify-center  '>
             <div className='flex flex-col w-full items-start gap-2'>
               <label className='italic ' htmlFor="name">Name</label>
