@@ -14,7 +14,7 @@ function NavBar() {
     }
 
     return (
-        <nav className={`w-full  h-14  backdrop-blur-md flex flex-row items-center justify-between px-4 md:px-8 fixed font-sans z-50 text-base text-white `}>
+        <nav className={`w-full  h-14  backdrop-blur-md flex flex-row items-center justify-between px-4 md:px-8 fixed font-sans z-50 text-base bg-white text-black shadow-sm shadow-black `}>
 
             <Link to="/" className='w-auto font-semibold h-14 flex items-center justify-center text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</Link>
         
