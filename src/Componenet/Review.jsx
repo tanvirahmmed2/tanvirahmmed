@@ -10,9 +10,8 @@ const Review = () => {
   const [centerslide, setCenterSlide] = useState(0)
   const [rightslide, setRightSlide] = useState(2)
 
-  const centerSlideRef = useRef(null) // Ref for center slide
+  const centerSlideRef = useRef(null) 
 
-  // Auto slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCenterSlide(prev =>
@@ -23,7 +22,6 @@ const Review = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Adjust left/right slide indexes
   useEffect(() => {
     if (centerslide === 0) {
       setLeftSlide(reviewDatas.length - 1)
