@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import {  FaNodeJs, FaReact } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
 import ThemeContext from './Context/ThemeContext';
-import photo from './Image/photo.png'
+import photo from './Image/tanvir.png'
 
 const About = () => {
     
@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className={`w-[280px] h-[400px] ${light?"bg-black/20" : "bg-white/20"} rounded-3xl overflow-hidden flex items-center justify-center`}>
           <div className={`w-[260px] h-[380px] object-contain ${light? "bg-indigo-50": "bg-gray-800"} rounded-3xl overflow-hidden flex items-center justify-center`}>
-              <img src={photo} alt="" className='w-[260px] h-[380px]  object-contain rounded-3xl scale-[1.8]' />
+              <img src={photo} alt="" className='w-[260px] h-[380px]  object-contain rounded-3xl scale-[1.5]' />
           </div>
             
           </div>
