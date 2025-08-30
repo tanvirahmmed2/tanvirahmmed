@@ -1,16 +1,14 @@
-import React, { useContext } from 'react'
+import React  from 'react'
 import { motion } from 'framer-motion';
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
-import ThemeContext from './Context/ThemeContext';
 import photo from './Image/tanvir.png'
 
 const About = () => {
 
-  const { light } = useContext(ThemeContext)
   UsePageTitle("About")
   return (
-    <div className={`w-full h-auto  py-16 flex flex-col items-center justify-center ${light? "bg-white": "bg-gray-800"} ${light? "text-black" : "text-white"}`}>
+    <div className={`w-full h-auto  py-16 flex flex-col items-center justify-center`}>
       <h1 className='text-4xl font-semibold flex flex-row gap-4'>
         <span className='text-cyan-500'>About</span>
         <span>Myself</span>
