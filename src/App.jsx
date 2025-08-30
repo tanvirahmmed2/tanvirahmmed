@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './Componenet/NavBar'
-import Footer from './Componenet/Footer'
-import Home from './Home'
+import NavBar from './Componenet/layout/NavBar.jsx'
+import Footer from './Componenet/layout/Footer.jsx'
+import Home from './Componenet/layout/Home.jsx'
 import Review from './Componenet/Review'
 import Skills from './Componenet/Skills.jsx'
 import Contact from './Componenet/Contact'
@@ -31,7 +31,7 @@ function App() {
     
   return (
     <ThemeContext.Provider value={{ light, setLight }}>
-      <div className={`overflow-x-hidden w-full relative select-none h-auto ${light ? "bg-white" : "bg-gray-900"} ${light ? "text-black" : "text-white"} font-sans `}>
+      <div  className={`overflow-x-hidden w-full relative select-none h-auto   font-sans `}>
 
         <NavBar />
         <div className='w-full flex flex-col items-center justify-center min-h-screen  pt-14 h-auto'>

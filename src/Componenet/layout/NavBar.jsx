@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
-import ThemeContext from './Context/ThemeContext';
+import ThemeContext from '../Context/ThemeContext';
 
 function NavBar() {
 
@@ -14,7 +14,7 @@ function NavBar() {
     }
 
     return (
-        <nav className={`w-full  h-14  backdrop-blur-md flex flex-row items-center justify-between px-4 md:px-8 fixed font-sans z-50 text-base ${light? "bg-indigo-950": "bg-white/15"} text-white `}>
+        <nav className={`w-full  h-14  backdrop-blur-md flex flex-row items-center justify-between px-4 md:px-8 fixed font-sans z-50 text-base text-white `}>
 
             <Link to="/" className='w-auto font-semibold h-14 flex items-center justify-center text-xl sm:text-3xl cursor-grab'>Tanvir Ahmmed</Link>
         
