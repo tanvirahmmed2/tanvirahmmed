@@ -54,7 +54,7 @@ const Review = () => {
   
 
   return (
-    <div className={`w-full min-h-screen flex flex-col items-center justify-center gap-12 py-8 ${light? "bg-indigo-900": "bg-white"} bg-opacity-5`}>
+    <div className={`w-full  flex flex-col items-center justify-center gap-12 py-8 ${light? "bg-indigo-900": "bg-white"} bg-opacity-5`}>
       <p className='flex flex-row w-full h-auto items-center justify-center gap-4 text-2xl md:text-4xl font-bold'>
         <span className='text-amber-500'><FaStar /></span> What clients are saying?
       </p>

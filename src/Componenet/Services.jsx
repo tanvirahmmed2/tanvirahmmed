@@ -15,14 +15,14 @@ function Services() {
 
 
   return (
-    <div className='w-full h-auto px-4 py-20 min-h-screen gap-12 flex flex-col items-center justify-center'>
+    <div className='w-full h-auto px-4 py-20 gap-12 flex flex-col items-center justify-center'>
       <div className='text-3xl font-bold text-center '>
         <h1 className='text-cyan-500 inline-block mr-2'>Service</h1>
         <h1 className='inline-block'>I Provide</h1>
       </div>
 
 
-      <div className='h-auto flex flex-col md:flex-row w-full items-center justify-center gap-12'>
+      <div className='h-auto flex flex-wrap w-full items-center justify-center gap-12'>
 
         <motion.div initial={{ x: -50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className={`relative shadow-xl flex flex-col items-center justify-center p-6 border-cyan-500 border-2 ${light ? "hover:bg-black/10" : "hover:bg-white/10"}  rounded-2xl text-center transition duration-300 cursor-pointer w-[350px] md:w-[275px] h-[350px] `}>
           <div className='text-2xl mb-2'><FaSwatchbook /></div>
