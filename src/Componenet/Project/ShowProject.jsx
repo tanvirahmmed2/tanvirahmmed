@@ -28,7 +28,7 @@ const ShowProject = () => {
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={homeimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
 
             <p>{desc}</p>
-            <p className='text-3xl font-mono '>Product Showcase</p>
+            <p className='text-3xl font-mono '>Page Showcase</p>
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={productimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>
             <p className='text-3xl font-mono '>Reponsive Design</p>
             <a href={siteurl} className='w-full h-auto flex items-center justify-center'><img src={responsiveimg} className='w-4/5 md:w-1/2 shadow-xl hover:scale-105 cursor-pointer' alt="" /></a>

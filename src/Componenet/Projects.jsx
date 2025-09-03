@@ -20,9 +20,9 @@ const Projects = () => {
             <img
               src={titleimg}
               alt={title}
-              className="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-in-out"
+              className="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out"
             />
-            <div className="absolute bottom-0 w-full flex flex-col items-center justify-center gap-2 p-3 bg-gradient-to-t from-black/70 via-black/40 to-transparent backdrop-blur-sm">
+            <div className="absolute bottom-0 w-full flex flex-col items-center justify-center gap-2 p-3  backdrop-blur-sm">
               <p className="text-xs font-poppins text-cyan-400 font-semibold w-full text-right px-2">
                 {category}
               </p>
