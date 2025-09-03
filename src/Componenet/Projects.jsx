@@ -15,12 +15,12 @@ const Projects = () => {
         {projectDatas.map(({ id, title, category, titleimg }) => (
           <div
             key={id}
-            className="group w-[280px] h-[400px] relative rounded-2xl overflow-hidden cursor-pointer shadow-xl shadow-cyan-900 hover:scale-105 transform transition duration-500 ease-out"
+            className="group w-[280px] h-[400px] relative rounded-2xl overflow-hidden cursor-pointer shadow-xl shadow-cyan-900  transform transition duration-500 ease-out"
           >
             <img
               src={titleimg}
               alt={title}
-              className="w-full h-full object-cover group-hover:scale-105 transition duration-700 ease-in-out"
+              className="w-full h-full object-cover group-hover:scale-110 rounded-2xl transition duration-700 ease-in-out"
             />
             <div className="absolute bottom-0 w-full flex flex-col items-center justify-center gap-2 p-3  backdrop-blur-sm">
               <p className="text-xs font-poppins text-cyan-400 font-semibold w-full text-right px-2">
