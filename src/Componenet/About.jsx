@@ -34,8 +34,8 @@ const About = () => {
         </motion.div>
 
 
-        <motion.div initial={{ x: 50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className='w-3/4 lg:w-[600px] h-auto flex flex-col items-center justify-center gap-8 text-center lg:text-start px-6'>
-          <div className='w-full h-auto flex flex-col items-start justify-center gap-4'>
+        <motion.div initial={{ x: 50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className='w-3/4 lg:w-[600px]  lg:text-start px-6'>
+          <div className='w-full h-auto flex flex-col items-start justify-center gap-4 text-justify'>
             <h1 className='w-full h-auto text-center lg:text-start text-3xl' >Hello!</h1>
             <p>I'm <span className='font-bold text-xl'>Tanvir Ahmmed</span>, a passionate MERN stack developer who loves creating digital experiences that make a difference. With expertise in modern web technologies, I transform complex ideas into elegant, functional solutions.</p>
             <p>My journey in web development started with curiosity and has evolved into a deep passion for building scalable applications. I specialize in the MERN stack but I'm always exploring new technologies to stay at the forefront of web development.</p>
