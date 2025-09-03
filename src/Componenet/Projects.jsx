@@ -15,7 +15,7 @@ const Projects = () => {
         {projectDatas.map(({ id, title, category, Image }) => (
           <div
             key={id}
-            className="group w-[280px] h-[400px] relative rounded-2xl overflow-hidden cursor-pointer shadow-sm shadow-emerald-500  transform transition duration-500 ease-out"
+            className="group w-[280px] h-[400px] relative rounded-2xl overflow-hidden cursor-pointer border-2 border-emerald-500  transform transition duration-500 ease-out"
           >
             <img
               src={Image}
