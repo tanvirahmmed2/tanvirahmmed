@@ -1,103 +1,86 @@
 
-import dbhomepage from './ProjectImg/disibin/homepage.jpg'
-import dbpackage from './ProjectImg/disibin/package.jpg'
-import dbresponsive from './ProjectImg/disibin/responsive.png'
-import dbbottom from './ProjectImg/disibin/bottom.jpg'
-import dbsignin from './ProjectImg/disibin/signinpage.jpg'
-
-
-import tbhomepage from './ProjectImg/techbeast/homepage.jpg'
-import tbitem from './ProjectImg/techbeast/item.jpg'
-import tbresponsive from './ProjectImg/techbeast/responsive.png'
-import tbsignin from './ProjectImg/techbeast/signinpage.jpg'
-import tbbottom from './ProjectImg/techbeast/bottom.jpg'
-
-
-
-import tahomepage from './ProjectImg/tanvirahmmed/homepage.jpg'
-import taitem from './ProjectImg/tanvirahmmed/product.jpg'
-import taresponsive from './ProjectImg/tanvirahmmed/responsive.jpg'
-import tasignin from './ProjectImg/tanvirahmmed/user.jpg'
-import tabottom from './ProjectImg/tanvirahmmed/footer.jpg'
-
-import onlineshop from './ProjectImg/onlineshop.jpg'
-import portfolio from './ProjectImg/portfolio.jpg'
 
 
 
 export const projectDatas = [
-
-
     {
-        id: 1,
-        category: "Portfolio",
-        title: "DisiBin",
-        titleimg: portfolio,
-        headline: " Responsive and modern design to present developer, business, commercial profile.",
-        desc: "DisiBin specialize in delivering innovative solutions that drive success and growth. This portfolio highlights our expertise, showcasing a diverse range of projects that demonstrate our commitment to quality, creativity, and client satisfaction. Explore our work to see how we turn ideas into impactful results — let’s partner to elevate your business to the next level",
-        responsivedesc: "Responsive design is a modern web development approach that ensures websites and applications provide an optimal viewing and interaction experience across a wide range of devices and screen sizes. It involves using CSS media queries, fluid grids, flexible layouts, and responsive images to create interfaces that automatically adjust their structure, content, and functionality based on the user's device. By implementing responsive design principles, developers can deliver seamless usability, improve accessibility, and reduce the need for multiple versions of a website for different devices. Whether viewed on a large desktop monitor, a tablet, or a mobile phone, a responsively designed site maintains visual consistency, readability, and navigation ease—enhancing both user experience and performance. Responsive design also plays a crucial role in SEO, as search engines prioritize mobile-friendly websites. It's a foundational skill for modern frontend development and essential for building scalable, future-proof web applications",
-        homeimg: dbhomepage,
-        productimg: dbpackage,
-        responsiveimg: dbresponsive,
-        footerimg: dbbottom,
-        userimg: dbsignin,
-        siteurl: "https://www.disibin.com",
-        codeurl: "https://github.com/tanvirahmmed2/disibin",
+        id:1,
+        title: "Blood Campus",
+        Image: 'https://res.cloudinary.com/dz45x9efk/image/upload/v1756875256/bloodcampus_a9dqtb.jpg',
+        description: "Welcome to LifeSaver, a community-driven initiative dedicated to connecting voluntary blood donors with those in urgent need. Our mission is simple — save lives by making blood donation easier, faster, and more accessible. Every drop of blood can save a life. We aim to build a strong and reliable network of donors across Bangladesh, so that no patient suffers due to lack of available blood. Thousands of people need blood transfusions every day due to accidents, surgeries, childbirth, and illnesses. By donating blood, you give someone a second chance at life. Be a Hero — Donate Blood. Whether you are a first-time donor or a regular one, your contribution matters. Together, we can ensure that blood is always available for those in need. Join as a Donor",
+        category: "Org",
+        homeImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875257/user_szdz44.png",
+        serviceImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875256/service_yusac9.png",
+        userImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875256/contact_j2v5qm.png",
+        productImage: 'https://res.cloudinary.com/dz45x9efk/image/upload/v1756875257/product_yu63vw.png',
+        contactImage:"https://res.cloudinary.com/dz45x9efk/image/upload/v1756875257/user_szdz44.png",
+        siteUrl: "https://bloodcampus.netlify.app",
+        githubUrl: "https://github.com/tanvirahmmed2/bloodcampus"
+
 
     },
     {
-        id: 2,
-        category: "Ecommerce",
-        title: "Tech Beast",
-        titleimg: onlineshop,
-        headline: "One-stop destination for quality products at great prices",
-        desc: "Shopping meets convenience and quality! We are dedicated to bringing you a wide selection of carefully curated products to suit your lifestyle and needs. From the latest fashion trends to must-have gadgets, home essentials, and unique gifts, we’ve got something for everyone. Our user-friendly platform makes browsing and purchasing easy and secure, while our fast shipping and responsive customer service ensure a seamless experience from start to finish. At [Shop Name], customer satisfaction is our top priority — shop with confidence and discover great deals every day!",
-        responsivedesc: "Responsive design is a modern web development approach that ensures websites and applications provide an optimal viewing and interaction experience across a wide range of devices and screen sizes. It involves using CSS media queries, fluid grids, flexible layouts, and responsive images to create interfaces that automatically adjust their structure, content, and functionality based on the user's device. By implementing responsive design principles, developers can deliver seamless usability, improve accessibility, and reduce the need for multiple versions of a website for different devices. Whether viewed on a large desktop monitor, a tablet, or a mobile phone, a responsively designed site maintains visual consistency, readability, and navigation ease—enhancing both user experience and performance. Responsive design also plays a crucial role in SEO, as search engines prioritize mobile-friendly websites. It's a foundational skill for modern frontend development and essential for building scalable, future-proof web applications",
-        homeimg: tbhomepage,
-        productimg: tbitem,
-        responsiveimg: tbresponsive,
-        footerimg: tbbottom,
-        userimg: tbsignin,
-        siteurl: "https://tech-beast.netlify.app/",
-        codeurl: "https://github.com/tanvirahmmed2/techbeast",
-
-    },
-    {
-        id: 3,
-        category: "Portfolio",
+        id:2,
         title: "Tanvir Ahmmed",
-        titleimg: portfolio,
-        headline: " Responsive and modern design to present developer, business, commercial profile.",
-        desc: "DisiBin specialize in delivering innovative solutions that drive success and growth. This portfolio highlights our expertise, showcasing a diverse range of projects that demonstrate our commitment to quality, creativity, and client satisfaction. Explore our work to see how we turn ideas into impactful results — let’s partner to elevate your business to the next level",
-        responsivedesc: "Responsive design is a modern web development approach that ensures websites and applications provide an optimal viewing and interaction experience across a wide range of devices and screen sizes. It involves using CSS media queries, fluid grids, flexible layouts, and responsive images to create interfaces that automatically adjust their structure, content, and functionality based on the user's device. By implementing responsive design principles, developers can deliver seamless usability, improve accessibility, and reduce the need for multiple versions of a website for different devices. Whether viewed on a large desktop monitor, a tablet, or a mobile phone, a responsively designed site maintains visual consistency, readability, and navigation ease—enhancing both user experience and performance. Responsive design also plays a crucial role in SEO, as search engines prioritize mobile-friendly websites. It's a foundational skill for modern frontend development and essential for building scalable, future-proof web applications",
-        homeimg: tahomepage,
-        productimg: taitem,
-        responsiveimg: taresponsive,
-        footerimg: tabottom,
-        userimg: tasignin,
-        siteurl: "https://www.tanvirahmmed.info",
-        codeurl: "https://github.com/tanvirahmmed2/tanvirahmmed",
+        Image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875260/tanvirahmmed_sepjst.jpg",
+        description: "I'm Tanvir Ahmmed, a passionate MERN stack developer who loves creating digital experiences that make a difference. With expertise in modern web technologies, I transform complex ideas into elegant, functional solutions. My journey in web development started with curiosity and has evolved into a deep passion for building scalable applications. I specialize in the MERN stack but I'm always exploring new technologies to stay at the forefront of web development. When I'm not coding, you'll find me exploring new frameworks, contributing to open-source projects, or sharing knowledge with the developer community.",
+        category: "Portfolio",
+        homeImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875260/home_ortedn.png",
+        serviceImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875260/product_vih8ij.png",
+        userImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875261/user_nm8ana.png",
+        productImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875260/service_whu6xl.png",
+        contactImage:"https://res.cloudinary.com/dz45x9efk/image/upload/v1756875259/contact_qyt6on.png",
+        siteUrl: "https://tanvirahmmed.netlify.app",
+        githubUrl: "https://github.com/tanvirahmmed2/tanvirahmmed"
+
+
+    },
+    {
+        id:3,
+        title: "Tech Beast",
+        Image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875262/techbeast_crquru.jpg",
+        description: "Level up your setup. We're your one-stop online PC shop for custom gaming rigs, powerful workstations, and everyday computers. We sell the latest CPUs, GPUs, motherboards, RAM, and all the gear you need to build or upgrade your dream machine. Get the tech you want without the high price tag.",
+        category: "Ecommerce",
+        homeImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875261/home_ehfpum.png",
+        serviceImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875261/product_tzwmy6.png",
+        userImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875261/contact_sb2dg3.png",
+        productImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875262/service_exxwzg.png",
+        contactImage:"https://res.cloudinary.com/dz45x9efk/image/upload/v1756875261/user_pwbzkr.png",
+        siteUrl: "https://tech-beast.netlify.app",
+        githubUrl: "https://github.com/tanvirahmmed2/techbeast"
+
 
     },
     {
         id:4,
-        category: "org",
-        title: "Blood Bank",
-        titleimg: onlineshop,
-        headline: " Responsive and modern design to present developer, business, commercial profile.",
-        desc: "DisiBin specialize in delivering innovative solutions that drive success and growth. This portfolio highlights our expertise, showcasing a diverse range of projects that demonstrate our commitment to quality, creativity, and client satisfaction. Explore our work to see how we turn ideas into impactful results — let’s partner to elevate your business to the next level",
-        responsivedesc: "Responsive design is a modern web development approach that ensures websites and applications provide an optimal viewing and interaction experience across a wide range of devices and screen sizes. It involves using CSS media queries, fluid grids, flexible layouts, and responsive images to create interfaces that automatically adjust their structure, content, and functionality based on the user's device. By implementing responsive design principles, developers can deliver seamless usability, improve accessibility, and reduce the need for multiple versions of a website for different devices. Whether viewed on a large desktop monitor, a tablet, or a mobile phone, a responsively designed site maintains visual consistency, readability, and navigation ease—enhancing both user experience and performance. Responsive design also plays a crucial role in SEO, as search engines prioritize mobile-friendly websites. It's a foundational skill for modern frontend development and essential for building scalable, future-proof web applications",
-        homeimg: tahomepage,
-        productimg: taitem,
-        responsiveimg: taresponsive,
-        footerimg: tabottom,
-        userimg: tasignin,
-        siteurl: "https://blood-bank.netlify.app/",
-        codeurl: "https://github.com/tanvirahmmed2/donatebank",
-
-    }
+        title: "DisiBin",
+        Image: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875258/disibin_td6q7q.jpg",
+        description: "DisiBin, is a dynamic and forward-thinking digital agency committed to transforming ideas into impactful digital experiences. We provide end-to-end services that blend strategy, creativity, and technology to help businesses thrive in the modern digital landscape. Our mission is to empower businesses—big or small—to succeed onne. We believe in honest communication, long-term partnerships, and devering measurable results. Whether you’re launching a new product, redesigning your website, or building a brand from scratch, our team is here to make it happen.",
+        category: "online service",
+        homeImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875260/home_pk4nmp.png",
+        serviceImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875259/service_avashs.png",
+        userImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875259/user_hr63nt.png",
+        productImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875259/product_frnmmh.png",
+        contactImage:"https://res.cloudinary.com/dz45x9efk/image/upload/v1756875258/contact_iqxwls.png",
+        siteUrl: "https://www.disibin.com",
+        githubUrl: "https://github.com/tanvirahmmed2/disibin"
 
 
+    },
+    {
+        id:5,
+        title: "MEC",
+        Image:"https://res.cloudinary.com/dz45x9efk/image/upload/v1756875258/mec_yup0m0.jpg",
+        description: "DisiBin, is a dynamic and forward-thinking digital agency committed to transforming ideas into impactful digital experiences. We provide end-to-end services that blend strategy, creativity, and technology to help businesses thrive in the modern digital landscape. Our mission is to empower businesses—big or small—to succeed onne. We believe in honest communication, long-term partnerships, and devering measurable results. Whether you’re launching a new product, redesigning your website, or building a brand from scratch, our team is here to make it happen.",
+        category: "Institution",
+        homeImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875263/home_vxhsat.png",
+        serviceImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875257/dept_rbnazs.png",
+        userImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875257/about_foyezw.png",
+        productImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875258/details_bdnmn6.png",
+        contactImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1756875257/contact_w3o0wa.png",
+        siteUrl: "https://mec-new.netlify.app",
+        githubUrl: "https://github.com/tanvirahmmed2/mec"
 
 
+    },
 ]

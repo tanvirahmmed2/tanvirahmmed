@@ -12,13 +12,13 @@ const Projects = () => {
         <h1 className="text-cyan-500">My Projects</h1>
       </div>
       <div className="w-full p-4 flex flex-wrap justify-center gap-10">
-        {projectDatas.map(({ id, title, category, titleimg }) => (
+        {projectDatas.map(({ id, title, category, Image }) => (
           <div
             key={id}
-            className="group w-[280px] h-[400px] relative rounded-2xl overflow-hidden cursor-pointer shadow-xl shadow-cyan-900  transform transition duration-500 ease-out"
+            className="group w-[280px] h-[400px] relative rounded-2xl overflow-hidden cursor-pointer shadow-sm shadow-emerald-500  transform transition duration-500 ease-out"
           >
             <img
-              src={titleimg}
+              src={Image}
               alt={title}
               className="w-full h-full object-cover group-hover:scale-110 rounded-2xl transition duration-700 ease-in-out"
             />
@@ -27,10 +27,10 @@ const Projects = () => {
                 {category}
               </p>
               <div className="w-full flex flex-row items-center justify-between px-2">
-                <p className="text-sm font-bold text-white">{title}</p>
+                <p className="text-sm font-bold bg-white text-black px-2 p-1 rounded-lg">{title}</p>
                 <Link
                   to={`/projects/${title}`}
-                  className="text-xs md:text-sm text-white font-semibold font-mono px-3 py-1 bg-cyan-500 rounded-lg shadow-md hover:bg-cyan-600 transition"
+                  className="text-xs md:text-sm  text-white font-semibold font-mono px-3 py-1 bg-cyan-500 rounded-lg shadow-md hover:bg-cyan-600 transition"
                 >
                   see more
                 </Link>
