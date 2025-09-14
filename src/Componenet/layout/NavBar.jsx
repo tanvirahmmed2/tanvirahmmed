@@ -1,13 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
-import ThemeContext from '../Context/ThemeContext';
 
 function NavBar() {
 
-    const { light } = useContext(ThemeContext)
     const [menu, setMenu] = useState(false);
     const handlemenu = () => {
         setMenu(!menu)
@@ -24,7 +22,7 @@ function NavBar() {
                     <p className={`text-3xl ${!menu ? "hidden" : "flex"}`}><IoMdClose /></p>
 
                 </span>
-                <div className={`absolute ${!menu ? "hidden" : "flex"} flex-col w-[130px] h-auto gap-4 items-start top-14 shadow-sm shadow-indigo-400 ${light? "bg-indigo-950": "bg-black/50"} rounded-br-md rounded-bl-md py-4 px-4 `}>
+                <div className={`absolute ${!menu ? "hidden" : "flex"} flex-col w-[130px] h-auto gap-4 items-start top-14 shadow-sm shadow-indigo-400 bg-white rounded-br-md rounded-bl-md py-4 px-4 `}>
                     <a href='/' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Home</a>
                     <Link to='/about' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>About</Link>
                     <Link to='/skills' className=' h-8 w-full pl-4 hover:pl-6 hover:scale-110 hover:text-cyan-500 cursor-pointer font-semibold'>Skills</Link>

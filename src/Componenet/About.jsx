@@ -2,7 +2,7 @@ import React  from 'react'
 import { motion } from 'framer-motion';
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import UsePageTitle from './UsePageTitle';
-import photo from './Image/tanvir.png'
+import photo from './Image/gg-profile.jpg'
 
 const About = () => {
 
@@ -21,7 +21,7 @@ const About = () => {
           <div className='h-[400px] w-[50px] flex items-start justify-center'>
             <p className='text-4xl text-cyan-500 animate-bounce'><FaReact /></p>
           </div>
-          <div className={`w-[280px] h-[400px] bg-cyan-700 rounded-3xl overflow-hidden flex items-center justify-center`}>
+          <div className={`w-[280px] h-[400px] bg-white/50 rounded-3xl overflow-hidden flex items-center justify-center`}>
             <div className={`w-[260px] h-[380px] object-contain bg-white  rounded-3xl overflow-hidden flex items-center justify-center`}>
               <img src={photo} alt="" className='w-[260px] h-[380px]  object-contain rounded-3xl scale-[1.5]' />
             </div>
