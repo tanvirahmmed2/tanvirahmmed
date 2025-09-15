@@ -86,7 +86,7 @@ const ShowProject = () => {
                                 href={siteUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-2  text-white rounded-xl hover:scale-105 shadow-sm shadow-red-400 transition"
+                                className="px-6 py-2   rounded-xl hover:scale-105 shadow-sm shadow-red-400 transition"
                             >
                                 View Site
                             </a>
@@ -94,7 +94,7 @@ const ShowProject = () => {
                                 href={githubUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-2  text-white rounded-xl hover:scale-105 shadow-sm shadow-emerald-400 transition"
+                                className="px-6 py-2   rounded-xl hover:scale-105 shadow-sm shadow-emerald-400 transition"
                             >
                                 Code
                             </a>
