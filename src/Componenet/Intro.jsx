@@ -16,7 +16,7 @@ const Intro = () => {
         <div className={`w-full h-auto min-h-screen py-16 flex flex-col items-center justify-center  text-center px-4`}>
             <div className='w-3/4 h-auto flex flex-col items-center justify-center gap-4 text-center'>
                 <p className='text-6xl  animate-bounce'><FaCode /></p>
-                <h1 className='lg:text-6xl text-3xl font-semibold flex flex-row items-center justify-center gap-4'>
+                <h1 className='lg:text-6xl text-3xl font-semibold flex flex-row items-center justify-center gap-4 '>
                     <p>Tanvir</p>
                     <p>Ahmmed</p>
                 </h1>

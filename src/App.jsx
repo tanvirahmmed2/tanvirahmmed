@@ -34,7 +34,7 @@ function App() {
       <div  className={`overflow-x-hidden w-full relative select-none h-auto   font-sans ${light? "bg-white text-black": "bg-gray-800 text-white"} `}>
 
         <NavBar />
-        <div className='w-full flex flex-col items-center justify-center min-h-screen  pt-14 h-auto'>
+        <div className='w-full flex flex-col items-center justify-center min-h-screen  pt-14 h-auto font-poppins'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
