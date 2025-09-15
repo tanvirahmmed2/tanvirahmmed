@@ -12,7 +12,7 @@ const Notice = () => {
 
 
     return (
-        <div className={`w-full h-8 text-white border-b-[1px] border-t-[1px] flex flex-row items-center justify-around gap-4 text-xs lg:text-base ${light? "bg-gray-800": "bg-gray-900"} text-white`}>
+        <div className={`w-full h-8  border-b-[1px] border-t-[1px] flex flex-row items-center justify-around gap-4 text-xs lg:text-base `}>
             <p className='italic '>currently available for new job or project offer</p>
             <span onClick={handlemood} className='w-auto h-8 flex items-center justify-center '>
                 <p className={`w-auto h-8 ${!light? "flex": "hidden"} cursor-pointer rounded-xl gap-2 items-center justify-center px-3`}><IoMdSunny /> Light</p>

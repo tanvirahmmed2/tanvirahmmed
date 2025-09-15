@@ -10,6 +10,7 @@ import Services from '../Services'
 
 
 function Home() {
+  
   UsePageTitle("Home")
   return (
     <div className='w-full h-auto flex flex-col items-center justify-center gap-12'>
