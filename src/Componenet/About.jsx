@@ -15,7 +15,7 @@ const About = () => {
         <span className='text-cyan-500'>About</span>
         <span>Myself</span>
       </h1>
-      <div className='w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-12'>
+      <div className='w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-12 px-6'>
 
 
         <motion.div initial={{ x: -50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className='w-[400px] h-[500px] flex flex-row items-center justify-between '>
@@ -36,23 +36,23 @@ const About = () => {
         </motion.div>
 
 
-        <motion.div initial={{ x: 50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className='w-3/4 lg:w-[600px]  lg:text-start px-6'>
+        <motion.div initial={{ x: 50, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className='w-full lg:w-[600px]  lg:text-start px-2 lg:px-6'>
           <div className='w-full h-auto flex flex-col items-start justify-center gap-4 text-justify font-manrope'>
             <h1 className='w-full h-auto text-center lg:text-start text-3xl' >Hello!</h1>
             <p>I'm <span className='font-bold text-xl'>Tanvir Ahmmed</span>, a passionate MERN stack developer who loves creating digital experiences that make a difference. With expertise in modern web technologies, I transform complex ideas into elegant, functional solutions.</p>
             <p>My journey in web development started with curiosity and has evolved into a deep passion for building scalable applications. I specialize in the MERN stack but I'm always exploring new technologies to stay at the forefront of web development.</p>
             <p>When I'm not coding, you'll find me exploring new frameworks, contributing to open-source projects, or sharing knowledge with the developer community.</p>
           </div>
-          <div className='w-full h-auto flex flex-row items-center justify-between'>
-            <div className='w-auto flex-auto flex flex-col items-center justify-center gap-3'>
+          <div className='w-full h-auto flex flex-row items-center justify-between mt-6 text-center'>
+            <div className='w-full flex-auto flex flex-col items-center justify-center gap-3'>
               <span className='text-3xl font-bold text-cyan-500'>20+</span>
               <p>Projects</p>
             </div>
-            <div className='w-auto flex-auto flex flex-col items-center justify-center gap-3'>
+            <div className='w-full flex-auto flex flex-col items-center justify-center gap-3'>
               <span className='text-3xl font-bold text-emerald-500'>2 Years+</span>
               <p>Experience</p>
             </div>
-            <div className='w-auto flex-auto flex flex-col items-center justify-center gap-3'>
+            <div className='w-full flex-auto flex flex-col items-center justify-center gap-3'>
               <span className='text-3xl font-bold text-indigo-500'>100%</span>
               <p>Client satisfaction</p>
             </div>
