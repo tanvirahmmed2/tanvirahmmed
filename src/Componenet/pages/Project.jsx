@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { projectDatas } from './Datas';
+import { projectDatas } from '../Project/Datas';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const ShowProject = () => {
+const Project = () => {
   const [projects, setProjects] = useState([]);
   const { title } = useParams();
 
@@ -114,4 +114,4 @@ const ShowProject = () => {
     );
 };
 
-export default ShowProject;
+export default Project;

@@ -1,22 +1,20 @@
 import React from 'react'
-import Projects from '../Projects'
-import Review from '../Review'
-import Contact from '../Contact'
-import About from '../About'
+import Projects from '../pages/Projects'
+import Review from '../pages/Review'
+import Contact from '../pages/Contact'
+import About from '../pages/About'
 import UsePageTitle from '../UsePageTitle'
-import Skills from '../Skills'
-import Intro from '../Intro'
-import Services from '../Services'
+import Skills from '../pages/Skills'
+import Intro from '../pages/Intro'
 
 
 function Home() {
   
   UsePageTitle("Home")
   return (
-    <div className='w-full h-auto flex flex-col items-center justify-center gap-12'>
+    <div className='w-full h-auto flex flex-col items-center justify-center '>
       <Intro />
       <About />
-      <Services />
       <Skills />
       <Projects />
       <Review />

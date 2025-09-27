@@ -3,17 +3,14 @@ import { Routes, Route } from 'react-router-dom'
 import NavBar from './Componenet/layout/NavBar.jsx'
 import Footer from './Componenet/layout/Footer.jsx'
 import Home from './Componenet/layout/Home.jsx'
-import Review from './Componenet/Review'
-import Skills from './Componenet/Skills.jsx'
-import Contact from './Componenet/Contact'
-import Projects from './Componenet/Projects'
-import ShowProject from './Componenet/Project/ShowProject'
-import About from './Componenet/About'
-import Services from './Componenet/Services.jsx'
+import Review from './Componenet/pages/Review.jsx'
+import Skills from './Componenet/pages/Skills.jsx'
+import Contact from './Componenet/pages/Contact.jsx'
+import Projects from './Componenet/pages/Projects.jsx'
+import ShowProject from './Componenet/pages/Project.jsx'
+import About from './Componenet/pages/About.jsx'
 import ThemeContext from './Componenet/Context/ThemeContext.jsx'
-import Notice from './Componenet/Notice.jsx'
-import LogIn from './Componenet/LogIn.jsx'
-import Message from './Componenet/Message.jsx'
+import Notice from './Componenet/pages/Notice.jsx'
 
 
 
@@ -34,18 +31,15 @@ function App() {
       <div  className={`overflow-x-hidden w-full relative select-none h-auto   font-sans ${light? "bg-white text-black": "bg-gray-800 text-white"} `}>
 
         <NavBar />
-        <div className='w-full flex flex-col items-center justify-center min-h-screen  pt-14 h-auto font-poppins'>
+        <div className='w-full flex flex-col items-center justify-center min-h-screen  mt-16 h-auto font-poppins'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/reviews' element={<Review />} />
             <Route path='/skills' element={<Skills />} />
-            <Route path='/services' element={<Services />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/projects/:title' element={<ShowProject />} />
-            <Route path='/login' element={<LogIn/>}/>
-            <Route path='message' element={<Message/>}/>
           </Routes>
 
         </div>

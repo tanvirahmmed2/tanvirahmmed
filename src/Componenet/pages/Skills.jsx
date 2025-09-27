@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 
 import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
-import UsePageTitle from './UsePageTitle';
-import ThemeContext from './Context/ThemeContext';
+import UsePageTitle from '../UsePageTitle';
+import ThemeContext from '../Context/ThemeContext';
 
 
 
@@ -16,10 +16,10 @@ const Skills = () => {
         <div className={`w-full h-auto  flex flex-col items-center justify-center gap-6 py-16  `}>
             <h1 className='text-4xl font-semibold'>Technical skills</h1>
             <p className='md:text-2xl text-lg opacity-70 text-center'>Technologies I work with to bring ideas to life</p>
-            <div className='w-full h-auto flex flex-col md:flex-row items-center justify-center gap-12'>
+            <div className='w-full p-4 flex flex-wrap justify-center gap-10'>
 
                 
-                <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-[300px] md:w-[230px] h-[400px] ${light? "bg-black/5": "bg-white/5"} shadow-sm shadow-cyan-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
+                <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-full md:w-[280px] h-[400px] ${light? "bg-black/5": "bg-white/5"} shadow-sm shadow-cyan-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
                     <p className='text-4xl text-cyan-500'><FaReact/></p>
                     <h1 className='text-4xl'>Frontend</h1>
                     <div  className='text-cyan-400 w-full'>
@@ -48,7 +48,7 @@ const Skills = () => {
                     </div>
                 </motion.div>
 
-                <motion.div initial={{y:-20, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.6}} className={`w-[300px] md:w-[230px] h-[400px] ${light? "bg-black/5": "bg-white/5"} shadow-sm shadow-emerald-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
+                <motion.div initial={{y:-20, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.6}} className={`w-full md:w-[280px] h-[400px] ${light? "bg-black/5": "bg-white/5"} shadow-sm shadow-emerald-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
                     <p className='text-4xl text-emerald-500'><FaNodeJs/></p>
                     <h1 className='text-4xl'>Backend</h1>
                     <div  className='text-emerald-400 w-full'>
@@ -77,7 +77,7 @@ const Skills = () => {
                     </div>
                 </motion.div>
 
-                <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-[300px] md:w-[230px] h-[400px] ${light? "bg-black/5": "bg-white/5"}  shadow-sm shadow-indigo-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
+                <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-full md:w-[280px] h-[400px] ${light? "bg-black/5": "bg-white/5"}  shadow-sm shadow-indigo-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
                     <p className='text-4xl text-indigo-500'><FaDatabase/></p>
                     <h1 className='text-4xl'>DataBase</h1>
                     <div  className='text-indigo-400 w-full'>

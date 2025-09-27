@@ -1,6 +1,6 @@
 import React, { useContext} from 'react'
 import { IoMdMoon, IoMdSunny } from "react-icons/io";
-import ThemeContext from './Context/ThemeContext';
+import ThemeContext from '../Context/ThemeContext';
 
 const Notice = () => {
     const {light, setLight}= useContext(ThemeContext)

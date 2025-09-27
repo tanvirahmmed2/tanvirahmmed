@@ -13,7 +13,7 @@ const Intro = () => {
   
    
     return (
-        <div className={`w-full h-auto min-h-screen py-16 flex flex-col items-center justify-center  text-center px-4`}>
+        <div className={`w-full h-auto  pt-36 pb-10 flex flex-col items-center justify-center  text-center px-4`}>
             <div className='w-3/4 h-auto flex flex-col items-center justify-center gap-4 text-center'>
                 <p className='text-6xl  animate-bounce'><FaCode /></p>
                 <h1 className='lg:text-6xl text-3xl font-semibold flex flex-row items-center justify-center gap-4 '>
@@ -29,7 +29,7 @@ const Intro = () => {
                 </p>
 
                 
-                <p className='text-lg'>Crafting exceptional digital experiences with modern web technologies. Specializing in full-stack development with a passion for clean code and innovative solutions.</p>
+                <p className='text-xs md:text-lg'>Crafting exceptional digital experiences with modern web technologies. Specializing in full-stack development with a passion for clean code and innovative solutions.</p>
 
 
                 <div className='h-auto md:w-[400px] text-xs md:text-base w-[160px] group gap-2   flex flex-col md:flex-row'>
