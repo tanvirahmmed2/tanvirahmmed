@@ -6,7 +6,7 @@ import UsePageTitle from '../UsePageTitle'
 const Projects = () => {
   UsePageTitle("Projects")
   return (
-    <div className="w-full min-h-screen py-16 px-6 flex flex-col gap-12 items-center justify-center ">
+    <div className="w-full h-auto py-16 px-6 flex flex-col gap-12 items-center justify-center ">
       
       {/* Heading */}
       <div className="text-3xl md:text-4xl font-extrabold flex flex-row items-center justify-center gap-3">
