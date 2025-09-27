@@ -28,7 +28,7 @@ const About = () => {
             <p className="text-4xl text-indigo-500 animate-bounce"><FaReact /></p>
           </div>
 
-          <div className={`w-[260px] h-[380px] ${light? 'bg-black/40': 'bg-white/40'} rounded-2xl overflow-hidden flex items-center justify-center shadow-lg`}>
+          <div className={`w-[260px] h-[380px] ${light? 'bg-indigo-50': 'bg-emerald-50'} rounded-2xl overflow-hidden flex items-center justify-center shadow-lg`}>
             <div className="w-[240px] h-[360px] bg-white rounded-2xl overflow-hidden flex items-center justify-center shadow-inner">
               <img src={photo} alt="" className="w-[240px] h-[360px] object-cover rounded-2xl scale-[1.1]" />
             </div>
@@ -58,7 +58,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="w-full text-xs md:text-base h-28 overflow-hidden flex flex-row items-center justify-between mt-10 text-center gap-2">
+          <div className="w-full text-black text-xs md:text-base h-28 overflow-hidden flex flex-row items-center justify-between mt-10 text-center gap-2">
             <div className="h-full w-full flex flex-col items-center justify-center gap-2 bg-gray-50 rounded-lg p-4">
               <span className="text-xl md:text-3xl font-extrabold text-indigo-600">20+</span>
               <p className="">Projects</p>

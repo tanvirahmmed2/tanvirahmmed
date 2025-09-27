@@ -17,7 +17,7 @@ const Project = () => {
   }
 
     return (
-        <div className="min-h-screen w-full pt-28 p-4 flex flex-col items-center justify-center gap-12">
+        <div className="min-h-screen w-full pt-20 p-4 flex flex-col items-center justify-center gap-6">
             <h1 className="text-4xl font-bold text-center mb-10">{title}</h1>
 
             {projects.map(
@@ -38,7 +38,7 @@ const Project = () => {
                         className="w-full flex flex-col gap-8 items-center text-center mb-12"
                         key={id}
                     >
-                        <h2 className="text-2xl italic font-semibold text-white/70">
+                        <h2 className="text-2xl italic">
                             Category: {category}
                         </h2>
                         <a
@@ -54,7 +54,7 @@ const Project = () => {
                             />
                         </a>
 
-                        <p className="text-lg text-white opacity-70 w-3/4">{description}</p>
+                        <p className="text-lg opacity-70 w-3/4">{description}</p>
 
                         {/* Sections */}
                         {[
@@ -64,7 +64,7 @@ const Project = () => {
                             { label: "Page", img: contactImage },
                         ].map(({ label, img }, idx) => (
                             <div key={idx} className="w-full flex flex-col gap-6 items-center">
-                                <p className="text-4xl font-semibold">{label}</p>
+                                <p className="text-xl font-semibold">{label}</p>
                                 <a
                                     href={siteUrl}
                                     target="_blank"
@@ -86,7 +86,7 @@ const Project = () => {
                                 href={siteUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-2   rounded-xl hover:scale-105 shadow-sm shadow-red-400 transition"
+                                className="px-6 py-2   rounded-xl hover:scale-105 shadow-md shadow-red-400 bg-red-300 transition"
                             >
                                 View Site
                             </a>
@@ -94,7 +94,7 @@ const Project = () => {
                                 href={githubUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-6 py-2   rounded-xl hover:scale-105 shadow-sm shadow-emerald-400 transition"
+                                className="px-6 py-2   rounded-xl hover:scale-105 shadow-md shadow-emerald-400 bg-emerald-300 transition"
                             >
                                 Code
                             </a>
