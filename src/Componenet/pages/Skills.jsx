@@ -86,7 +86,7 @@ const Skills = () => {
                             <span>93%</span>
 
                         </div>
-                        <input type="range" disabled value={90} className='w-full'/>
+                        <input type="range" disabled value={93} className='w-full'/>
                     </div>
                     <div className='text-indigo-500 w-full'>
                         <div className='w-full h-auto flex flex-row items-center justify-between'>
