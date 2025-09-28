@@ -4,6 +4,22 @@
 
 export const projectDatas = [
     {
+        id:0,
+        title: "Flavor",
+        Image: 'https://res.cloudinary.com/dz45x9efk/image/upload/v1759075559/flavor_ng80gj.jpg',
+        description: "Flavor is a fully functional restaurant web application designed for food lovers. The project is built using MERN stack: React.js for the frontend, Node.js for the backend, and MongoDB for the database, ensuring a seamless and responsive user experience",
+        category: "Restaurant",
+        homeImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1759075560/Screenshot_2025-09-28_104540_wtfxig.png",
+        serviceImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1759075559/Screenshot_2025-09-28_104602_xattwr.png",
+        userImage: "https://res.cloudinary.com/dz45x9efk/image/upload/v1759075558/Screenshot_2025-09-28_104613_bunfvb.png",
+        productImage: 'https://res.cloudinary.com/dz45x9efk/image/upload/v1759075559/Screenshot_2025-09-28_104659_pogquq.png',
+        contactImage:"https://res.cloudinary.com/dz45x9efk/image/upload/v1759075557/Screenshot_2025-09-28_104724_yoxued.png",
+        siteUrl: "https://flavorbd.netlify.app",
+        githubUrl: "https://github.com/tanvirahmmed2/flavor"
+
+
+    },
+    {
         id:1,
         title: "Blood Campus",
         Image: 'https://res.cloudinary.com/dz45x9efk/image/upload/v1756875256/bloodcampus_a9dqtb.jpg',

@@ -10,10 +10,7 @@ function Footer() {
     <footer className={`flex flex-col gap-4 w-full h-auto items-center justify-center  py-8 bg `}>
       
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
-        <div>
-          <Link to='/services'>Services</Link>
-
-        </div>
+        
         <div>
           <Link to='/projects'>Projects</Link>
         </div>
