@@ -38,9 +38,7 @@ const Project = () => {
                         className="w-full flex flex-col gap-8 items-center text-center mb-12"
                         key={id}
                     >
-                        <h2 className="text-2xl italic">
-                            Category: {category}
-                        </h2>
+                        <h2 className="text-2xl italic"> Category: {category}</h2>
                         <a
                             href={siteUrl}
                             target="_blank"
@@ -54,7 +52,7 @@ const Project = () => {
                             />
                         </a>
 
-                        <p className="text-lg opacity-70 w-3/4">{description}</p>
+                        <p className="text-lg opacity-70  w-3/4">{description}</p>
 
                         {/* Sections */}
                         {[
@@ -69,7 +67,7 @@ const Project = () => {
                                     href={siteUrl}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="w-3/4 flex justify-center"
+                                    className="w-full md:w-3/4 flex justify-center"
                                 >
                                     <img
                                         src={img}
