@@ -13,7 +13,7 @@ const Intro = () => {
   
    
     return (
-        <div className={`w-full h-auto  pt-36 pb-10 flex flex-col items-center justify-center  text-center px-4`}>
+        <div className={`w-full h-auto  pt-36 pb-20 flex flex-col items-center justify-center  text-center px-10`}>
             <div className='w-3/4 h-auto flex flex-col items-center justify-center gap-4 text-center'>
                 <p className='text-6xl  animate-bounce'><FaCode /></p>
                 <h1 className='lg:text-6xl text-3xl font-semibold flex flex-row items-center justify-center gap-4 '>

@@ -1,112 +1,57 @@
 import React, { useContext } from 'react'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+import { FaReact, FaNodeJs, FaJs, } from "react-icons/fa"
+import { SiExpress, SiMongodb, SiPostgresql, SiTailwindcss } from "react-icons/si"
+import UsePageTitle from '../UsePageTitle'
+import ThemeContext from '../Context/ThemeContext'
 
-
-
-import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
-import UsePageTitle from '../UsePageTitle';
-import ThemeContext from '../Context/ThemeContext';
-
+const skills = [
+    { name: "React Js", level: 90, icon: <FaReact className="text-sky-500 text-4xl w-full text-center" /> },
+    { name: "JavaScript", level: 95, icon: <FaJs className="text-yellow-400 text-4xl w-full text-center" /> },
+    { name: "Tailwind CSS", level: 100, icon: <SiTailwindcss className="text-cyan-400 text-4xl w-full text-center" /> },
+    { name: "Express Js", level: 94, icon: <SiExpress className="text-green-500 text-4xl w-full text-center" /> },
+    { name: "Node Js", level: 95, icon: <FaNodeJs className="text-green-400 text-4xl w-full text-center" /> },
+    { name: "Rest API's", level: 89, icon: <FaNodeJs className="text-teal-400 text-4xl w-full text-center" /> },
+    { name: "MongoDB", level: 93, icon: <SiMongodb className="text-green-600 text-4xl w-full text-center" /> },
+    { name: "PostgreSQL", level: 90, icon: <SiPostgresql className="text-blue-500 text-4xl w-full text-center" /> },
+]
 
 
 const Skills = () => {
-    const {light} =useContext(ThemeContext)
+    const { light } = useContext(ThemeContext)
     UsePageTitle("skills")
+
     return (
-        <div className={`w-full h-auto  flex flex-col items-center justify-center gap-6 py-16  `}>
-            <h1 className='text-4xl font-semibold'>Technical skills</h1>
-            <p className='md:text-2xl text-lg opacity-70 text-center'>Technologies I work with to bring ideas to life</p>
-            <div className='w-full p-4 flex flex-wrap justify-center gap-10'>
+        <div className="w-full flex flex-col items-center justify-center gap-8 py-16 px-6">
+            <h1 className="text-4xl font-semibold">Technical Skills</h1>
+            <p className="md:text-2xl text-lg opacity-70 text-center">
+                Technologies I work with to bring ideas to life
+            </p>
 
-                
-                <motion.div initial={{x:-50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-full md:w-[280px] h-[400px] ${light? "bg-black/5": "bg-white/5"} shadow-sm shadow-cyan-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
-                    <p className='text-4xl text-cyan-500'><FaReact/></p>
-                    <h1 className='text-4xl'>Frontend</h1>
-                    <div  className='text-cyan-400 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>React Js</p>
-                            <span>90%</span>
+            <div className="w-full md:w-3/4 flex flex-wrap justify-center gap-10">
+                {skills.map((skill, i) => {
+                    const { name, level, icon } = skill
+                    return <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className={`w-full sm:w-[220px] h-[150px] p-5 rounded-2xl shadow-md ${light ? "bg-indigo-50" : "bg-cyan-50"} bg-opacity-30 flex flex-col justify-between `}  >
 
+                        {icon}
+                        <div className='w-full flex flex-row items-center justify-between'>
+                            <h2 className="text-lg font-semibold">{name}</h2>
+                            <span>{level}%</span>
                         </div>
-                        <input type="range" disabled value={90} className='w-full'/>
-                    </div>
-                    <div className='text-cyan-500 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>JavaScript</p>
-                            <span>95%</span>
 
+
+                        <div className="w-full bg-white h-2 rounded-full overflow-hidden">
+                            <motion.div
+                                initial={{ width: 0 }}
+                                animate={{ width: `${level}%` }}
+                                transition={{ duration: 2 }}
+                                className="h-2 bg-indigo-500 rounded-full"
+                            />
                         </div>
-                        <input type="range" disabled value={95} className='w-full'/>
-                    </div>
-                    <div className='text-cyan-600 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>Tailwind CSS</p>
-                            <span>100%</span>
 
-                        </div>
-                        <input type="range" disabled value={100} className='w-full'/>
-                    </div>
-                </motion.div>
-
-                <motion.div initial={{y:-20, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:0.6}} className={`w-full md:w-[280px] h-[400px] ${light? "bg-black/5": "bg-white/5"} shadow-sm shadow-emerald-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
-                    <p className='text-4xl text-emerald-500'><FaNodeJs/></p>
-                    <h1 className='text-4xl'>Backend</h1>
-                    <div  className='text-emerald-400 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>Express Js</p>
-                            <span>94%</span>
-
-                        </div>
-                        <input type="range" disabled value={94} className='w-full'/>
-                    </div>
-                    <div className='text-emerald-500 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>Node Js</p>
-                            <span>95%</span>
-
-                        </div>
-                        <input type="range" disabled value={95} className='w-full'/>
-                    </div>
-                    <div className='text-emerald-600 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>Rest API's</p>
-                            <span>89%</span>
-
-                        </div>
-                        <input type="range" disabled value={89} className='w-full'/>
-                    </div>
-                </motion.div>
-
-                <motion.div initial={{x:50, opacity:0}} whileInView={{x:0, opacity:1}} transition={{duration:0.6}} className={`w-full md:w-[280px] h-[400px] ${light? "bg-black/5": "bg-white/5"}  shadow-sm shadow-indigo-600 p-8 rounded-3xl flex flex-col items-center justify-between`}>
-                    <p className='text-4xl text-indigo-500'><FaDatabase/></p>
-                    <h1 className='text-4xl'>DataBase</h1>
-                    <div  className='text-indigo-400 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>MongoDB</p>
-                            <span>93%</span>
-
-                        </div>
-                        <input type="range" disabled value={93} className='w-full'/>
-                    </div>
-                    <div className='text-indigo-500 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>Mongoose</p>
-                            <span>92%</span>
-
-                        </div>
-                        <input type="range" disabled value={95} className='w-full'/>
-                    </div>
-                    <div className='text-indigo-600 w-full'>
-                        <div className='w-full h-auto flex flex-row items-center justify-between'>
-                            <p>PostgreSQL</p>
-                            <span>90%</span>
-
-                        </div>
-                        <input type="range" disabled value={90} className='w-full'/>
-                    </div>
-                </motion.div>
+                    </motion.div>
+                })}
             </div>
-
         </div>
     )
 }

@@ -1,12 +1,11 @@
-import React, { useContext }  from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion';
-import { FaNodeJs, FaReact } from "react-icons/fa";
 import UsePageTitle from '../UsePageTitle';
 import photo from '../Image/gg-profile.jpg'
 import ThemeContext from '../Context/ThemeContext';
 
 const About = () => {
-  const {light}= useContext(ThemeContext)
+  const { light } = useContext(ThemeContext)
 
   UsePageTitle("About")
   return (
@@ -18,31 +17,26 @@ const About = () => {
 
       <div className="w-full h-auto flex flex-col lg:flex-row items-center justify-center gap-14 px-6">
 
-        <motion.div 
-          initial={{ x: -50, opacity: 0 }} 
-          whileInView={{ x: 0, opacity: 1 }} 
-          transition={{ duration: 0.6 }} 
-          className="w-[380px] h-[480px] flex flex-row items-center justify-between"
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-full sm:w-[380px] h-[480px] flex flex-row items-center justify-between"
         >
-          <div className="h-[380px] w-[50px] flex items-start justify-center">
-            <p className="text-4xl text-indigo-500 animate-bounce"><FaReact /></p>
-          </div>
 
-          <div className={`w-[260px] h-[380px] ${light? 'bg-indigo-50': 'bg-emerald-50'} rounded-2xl overflow-hidden flex items-center justify-center shadow-lg`}>
-            <div className="w-[240px] h-[360px] bg-white rounded-2xl overflow-hidden flex items-center justify-center shadow-inner">
-              <img src={photo} alt="" className="w-[240px] h-[360px] object-cover rounded-2xl scale-[1.1]" />
+          <div className={`w-full h-full p-2 ${light ? 'bg-indigo-50' : 'bg-emerald-50'} rounded-tl-[100px] rounded-br-[100px] overflow-hidden flex items-center justify-center shadow-lg`}>
+            <div className="w-full h-full bg-white rounded-tl-[98px] rounded-br-[98px] overflow-hidden flex items-center justify-center shadow-inner">
+              <img src={photo} alt="" className="w-full h-full object-cover rounded-2xl scale-[1.1]" />
             </div>
           </div>
 
-          <div className="h-[380px] w-[50px] flex items-end justify-center">
-            <p className="text-4xl text-emerald-500 animate-bounce"><FaNodeJs /></p>
-          </div>
+
         </motion.div>
 
-        <motion.div 
-          initial={{ x: 50, opacity: 0 }} 
-          whileInView={{ x: 0, opacity: 1 }} 
-          transition={{ duration: 0.6 }} 
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
           className="w-full lg:w-[600px] px-2 lg:px-6"
         >
           <div className="flex flex-col items-start justify-center gap-5 text-justify  leading-relaxed">

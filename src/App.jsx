@@ -28,7 +28,7 @@ function App() {
     
   return (
     <ThemeContext.Provider value={{ light, setLight }}>
-      <div  className={`overflow-x-hidden w-full relative select-none h-auto   font-sans ${light? "bg-white text-black": "bg-gray-800 text-white"} `}>
+      <div  className={`overflow-x-hidden w-full relative select-none h-auto   font-sans ${light? "bg-white text-black": "bg-gradient-to-br from-gray-700 to-black text-white"} `}>
 
         <NavBar />
         <div className='w-full flex flex-col items-center justify-center min-h-screen  mt-16 h-auto font-poppins'>

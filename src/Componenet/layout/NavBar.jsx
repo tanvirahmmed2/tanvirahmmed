@@ -14,9 +14,9 @@ function NavBar() {
 
     return (
         <section className={`w-full h-auto fixed flex flex-col items-center justify-center z-50 backdrop-blur-md  shadow-sm shadow-indigo-400 ${light? "text-black bg-white": 'text-white bg-gray-800'}`}>
-            <nav className={`w-full h-16 flex flex-row items-center justify-around px-6 `}>
+            <nav className={`w-full h-16 flex flex-row items-center justify-between md:justify-around px-6 `}>
 
-                <Link to="/" className='text-3xl font-semibold'>Tanvir Ahmmed</Link>
+                <Link to="/" className='md:text-3xl text-xl font-semibold'>Tanvir Ahmmed</Link>
 
                 <div className={`flex md:hidden flex-col items-center justify-center  h-16 w-28`}>
                     <span onClick={handlemenu} className=' h-16 w-16 flex gap-4 items-center justify-center cursor-pointer ' >

@@ -1,38 +1,39 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import ThemeContext from '../Context/ThemeContext';
 
 function Footer() {
+  const { light } = useContext(ThemeContext)
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <footer className={`flex flex-col gap-4 w-full h-auto items-center justify-center  py-8 bg `}>
-      
+    <footer className={`flex flex-col gap-6 w-full h-auto items-center justify-center  py-8 ${light ? 'bg-cyan-700' : 'bg-cyan-950'} text-white `}>
+
       <div className='flex flex-col gap-4 md:gap-12 md:flex-row items-center justify-center'>
-        
-        <div>
-          <Link to='/projects'>Projects</Link>
-        </div>
-        <div>
-          <Link to='/about'>About Me</Link>
-        </div>
-        <div>
-          <Link to='/contact'>Contact</Link>
-        </div>
 
-        
+
+        <Link to='/'>Home</Link>
+        <Link to='/projects'>Projects</Link>
+        <Link to='/about'>About Me</Link>
+        <Link to='/reviews'>Reviews</Link>
+        <Link to='/skills'>Skills</Link>
+        <Link to='/contact'>Contact</Link>
+
+
+
       </div>
-      <div className='flex flex-row gap-4 items-start justify-center text-2xl'>
-          <a className='hover:scale-110 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FaFacebook /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FaInstagram/></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FaWhatsapp/></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://t.me/tanvirahmmed14"><FaTelegram /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://bd.linkedin.com/in/tanvirahmmed4"><FaLinkedin /></a>
-          <a className='hover:scale-110 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FaGithub/></a>
+      <div className='flex flex-row gap-4 items-start justify-center text-3xl'>
+        <a className='hover:scale-110 hover:text-red-800' href="https://www.facebook.com/tanvirahmmed.official/"> <FaFacebook /></a>
+        <a className='hover:scale-110 hover:text-red-800' href="https://www.instagram.com/tanvirahmmed4"><FaInstagram /></a>
+        <a className='hover:scale-110 hover:text-red-800' href="https://wa.me/qr/YE7Q5ROGHJ54I1"><FaWhatsapp /></a>
+        <a className='hover:scale-110 hover:text-red-800' href="https://t.me/tanvirahmmed14"><FaTelegram /></a>
+        <a className='hover:scale-110 hover:text-red-800' href="https://bd.linkedin.com/in/tanvirahmmed4"><FaLinkedin /></a>
+        <a className='hover:scale-110 hover:text-red-800' href="https://github.com/tanvirahmmed2"><FaGithub /></a>
 
-        </div>
-      <p className='p-4 text-xs md:text-base text-center'>All rights are reserved by <a href="/" className='text-indigo-400 font-bold text-xl'>Tanvir Ahmmed</a> | {year}</p>
+      </div>
+      <p className='pb-4 text-xs md:text-base text-center'>All rights are reserved by <a href="/" className='text-indigo-400 font-bold text-xl'>Tanvir Ahmmed</a> | {year}</p>
     </footer>
   )
 }
